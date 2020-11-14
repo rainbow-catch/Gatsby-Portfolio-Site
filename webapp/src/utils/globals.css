@@ -1,0 +1,17 @@
+@tailwind base;
+
+@tailwind components;
+
+h2 {
+  @apply text-xl;
+}
+
+a {
+  @apply text-teal-600 underline inline-block;
+}
+
+a:hover {
+  @apply text-teal-700;
+}
+
+@tailwind utilities;
