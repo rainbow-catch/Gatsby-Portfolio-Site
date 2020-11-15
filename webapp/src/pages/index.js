@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import "../utils/globals.css"
-import H1 from "../components/ui/h1"
-import Layout from "../components/ui/layout"
+import H1 from "../components/h1"
+import Layout from "../components/layout"
 
 function IndexPage() {
   return (

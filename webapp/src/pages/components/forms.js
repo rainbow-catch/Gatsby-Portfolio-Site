@@ -1,6 +1,6 @@
 import React from "react"
-import H1 from "../../components/ui/h1"
-import Layout from "../../components/ui/layout"
+import H1 from "../../components/h1"
+import Layout from "../../components/layout"
 
 import "../../utils/globals.css"
 
