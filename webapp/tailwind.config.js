@@ -27,7 +27,6 @@ module.exports = {
         'logo': 45,
         'hero': 910
       },
-      
       listStyleType: {
         square: "square",
       },
