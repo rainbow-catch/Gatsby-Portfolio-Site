@@ -68,7 +68,7 @@ function Header() {
                   <div className="relative">
                     <Link
                       className={"block text-center text-xl font-link smd:inline-block smd:mx-6 mb-2 smd:mb-0 no-underline"
-                        + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-black hover:text-gray-900 ")}
+                        + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-black hover:text-gray-900")}
 
                       key={link.title}
                       to={link.route}
