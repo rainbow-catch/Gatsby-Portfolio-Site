@@ -5,16 +5,17 @@ module.exports = {
         'primary': "#835238",
         'lightBrown': "#b57f66",
         'black': '#363636',
-        'gray': '#989898'
+        'customGray': '#989898'
       },
       textColor: {
         'primary': "#835238",
         'lightBrown': "#b57f66",
         'black': '#363636',
-        'gray': '#989898'
+        'customGray': '#989898'
       },
       fontSize: {
-        'huge': "130px"
+        'huge': "130px",
+        'smdHuge': "80px"
       },
       width: {
         'logo': 154,
