@@ -10,12 +10,12 @@ if (typeof window !== `undefined`) {
 
 function Layout({ children }) {
   return (
-    <div className="mx-auto flex-col min-h-screen  bg-white font-lora-regular text-primary">
-      <div className="fixed w-full bg-white">
+    <div className="w-full mx-auto flex-col font-lora-regular text-primary" style={{maxWidth:"1280px"}}>
+      <div className="fixed w-full bg-white" style={{maxWidth:"1280px"}}>
         <Header />
       </div>
 
-      <main className="flex-1 w-full text-color bg-white">
+      <main className="flex-1 w-full text-color mx-auto">
         {children}
       </main>
       {/* <Footer /> */}

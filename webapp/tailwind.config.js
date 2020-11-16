@@ -18,12 +18,14 @@ module.exports = {
         'smdHuge': "80px"
       },
       width: {
-        'logo': 154,
-        'hero': 696
+        'logosmd': 154,
+        'logo': 80,
+        'hero': 835
       },
       height: {
-        'logo': 84,
-        'hero': 758
+        'logosmd': 84,
+        'logo': 45,
+        'hero': 910
       },
       
       listStyleType: {

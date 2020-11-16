@@ -15,12 +15,12 @@ function Header() {
           const pathName = location.pathname.substr(0, lastPos == 0 ? len : lastPos);
 
           return (
-            <div className="flex flex-wrap items-center justify-between shadow bg-white px-10 lg:px-20 z-50">
+            <div className="flex flex-wrap items-center justify-between shadow px-10 lg:px-20 z-50">
               <div className="my-auto">
                 <Link to="/" className="">
                   <img
                     src={images.IMAGE_LOGO}
-                    className="w-logo h-logo pt-1"
+                    className="w-logo h-logo smd:w-logosmd smd:h-logosmd pt-1"
                     alt="page elements shape"
                   />
                 </Link>
