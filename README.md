@@ -1,16 +1,3 @@
-# :calling: Please call me :calling:
-
-My account in Freelancer was blocked yesterday :confused:, but I want to go on with your job :+1:.
-Soon I will create a new account, and we can restart with the new account.
-
-My Skypeid is ***"heracles710_rns"***.
-
-Find me on Skype! :call_me_hand:
-
-AWAINTING YOUR RESPONSE~~~~~
-
-----------
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
