@@ -19,7 +19,7 @@ button.primary {
 }
 
 button.secondery {
-  @apply text-lg text-black border border-lightBrown border-2 rounded-lg bg-white px-8 py-3;
+  @apply text-lg text-black border border-lightBrown border-2 rounded-lg bg-white px-6 py-3;
 }
 
 @tailwind utilities;

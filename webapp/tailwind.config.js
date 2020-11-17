@@ -18,6 +18,7 @@ module.exports = {
       },
       fontSize: {
         'huge': "130px",
+        '40': "40px",
         'smdHuge': "80px"
       },
       width: {
