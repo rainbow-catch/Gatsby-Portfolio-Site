@@ -16,10 +16,10 @@ function IndexPage() {
             <p className="smd:text-huge text-smdHuge font-bold text-lightBrown uppercase">design</p>
             <p className="smd:text-2xl text-xl text-black">...Simple I belive is beautiful</p>
             <Link to="/projects" className="">
-              <button className="text-lg text-white rounded-lg bg-primary px-4 py-2 mt-10">View Projects</button>
+              <button className="primary mt-10">View Projects</button>
             </Link>
           </div>
-          <div className="left-10 text-gray-700 lg:px-12 py-5">
+          <div className="left-10 text-customGray lg:px-12 py-5">
             © 2020 Bkay, All rights reserved.
           </div>
         </div>

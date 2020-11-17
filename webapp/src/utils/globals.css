@@ -7,11 +7,19 @@ h2 {
 }
 
 a {
-  @apply text-teal-600 underline inline-block;
+  @apply text-teal-600 inline-block;
 }
 
 a:hover {
   @apply text-teal-700;
+}
+
+button.primary {
+  @apply text-lg text-white rounded-lg bg-primary px-8 py-3;
+}
+
+button.secondery {
+  @apply text-lg text-black border border-lightBrown border-2 rounded-lg bg-white px-8 py-3;
 }
 
 @tailwind utilities;

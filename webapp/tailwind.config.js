@@ -13,6 +13,9 @@ module.exports = {
         'black': '#363636',
         'customGray': '#989898'
       },
+      borderColor: {
+        'lightBrown': "#b57f66",
+      },
       fontSize: {
         'huge': "130px",
         'smdHuge': "80px"

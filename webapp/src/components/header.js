@@ -76,7 +76,7 @@ function Header() {
                       {link.title}
                     </Link>
                     {link.route == pathName &&
-                      <img src={images.IMAGE_UNDERLINE} className="absolute hidden smd:block" style={{ bottom: "-30px" }}></img>
+                      <div className="bg-primary absolute hidden smd:block w-full h-1 rounded-t-xl object-fill" style={{ bottom: "-30px" }}></div>
                     }
                   </div>
                 ))}
