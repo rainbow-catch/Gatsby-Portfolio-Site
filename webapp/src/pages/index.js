@@ -10,6 +10,8 @@ function IndexPage() {
     <Layout>
       <div className="pl-10 lg:pl-20 flex justify-between min-h-screen" style={{ paddingTop: "89px" }}>
         <div className="flex justify-between flex-col">
+          <div className="">
+          </div>
           <div>
             <img className="smd:pl-48 pl-24 smd:pt-10" src={images.IMAGE_DECORATION}></img>
             <p className="smd:text-5xl text-4xl text-black">Everything is</p>
