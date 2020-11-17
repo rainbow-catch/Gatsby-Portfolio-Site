@@ -10,7 +10,7 @@ import Heading from "../components/Heading"
 function IndexPage() {
   return (
     <Layout>
-      <div className="mx-10 lg:mx-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: (window.innerHeight > 900) ? window.innerHeight : 900 }}>
+      <div className="mx-10 lg:mx-20 min-h-screen" style={{ paddingTop: "89px" }}>
         <div className="relative">
           <div className="hidden smd:block smd:absolute pointer-events-none smd:mt-10 w-7/12 smd:w-8/12">
             <div className="bg-lightBrown flex p-4">
@@ -36,10 +36,10 @@ function IndexPage() {
               <FollowMe />
             </div>
           </div>
-          <div className="relative smd:w-7/12 float-right flex flex-col">
+          <div className="relative smd:w-7/12 h-full float-right flex flex-col">
             <div className="h-logo smd:h-logosmd"></div>
             <img className="absolute" style={{ top: "0px", right: "25px" }} src={images.IMAGE_DECORATION}></img>
-            <div className="border bg-white p-5 pt-10 pl-10 text-black text-lg w-full pb-20">
+            <div className="border bg-white p-5 text-black text-lg w-full pb-20">
               <Heading className="my-10">About Me</Heading>
               <p>
                 My name is Adam Mayowa. I’m a designer, an art enthusiast I focus on mobile and web interface designing, my passion towards arts & interface design made me root myself into the digital design world.

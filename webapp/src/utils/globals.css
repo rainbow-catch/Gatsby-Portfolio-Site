@@ -2,6 +2,8 @@
 
 @tailwind components;
 
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 h2 {
   @apply text-xl;
 }
@@ -13,7 +15,9 @@ a {
 a:hover {
   @apply text-teal-700;
 }
-
+* {
+  font-family: "Inter"
+}
 button.primary {
   @apply text-lg text-white rounded-lg bg-primary px-8 py-3;
 }

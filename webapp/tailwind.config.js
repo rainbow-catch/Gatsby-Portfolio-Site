@@ -6,7 +6,8 @@ module.exports = {
         'lightBrown': "#b57f66",
         'black': '#363636',
         'customGray': '#989898',
-        'mainBack': '#f8f8f8'
+        'mainBack': '#f8f8f8',
+        'aboutPanel': '#f9f9f9',
       },
       textColor: {
         'primary': "#835238",
