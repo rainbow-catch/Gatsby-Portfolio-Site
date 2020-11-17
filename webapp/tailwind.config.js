@@ -37,7 +37,6 @@ module.exports = {
         square: "square",
       },
       fontFamily: {
-        'link': ['Segoe UI'],
         'con-regular': ['CondensedRegular'],
         'con-bold': ['CondensedBold'],
         'slab-regular': ['SlabRegular'],

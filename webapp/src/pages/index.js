@@ -21,7 +21,7 @@ function IndexPage() {
               <button className="primary mt-10">View Projects</button>
             </Link>
           </div>
-          <div className="left-10 text-customGray lg:px-12 py-5">
+          <div className="text-customGray lg:pr-12 py-5">
             © 2020 Bkay, All rights reserved.
           </div>
         </div>
