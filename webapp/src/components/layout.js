@@ -9,12 +9,12 @@ if (typeof window !== `undefined`) {
 
 function Layout({ children }) {
   return (
-    <div className="w-full mx-auto flex-col font-lora-regular text-primary" style={{maxWidth:"1440px"}}>
-      <div className="fixed w-full bg-white z-50" style={{maxWidth:"1440px"}}>
+    <div className="w-full mx-auto  flex-col font-lora-regular text-primary" style={{maxWidth:"1440px"}}>
+      <div className="fixed w-full z-50" style={{maxWidth:"1440px"}}>
         <Header />
       </div>
 
-      <main className="flex-1 w-full text-color min-h-screen mx-auto z-10">
+      <main className="bg-mainBack flex-1 w-full text-color min-h-screen mx-auto z-10">
         {children}
       </main>
     </div>
