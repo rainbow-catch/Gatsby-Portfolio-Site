@@ -10,14 +10,14 @@ import Heading from "../components/Heading"
 function IndexPage() {
   return (
     <Layout>
-      <div className="mx-10 lg:mx-20 min-h-screen" style={{ paddingTop: "89px" }}>
+      <div className="mx-10 lg:mx-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh" }}>
         <div className="relative">
           <div className="hidden smd:block smd:absolute pointer-events-none smd:mt-10 w-7/12 smd:w-8/12">
             <div className="bg-lightBrown flex p-4">
               <img className="w-9/12" style={{ borderTopLeftRadius: "20%" }} src={images.IMAGE_ABOUT}></img>
               <div className="bg-white w-3/12 min-h-full"></div>
             </div>
-            <div className="text-black text-lg mt-5 w-7/12">
+            <div className="text-black text-lg my-5 w-7/12">
               Illustrator, Digital Graphic Designer, Graphite & Charcol Pencil Artist,
               Interface Designer & User Experience Designer
             </div>
@@ -26,7 +26,7 @@ function IndexPage() {
         <div className="relative min-h-full flex flex-col-reverse smd:flex-row smd:justify-between" style={{ maxWidth: "1440px" }}>
           <div className="min-h-full flex flex-col-reverse text-customGray lg:pr-6 py-5">
             © 2020 Bkay, All rights reserved.
-            <div className="text-customGray lg:flex items-center text-lg my-10">
+            <div className="text-customGray lg:flex items-center text-lg my-5">
               <Link to="/contact" className="items-center lg:mr-5 mb-5 lg:mb-0"><button className="secondery flex items-center">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 9.50003C19.0034 10.8199 18.6951 12.1219 18.1 13.3C17.3944 14.7118 16.3098 15.8992 14.9674 16.7293C13.6251 17.5594 12.0782 17.9994 10.5 18C9.18013 18.0035 7.87812 17.6951 6.7 17.1L1 19L2.9 13.3C2.30493 12.1219 1.99656 10.8199 2 9.50003C2.00061 7.92179 2.44061 6.37488 3.27072 5.03258C4.10083 3.69028 5.28825 2.6056 6.7 1.90003C7.87812 1.30496 9.18013 0.996587 10.5 1.00003H11C13.0843 1.11502 15.053 1.99479 16.5291 3.47089C18.0052 4.94699 18.885 6.91568 19 9.00003V9.50003Z" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -36,7 +36,7 @@ function IndexPage() {
               <FollowMe />
             </div>
           </div>
-          <div className="relative smd:w-7/12 h-full float-right flex flex-col">
+          <div className="relative smd:w-7/12 float-right flex flex-col">
             <div className="h-logo smd:h-logosmd"></div>
             <img className="absolute" style={{ top: "0px", right: "25px" }} src={images.IMAGE_DECORATION}></img>
             <div className="border bg-white p-5 text-black text-lg w-full pb-20">
