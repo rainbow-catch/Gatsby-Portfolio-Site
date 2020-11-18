@@ -7,7 +7,7 @@ import images from "../constants/images"
 import FollowMe from "../components/followMe"
 import Heading from "../components/Heading"
 
-function IndexPage() {
+function AboutPage() {
   return (
     <Layout>
       <div className="mx-10 lg:mx-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh" }}>
@@ -61,4 +61,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default AboutPage

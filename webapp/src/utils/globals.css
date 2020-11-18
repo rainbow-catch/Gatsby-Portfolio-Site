@@ -26,5 +26,12 @@ button.secondery {
   @apply text-lg text-black border border-lightBrown border-2 rounded-lg bg-white px-6 py-3;
 }
 
+.bkayInput {
+  padding: 16px;
+  background: #b57f662d;
+  border: 1px solid #b57f6644;
+  border-radius: 10px;
+}
+
 @tailwind utilities;
 

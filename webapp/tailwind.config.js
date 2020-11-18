@@ -6,6 +6,7 @@ module.exports = {
         'lightBrown': "#b57f66",
         'black': '#363636',
         'customGray': '#989898',
+        'lightGary': '#CBCBCB',
         'mainBack': '#f8f8f8',
         'aboutPanel': '#f9f9f9',
       },
@@ -17,6 +18,9 @@ module.exports = {
       },
       borderColor: {
         'lightBrown': "#b57f66",
+      },
+      borderWidth: {
+        'lg': '25px'
       },
       fontSize: {
         'huge': "130px",
