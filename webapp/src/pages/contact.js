@@ -43,8 +43,8 @@ function ContactPage() {
                 <input type="email" placeholder="Enter your email" name="email" className="bkayInput mb-4 w-full"></input>
                 <p className="pb-4">Tell me something</p>
                 <textarea placeholder="Enter your message" name="fullname" className="bkayInput mb-4 w-full"></textarea>
-                <Link to="">
-                  <button className="primary flex float-right">
+                <Link to="#" className="float-right">
+                  <button className="primary flex items-center">
                     Send Message &nbsp;
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21 1L14 21L10 12L1 8L21 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
