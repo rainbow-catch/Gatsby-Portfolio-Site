@@ -14,7 +14,7 @@ function AboutPage() {
         <div className="relative">
           <div className="hidden smd:block smd:absolute smd:mt-10 smd:w-8/12">
             <img className="" src={images.IMAGE_ABOUT}></img>
-            <div className="text-black text-sm my-5 ml-5 w-5/12">
+            <div className="text-lightBlack text-sm my-5 ml-5 w-5/12">
               <ul style={{ listStyleType: "circle" }}>
                 <li>Illustrator, Digital Graphic Designer,</li>
                 <li>Graphite & Charcol Pencil Artist,</li>
@@ -30,7 +30,7 @@ function AboutPage() {
           <div className="relative smd:w-8/12 float-right flex flex-col">
             <div className="h-0 smd:h-32"></div>
             <img className="absolute" style={{ top: "40px", right: "25px" }} src={images.IMAGE_DECORATION}></img>
-            <div className="border-t-lg border-l-lg border-white bg-aboutPanel p-5 smd:pt-10 smd:pl-10 text-black text-lg w-full smd:pb-20">
+            <div className="border-t-lg border-l-lg border-white bg-aboutPanel p-5 smd:pt-10 smd:pl-10 text-lightBlack text-lg w-full smd:pb-20">
               <Heading className="my-10">About Me</Heading>
               <p>
                 My name is Adam Mayowa. I’m a designer, an art enthusiast I focus on mobile and web interface designing, my passion towards arts & interface design made me root myself into the digital design world.

@@ -23,7 +23,15 @@ button.primary {
 }
 
 button.secondery {
-  @apply text-lg text-black border border-lightBrown border-2 rounded-lg bg-white px-6 py-3;
+  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg bg-white px-6 py-3;
+}
+
+button.tabButtonActive {
+  @apply text-lg text-black rounded-md bg-lighterGray p-4;
+}
+
+button.tabButtonNormal {
+  @apply text-lg text-customGray rounded-md p-4;
 }
 
 .bkayInput {

@@ -26,7 +26,7 @@ function Header() {
                 </Link>
               </div>
               <button
-                className="flex my-auto float-right w-10 h-10 items-center px-3 py-2 text-black border border-black rounded smd:hidden"
+                className="flex my-auto float-right w-10 h-10 items-center px-3 py-2 text-lightBlack border border-black rounded smd:hidden"
                 onClick={() => toggleExpansion(!isExpanded)}
               >
                 <svg
@@ -68,7 +68,7 @@ function Header() {
                   <div className="relative">
                     <Link
                       className={"block text-center text-xl smd:inline-block smd:mx-6 mb-2 smd:mb-0 no-underline  hover:bg-gray-300 smd:hover:bg-white"
-                        + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-black hover:text-gray-900")}
+                        + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}
 
                       key={link.title}
                       to={link.route}

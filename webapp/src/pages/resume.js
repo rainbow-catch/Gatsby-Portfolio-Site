@@ -12,9 +12,9 @@ function IndexPage() {
         <div className="flex justify-between flex-col">
           <div>
             <img className="smd:pl-48 pl-24 smd:pt-10" src={images.IMAGE_DECORATION}></img>
-            <p className="smd:text-5xl text-4xl text-black">Everything is</p>
+            <p className="smd:text-5xl text-4xl text-lightBlack">Everything is</p>
             <p className="smd:text-huge text-smdHuge font-bold text-lightBrown uppercase">design</p>
-            <p className="smd:text-2xl text-xl text-black">...Simple I belive is beautiful</p>
+            <p className="smd:text-2xl text-xl text-lightBlack">...Simple I belive is beautiful</p>
             <Link to="/projects" className="">
               <button className="text-lg text-white rounded-lg bg-primary px-4 py-2 mt-10">View Projects</button>
             </Link>
