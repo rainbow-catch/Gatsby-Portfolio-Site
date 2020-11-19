@@ -4,6 +4,7 @@ import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
 import Heading from "../components/heading"
+import FollowMe from "../components/followMe"
 
 function IndexPage() {
   return (
@@ -19,7 +20,7 @@ function IndexPage() {
           <div className="flex flex-col pl-8 xl:pl-18p">
             <p className="text-black text-50 leading-none">Adam</p>
             <p className="text-black text-100 font-bold leading-none">Mayowa</p>
-            <p className="text-lightBlack text-lg mt-10">User Interface / User Experience & Graphic Designer</p>
+            <p className="text-lightBlack text-lg mt-10 mb-5">User Interface / User Experience & Graphic Designer</p>
             <p className="text-lightBlack text-lg items-center mb-10 flex">
               <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 10.5948L30 2.73345V2.00011C30 1.61113 29.842 1.23808 29.5607 0.963024C29.2794 0.687971 28.8978 0.533447 28.5 0.533447H1.5C1.10218 0.533447 0.720644 0.687971 0.43934 0.963024C0.158035 1.23808 0 1.61113 0 2.00011V2.73345L15 10.5948Z" fill="#B57F66" />
@@ -45,8 +46,9 @@ function IndexPage() {
               </button>
             </div>
           </div>
-          <div className="hidden md:block pr-8 xl:pr-18p">
+          <div className="hidden md:flex md:flex-col pr-8 xl:pr-18p items-center">
             <img src={images.IMAGE_RESUME}></img>
+            <FollowMe className="mt-10"/>
           </div>
         </div>
         <div className="left-10 text-gray-700 lg:px-12 py-5 mt-20">
