@@ -45,5 +45,9 @@ button.tabButtonNormal {
   border-radius: 10px;
 }
 
+.bkayInput:focus {
+  border: 1px solid #b57f66;
+}
+
 @tailwind utilities;
 
