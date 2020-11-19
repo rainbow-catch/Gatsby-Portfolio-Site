@@ -23,7 +23,11 @@ button.primary {
 }
 
 button.secondery {
-  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg bg-white px-6 py-3;
+  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg  px-6 py-3;
+}
+
+button.seconderyFontWhite {
+  @apply text-lg text-white border border-lightBrown border-2 rounded-lg  px-6 py-3;
 }
 
 button.tabButtonActive {

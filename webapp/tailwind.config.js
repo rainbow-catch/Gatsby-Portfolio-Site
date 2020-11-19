@@ -5,6 +5,7 @@ module.exports = {
         'primary': "#835238",
         'lightBrown': "#b57f66",
         'black': '#363636',
+        'semiTransparentBlack': '#000000ac',
         'customGray': '#989898',
         'lightGray': '#CBCBCB',
         'lighterGray': '#eeeeee',
