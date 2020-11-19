@@ -19,11 +19,11 @@ a:hover {
   font-family: "Inter"
 }
 button.primary {
-  @apply text-lg text-white rounded-lg bg-primary px-8 py-3;
+  @apply text-lg text-white rounded-lg bg-primary px-8 py-3 flex items-center;
 }
 
 button.secondery {
-  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg  px-6 py-3;
+  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg  px-6 py-3 flex items-center;
 }
 
 button.seconderyFontWhite {

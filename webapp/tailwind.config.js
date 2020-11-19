@@ -27,6 +27,8 @@ module.exports = {
       fontSize: {
         'huge': "130px",
         '40': "40px",
+        '50': "50px",
+        '100': "100px",
         'smdHuge': "80px"
       },
       width: {
@@ -38,6 +40,9 @@ module.exports = {
         'logosmd': 84,
         'logo': 45,
         'hero': 910
+      },
+      padding: {
+        '18p': "18%",
       },
       listStyleType: {
         square: "square",

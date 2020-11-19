@@ -4,6 +4,7 @@ const images = {
     IMAGE_HOME_HERO: require("../images/tempImg.svg"),
     IMAGE_ABOUT: require("../images/about.svg"),
     IMAGE_CONTACT: require("../images/contact.svg"),
+    IMAGE_RESUME: require("../images/resume.svg"),
 
     IMAGE_PRO1: require("../images/project1.svg"),
     IMAGE_PRO2: require("../images/project2.svg"),
