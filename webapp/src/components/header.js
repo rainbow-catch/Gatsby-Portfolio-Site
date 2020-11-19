@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 import images from '../constants/images'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 function Header() {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -15,12 +16,12 @@ function Header() {
           const pathName = location.pathname.substr(0, lastPos == 0 ? len : lastPos);
 
           return (
-            <div className="flex flex-wrap items-center justify-between bg-white px-10 lg:px-20 z-50">
+            <div className={"flex flex-wrap items-center justify-between bg-white z-50 " + (isMobile? "px-3": "px-10 lg:px-20")}>
               <div className="my-auto">
                 <Link to="/" className="">
                   <img
                     src={images.IMAGE_LOGO}
-                    className="w-logo h-logo smd:w-logosmd smd:h-logosmd pt-1"
+                    className={"pt-1 " + (isMobile?"w-logomobile h-logomobile":"w-logo h-logo smd:w-logosmd smd:h-logosmd")}
                     alt="page elements shape"
                   />
                 </Link>

@@ -29,20 +29,27 @@ module.exports = {
         '40': "40px",
         '50': "50px",
         '100': "100px",
+        '25p': "25px",
+        '20p': "20px",
+        '70p': "70px",
         'smdHuge': "80px"
       },
       width: {
+        'logomobile': 92,
         'logosmd': 154,
         'logo': 80,
         'hero': 835
       },
       height: {
+        'logomobile': 50,
         'logosmd': 84,
         'logo': 45,
         'hero': 910
       },
       padding: {
         '18p': "18%",
+        '5p': "5%",
+        '70': "70px"
       },
       listStyleType: {
         square: "square",
