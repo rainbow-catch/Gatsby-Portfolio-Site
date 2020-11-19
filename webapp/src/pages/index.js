@@ -34,13 +34,17 @@ function IndexPage() {
       <MobileView>
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
           <div className="pl-6 flex justify-between flex-col">
-              <img className="float-right pr-5p pt-3" src={images.IMAGE_DECORATION}></img>
-              <p className="text-25p text-lightBlack">Everything is</p>
-              <p className="text-70p font-bold text-lightBrown uppercase">design</p>
-              <p className="text-20p text-lightBlack">...Simple I belive is beautiful</p>
-              <Link to="/projects" className="">
-                <button className="primarymobile mt-5">View Projects</button>
+            <div>
+              <img className="float-right w-decorationmobile h-decorationmobile pr-5p pt-3" src={images.IMAGE_DECORATION}></img>
+            </div>
+            <p className="text-25p text-lightBlack">Everything is</p>
+            <p className="text-70p font-bold text-lightBrown uppercase">design</p>
+            <p className="text-20p text-lightBlack">...Simple I belive is beautiful</p>
+            <div>
+              <Link to="/projects" className="mt-5">
+                <button className="primarymobile">View Projects</button>
               </Link>
+            </div>
           </div>
           <img className="float-right w-full object-fill" src={images.IMAGE_HOME_INDEX_MOBILE}></img>
         </div>

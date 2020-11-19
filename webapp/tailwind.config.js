@@ -32,13 +32,15 @@ module.exports = {
         '25p': "25px",
         '20p': "20px",
         '70p': "70px",
-        'smdHuge': "80px"
+        'smdHuge': "80px",
+        'decorationmobile':"88px",
       },
       width: {
         'logomobile': 92,
         'logosmd': 154,
         'logo': 80,
-        'hero': 835
+        'hero': 835,
+        'decorationmobile':181,
       },
       height: {
         'logomobile': 50,
