@@ -2,9 +2,9 @@ import React from "react"
 import cx from "classnames"
 import { Link } from "gatsby"
 
-function FollowMe({...rest}) {
+function FollowMe({className, ...rest}) {
   return (
-    <div {...rest} className="text-customGray flex justify-between items-center w-48">
+    <div {...rest} className={"text-customGray flex justify-between items-center w-48 " + className}>
       Follow Me:
       <Link to="">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

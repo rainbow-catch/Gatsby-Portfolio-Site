@@ -16,14 +16,15 @@ function ContactPage() {
             <div className="bg-lightGray flex p-6 pl-0">
               <img className="object-cover w-full" style={{ borderTopLeftRadius: "20%" }} src={images.IMAGE_CONTACT}></img>
             </div>
-            <div className="text-lightBlack text-lg my-5 w-7/12">
+            {/* <div className="text-lightBlack text-lg my-5 w-7/12">
               <FollowMe/>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="relative min-h-full flex flex-col-reverse smd:flex-row smd:justify-between" style={{ maxWidth: "1440px" }}>
           <div className="min-h-full flex flex-col-reverse text-customGray lg:pr-6 py-5">
             © 2020 Bkay, All rights reserved.
+            <FollowMe className="mb-10"/>
           </div>
           <div className="relative smd:w-7/12 float-right flex flex-col">
             <div className="h-logo smd:h-logosmd"></div>
