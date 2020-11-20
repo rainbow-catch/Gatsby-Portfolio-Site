@@ -35,7 +35,7 @@ function IndexPage() {
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
           <div className="pl-6 flex justify-between flex-col">
             <div>
-              <img className="float-right w-decorationmobile h-decorationmobile pr-5p pt-3" src={images.IMAGE_DECORATION}></img>
+              <img className="float-right w-decorationmobile h-decorationmobile pr-5p pt-3 pb-10" src={images.IMAGE_DECORATION}></img>
             </div>
             <p className="text-25p text-lightBlack">Everything is</p>
             <p className="text-70p font-bold text-lightBrown uppercase">design</p>
