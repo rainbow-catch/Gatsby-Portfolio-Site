@@ -35,7 +35,7 @@ button.seconderymobile {
 }
 
 button.seconderyFontWhite {
-  @apply text-lg text-white border border-lightBrown border-2 rounded-lg justify-center px-6 py-3;
+  @apply text-lg text-white border border-lightBrown rounded-lg justify-center px-6 py-3;
 }
 
 button.tabButtonActive {
@@ -44,6 +44,14 @@ button.tabButtonActive {
 
 button.tabButtonNormal {
   @apply text-lg text-customGray rounded-md p-4;
+}
+
+button.tabButtonMobileActive {
+  @apply text-sm text-black rounded-md bg-lighterGray p-2;
+}
+
+button.tabButtonMobileNormal {
+  @apply text-sm text-customGray rounded-md p-2;
 }
 
 .bkayInput {
