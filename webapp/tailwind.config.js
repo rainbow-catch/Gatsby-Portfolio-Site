@@ -19,6 +19,7 @@ module.exports = {
         'customGray': '#989898'
       },
       borderColor: {
+        'primary': "#835238",
         'lightBrown': "#b57f66",
       },
       borderWidth: {
