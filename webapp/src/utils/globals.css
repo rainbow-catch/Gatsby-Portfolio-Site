@@ -25,8 +25,13 @@ button.primary {
 button.primarymobile {
   @apply text-base text-white rounded-lg bg-primary px-4 py-2 flex items-center;
 }
+
 button.secondery {
   @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg  px-6 py-3 flex items-center;
+}
+
+button.seconderymobile {
+  @apply text-base text-lightBlack border border-lightBrown border-2 rounded-lg  px-4 py-2 flex items-center;
 }
 
 button.seconderyFontWhite {
