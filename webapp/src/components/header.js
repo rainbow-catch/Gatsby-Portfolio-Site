@@ -131,7 +131,7 @@ function Header() {
                       key={link.title}
                       to={link.route}
                     >
-                      <div className="h-16 w-48 flex flex-col justify-center items-center border-b border-primary">
+                      <div className="h-16 w-48 flex flex-col justify-center items-center border-b border-lighterBrown">
                       {link.title}
                       </div>
                     </Link>

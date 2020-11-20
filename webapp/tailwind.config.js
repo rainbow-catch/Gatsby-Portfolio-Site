@@ -21,6 +21,7 @@ module.exports = {
       borderColor: {
         'primary': "#835238",
         'lightBrown': "#b57f66",
+        'lighterBrown': "#F3A18355",
       },
       borderWidth: {
         'lg': '25px'
