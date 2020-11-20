@@ -19,23 +19,23 @@ a:hover {
   font-family: "Inter"
 }
 button.primary {
-  @apply text-lg text-white rounded-lg bg-primary px-8 py-3 flex items-center;
+  @apply text-lg text-white rounded-lg bg-primary px-8 py-3 flex justify-center items-center;
 }
 
 button.primarymobile {
-  @apply text-base text-white rounded-lg bg-primary px-4 py-2 flex items-center;
+  @apply text-base text-white rounded-lg bg-primary px-4 py-2 flex justify-center items-center;
 }
 
 button.secondery {
-  @apply text-lg text-lightBlack border border-lightBrown border-2 rounded-lg  px-6 py-3 flex items-center;
+  @apply text-lg text-lightBlack border border-lightBrown rounded-lg  px-6 py-3 flex justify-center items-center;
 }
 
 button.seconderymobile {
-  @apply text-base text-lightBlack border border-lightBrown border-2 rounded-lg  px-4 py-2 flex items-center;
+  @apply text-base text-lightBlack border border-lightBrown rounded-lg  px-4 py-2 flex justify-center items-center;
 }
 
 button.seconderyFontWhite {
-  @apply text-lg text-white border border-lightBrown border-2 rounded-lg  px-6 py-3;
+  @apply text-lg text-white border border-lightBrown border-2 rounded-lg justify-center px-6 py-3;
 }
 
 button.tabButtonActive {

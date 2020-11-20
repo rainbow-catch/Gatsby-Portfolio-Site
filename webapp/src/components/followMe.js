@@ -1,5 +1,4 @@
 import React from "react"
-import cx from "classnames"
 import { Link } from "gatsby"
 
 function FollowMe({className, ...rest}) {
