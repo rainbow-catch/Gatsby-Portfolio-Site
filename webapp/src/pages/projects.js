@@ -26,7 +26,7 @@ function IndexPage() {
               <div className="flex justify-between my-10">
                 <div className="flex flex-col justify-between w-6/12 pr-5">
                   <div className="relative mb-10">
-                    <img className="w-full" src={images.IMAGE_PRO2}></img>
+                    <img className="w-full" src={images.IMAGE_PRO1}></img>
                     <PanelOverlay>Acute Invoice Design</PanelOverlay>
                   </div>
                   <div className="relative mb-10">
@@ -40,7 +40,7 @@ function IndexPage() {
                 </div>
                 <div className="flex flex-col justify-between w-6/12 pl-5">
                   <div className="relative mt-20">
-                    <img className="w-full" src={images.IMAGE_PRO5}></img>
+                    <img className="w-full" src={images.IMAGE_PRO4}></img>
                     <PanelOverlay>Mobile Deposit</PanelOverlay>
                   </div>
                   <div className="relative mt-10">
@@ -75,7 +75,7 @@ function IndexPage() {
               </div>
               <div className="flex flex-col justify-between">
                 <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO2}></img>
+                  <img className="w-full" src={images.IMAGE_PRO1}></img>
                   <PanelOverlay>Acute Invoice Design</PanelOverlay>
                 </div>
                 <div className="relative mt-5">
@@ -87,7 +87,7 @@ function IndexPage() {
                   <PanelOverlay>Yutar Web Design</PanelOverlay>
                 </div>
                 <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO5}></img>
+                  <img className="w-full" src={images.IMAGE_PRO4}></img>
                   <PanelOverlay>Mobile Deposit</PanelOverlay>
                 </div>
                 <div className="relative mt-5">
