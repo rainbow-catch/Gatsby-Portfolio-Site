@@ -70,6 +70,9 @@ module.exports = {
       },
       screens: {
         smd: "890px"
+      },
+      opacity: {
+        "0.8": 0.8
       }
     },
   },

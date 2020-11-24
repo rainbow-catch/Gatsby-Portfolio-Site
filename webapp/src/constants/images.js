@@ -7,12 +7,12 @@ const images = {
     IMAGE_CONTACT: require("../images/contact.svg"),
     IMAGE_RESUME: require("../images/resume.svg"),
 
-    IMAGE_PRO1: require("../images/project1.svg"),
-    IMAGE_PRO2: require("../images/project2.svg"),
-    IMAGE_PRO3: require("../images/project3.svg"),
-    IMAGE_PRO4: require("../images/project4.svg"),
-    IMAGE_PRO5: require("../images/project5.svg"),
-    IMAGE_PRO6: require("../images/project6.svg"),
+    IMAGE_ACUTE: require("../images/project/acute.svg"),
+    IMAGE_MOBILE: require("../images/project/mobile.svg"),
+    IMAGE_FINANCIAL: require("../images/project/financial.svg"),
+    IMAGE_XPUTER: require("../images/project/xputer.svg"),
+    IMAGE_YUTAR: require("../images/project/yutar.svg"),
+    IMAGE_ESTATE: require("../images/project/estate.svg"),
 
 };
 

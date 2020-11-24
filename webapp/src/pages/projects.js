@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
@@ -6,10 +6,61 @@ import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
 import Heading from "../components/heading"
-import PanelOverlay from "../components/panelOverlay"
 import FollowMe from "../components/followMe";
+// import AcuteModal from "./modal/acute";
 
-function IndexPage() {
+const IndexPage = (props) => {
+
+  const [modal, setModal] = useState(false);
+
+  const allProject = [
+    {
+      image: images.IMAGE_ACUTE,
+      title: "Acute Invoice Design"
+    },
+    {
+      image: images.IMAGE_MOBILE,
+      title: "Mobile Deposit"
+    },
+    {
+      image: images.IMAGE_FINANCIAL,
+      title: "Financial Advisor"
+    },
+    {
+      image: images.IMAGE_XPUTER,
+      title: "Xputer Redesign"
+    },
+    {
+      image: images.IMAGE_YUTAR,
+      title: "Yutar Web Design"
+    },
+    {
+      image: images.IMAGE_ESTATE,
+      title: "Estate Manager"
+    },
+  ];
+  const PanelOverlay = ({ children }) => {
+    return (
+      <div>
+        <BrowserView>
+            <div className="absolute opacity-0 hover:opacity-100 top-0 min-h-full min-w-full bg-semiTransparentBlack flex flex-col justify-center items-center">
+                <p className="text-white font-bold text-4xl mb-10">{children}</p>
+                <button className="seconderyFontWhite" onClick={() => setModal(true)}>View Case</button>
+            </div>
+        </BrowserView>
+        <MobileView>
+            <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
+                <div className="rounded-t-3xl w-full py-5 bg-white opacity-0.8 text-lg flex justify-center text-black">
+                    <p className="">
+                      {children}
+                    </p>
+                </div>
+            </div>
+        </MobileView>
+      </div>
+    );
+  }
+
   return (
     <Layout>
       <BrowserView>
@@ -25,32 +76,24 @@ function IndexPage() {
               </div>
               <div className="flex justify-between my-10">
                 <div className="flex flex-col justify-between w-6/12 pr-5">
-                  <div className="relative mb-10">
-                    <img className="w-full" src={images.IMAGE_PRO1}></img>
-                    <PanelOverlay>Acute Invoice Design</PanelOverlay>
+                {allProject.map((project, index) => 
+                  index % 2 === 0 ? (
+                  <div className="relative mb-10" key={project.title}>
+                    <img className="w-full" src={ project.image }></img>
+                    <PanelOverlay index={index}>{ project.title }</PanelOverlay>
                   </div>
-                  <div className="relative mb-10">
-                    <img className="w-full" src={images.IMAGE_PRO2}></img>
-                    <PanelOverlay>Financial Advisor</PanelOverlay>
-                  </div>
-                  <div className="relative mb-20">
-                    <img className="w-full" src={images.IMAGE_PRO3}></img>
-                    <PanelOverlay>Yutar Web Design</PanelOverlay>
-                  </div>
+                ) : '')}
+                <div className="h-10"></div>
                 </div>
                 <div className="flex flex-col justify-between w-6/12 pl-5">
-                  <div className="relative mt-20">
-                    <img className="w-full" src={images.IMAGE_PRO4}></img>
-                    <PanelOverlay>Mobile Deposit</PanelOverlay>
+                <div className="h-10"></div>
+                {allProject.map((project, index) => 
+                  index % 2 === 1 ? (
+                  <div className="relative mt-20" key={project.title}>
+                    <img className="w-full" src={ project.image }></img>
+                    <PanelOverlay>{ project.title }</PanelOverlay>
                   </div>
-                  <div className="relative mt-10">
-                    <img className="w-full" src={images.IMAGE_PRO5}></img>
-                    <PanelOverlay>Xputer Redesign</PanelOverlay>
-                  </div>
-                  <div className="relative mt-10">
-                    <img className="w-full" src={images.IMAGE_PRO6}></img>
-                    <PanelOverlay>Estate Manager</PanelOverlay>
-                  </div>
+                ) : '')}
                 </div>
               </div>
             </div>
@@ -59,6 +102,7 @@ function IndexPage() {
           </div>
           </div>
         </div>
+        {/* <AcuteModal /> */}
       </BrowserView>
       <MobileView>
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
@@ -74,30 +118,12 @@ function IndexPage() {
                 <button className="tabButtonMobileNormal mr-3">Pencil Art</button>
               </div>
               <div className="flex flex-col justify-between">
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO1}></img>
-                  <PanelOverlay>Acute Invoice Design</PanelOverlay>
-                </div>
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO2}></img>
-                  <PanelOverlay>Financial Advisor</PanelOverlay>
-                </div>
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO3}></img>
-                  <PanelOverlay>Yutar Web Design</PanelOverlay>
-                </div>
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO4}></img>
-                  <PanelOverlay>Mobile Deposit</PanelOverlay>
-                </div>
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO5}></img>
-                  <PanelOverlay>Xputer Redesign</PanelOverlay>
-                </div>
-                <div className="relative mt-5">
-                  <img className="w-full" src={images.IMAGE_PRO6}></img>
-                  <PanelOverlay>Estate Manager</PanelOverlay>
-                </div>
+                {allProject.map((project) => (
+                  <div className="relative mt-5" key={ project.title }>
+                    <img className="w-full" src={project.image}></img>
+                    <PanelOverlay>{project.title}</PanelOverlay>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
