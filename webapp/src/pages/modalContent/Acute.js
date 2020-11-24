@@ -10,7 +10,7 @@ const Acute = () => {
                 <div className="w-6/12 p-10">
                     <p className="text-25p mt-32">Acute Invoice Mobile Application Design</p>
                     <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
-                    <p className="mt-6">Problem Statement</p>
+                    <p className="text-xl mt-6">Problem Statement</p>
                     <p className="mt-8">AcuteInvoice as a business account and invoice software wants to make it painless for targetted business audience on the go to be able to manage their invoicing and accounting software while on the go.</p>
                     <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
                 </div>
@@ -29,12 +29,12 @@ const Acute = () => {
                 <p className="text-3xl mt-8">Typography</p>
                 <p className="text-2xl text-lightBlack mt-8">Acute invoice use Poppins Google Font</p>
                 <div className="flex mt-8">
-                    <div className="w-4/12 flex flex-col">
+                    <div className="w-4/12 flex flex-col mr-10">
                         <div className="flex items-baseline">
                             <p className="text-4xl">Aa</p> &nbsp;
                             <p className="text-2xl text-lightBlack">Poppins - Medium</p>
                         </div>
-                        <div className="flex mt-8 items-baseline">
+                        <div className="flex items-baseline">
                             <p className="font-poppins text-2xl text-lightBlack">18.00px/Heading</p> &nbsp;
                             <p className="font-poppins text-3xl">A Visual Type Scale</p>
                         </div>
@@ -44,7 +44,7 @@ const Acute = () => {
                             <p className="text-4xl">Aa</p> &nbsp;
                             <p className="text-2xl text-lightBlack">Poppins - Regular</p>
                         </div>
-                        <div className="flex mt-8 items-baseline">
+                        <div className="flex items-baseline">
                             <p className="font-poppins text-xl text-lightBlack">16.00px/Heading</p> &nbsp;
                             <p className="font-poppins text-2xl">A Visual Type Scale</p>
                         </div>
