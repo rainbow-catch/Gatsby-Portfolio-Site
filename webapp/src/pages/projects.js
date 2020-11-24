@@ -10,6 +10,7 @@ import FollowMe from "../components/followMe";
 import PureModal from "react-pure-modal";
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 import Acute from "./modalContent/Acute";
+import Mobile from "./modalContent/Mobile";
 
 // import AcuteModal from "./modal/acute";
 
@@ -84,7 +85,7 @@ const IndexPage = (props) => {
 
   const ModalContents = [
     (<Acute />),
-    "Mobile",
+    (<Mobile />),
     "Financial",
     "Xputer",
     "Yutar",

@@ -13,12 +13,14 @@ module.exports = {
         'mainBack': '#f8f8f8',
         'aboutPanel': '#f9f9f9',
         'acute': '#675F92',
+        'mobile': '#222F49',
       },
       textColor: {
         'primary': "#835238",
         'lightBrown': "#b57f66",
         'lightBlack': '#363636',
-        'customGray': '#989898'
+        'customGray': '#989898',
+        'mobile': '#222F49',
       },
       borderColor: {
         'primary': "#835238",
@@ -46,7 +48,8 @@ module.exports = {
         'hero': 835,
         'decorationmobile':181,
         '90': 90,
-        '150': 150
+        '150': 150,
+        '350': 350,
       },
       height: {
         'logomobile': 50,
@@ -54,7 +57,8 @@ module.exports = {
         'logo': 45,
         'hero': 910,
         '90': 90,
-        '150': 150
+        '150': 150,
+        '350': 350,
       },
       padding: {
         '18p': "18%",
@@ -63,7 +67,9 @@ module.exports = {
         '70': "70px"
       },
       margin: {
-        '5p': "5%"
+        '5p': "5%",
+        '160': "160px",
+        '320': "320px",
       },
       listStyleType: {
         square: "square",

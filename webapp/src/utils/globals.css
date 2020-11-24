@@ -78,5 +78,9 @@ button.tabButtonMobileNormal {
   border: 1px solid #b57f66;
 }
 
+.boxshadow {
+  box-shadow: 32.158px 45.9399px 91.8799px rgba(0, 0, 0, 0.17);
+}
+
 @tailwind utilities;
 
