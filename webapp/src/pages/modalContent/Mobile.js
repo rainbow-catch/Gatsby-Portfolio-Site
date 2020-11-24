@@ -30,12 +30,12 @@ const Mobile = () => {
                 <div className="flex mt-10">
                     <div className="flex smd:w-6/12">
                         <div className="flex flex-col">
-                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-lg text-sm text-white" color="#222F49" />
-                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-lg text-sm " color="#F0F0F0" />
+                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-sm text-white" color="#222F49" />
+                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-sm " color="#F0F0F0" />
                         </div>
                         <div className="flex flex-col">
-                            <ColorPanel className="boxshadow mr-6 mb-6 mt-8 w-150 h-150 rounded-lg text-sm " color="#7ECCFC" />
-                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-lg text-sm " color="#FFFFFF" />
+                            <ColorPanel className="boxshadow mr-6 mb-6 mt-8 w-150 h-150 rounded-2xl text-sm " color="#7ECCFC" />
+                            <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-sm " color="#FFFFFF" />
                         </div>
                     </div>
                     <div className="flex flex-col pl-20 smd:w-6/12">

@@ -14,6 +14,7 @@ module.exports = {
         'aboutPanel': '#f9f9f9',
         'acute': '#675F92',
         'mobile': '#222F49',
+        'yutar': '#F3F6FA',
       },
       textColor: {
         'primary': "#835238",

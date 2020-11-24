@@ -29,10 +29,15 @@ const images = {
     IMAGE_MOBILE_SOLUTION11: require("../images/project/mobile/11.png"),
     IMAGE_MOBILE_SOLUTION12: require("../images/project/mobile/12.png"),
 
+    IMAGE_YUTAR: require("../images/project/yutar.svg"),
+    IMAGE_YUTAR1: require("../images/project/yutar/yutar1.svg"),
+    IMAGE_YUTAR_SOLUTION1: require("../images/project/yutar/1.png"),
+    IMAGE_YUTAR_SOLUTION2: require("../images/project/yutar/2.png"),
+    IMAGE_YUTAR_SOLUTION3: require("../images/project/yutar/3.png"),
+    IMAGE_YUTAR_SOLUTION4: require("../images/project/yutar/4.png"),
 
     IMAGE_FINANCIAL: require("../images/project/financial.svg"),
     IMAGE_XPUTER: require("../images/project/xputer.svg"),
-    IMAGE_YUTAR: require("../images/project/yutar.svg"),
     IMAGE_ESTATE: require("../images/project/estate.svg"),
 
 };
