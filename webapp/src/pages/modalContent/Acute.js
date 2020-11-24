@@ -7,7 +7,7 @@ const Acute = () => {
     return (
         <div className="bg-white m-12 smd:m-16 flex flex-col text-base text-white">
             <div className="bg-acute flex">
-                <div className="w-6/12 p-10">
+                <div className="w-6/12 p-10  break-normal">
                     <p className="text-25p mt-32">Acute Invoice Mobile Application Design</p>
                     <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
                     <p className="text-xl mt-6">Problem Statement</p>
