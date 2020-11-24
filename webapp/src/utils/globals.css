@@ -54,6 +54,18 @@ button.tabButtonMobileNormal {
   @apply text-sm text-customGray rounded-md p-2;
 }
 
+.pure-modal .panel-heading {
+  background-color: inherit !important;
+}
+
+.pure-modal .panel-body {
+  background-color: inherit !important;
+}
+
+.pure-modal .close {
+  background-color: inherit !important;
+}
+
 .bkayInput {
   padding: 16px;
   background: #b57f662d;
