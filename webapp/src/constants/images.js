@@ -8,6 +8,12 @@ const images = {
     IMAGE_RESUME: require("../images/resume.svg"),
 
     IMAGE_ACUTE: require("../images/project/acute.svg"),
+    IMAGE_ACUTE1: require("../images/project/acute1.svg"),
+    IMAGE_ACUTE2: require("../images/project/acute2.svg"),
+    IMAGE_ACUTE3: require("../images/project/acute3.svg"),
+    IMAGE_ACUTE4: require("../images/project/acute4.svg"),
+    IMAGE_ACUTE5: require("../images/project/acute5.svg"),
+
     IMAGE_MOBILE: require("../images/project/mobile.svg"),
     IMAGE_FINANCIAL: require("../images/project/financial.svg"),
     IMAGE_XPUTER: require("../images/project/xputer.svg"),

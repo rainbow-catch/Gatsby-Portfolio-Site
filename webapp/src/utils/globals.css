@@ -3,6 +3,7 @@
 @tailwind components;
 
 @import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 h2 {
   @apply text-xl;

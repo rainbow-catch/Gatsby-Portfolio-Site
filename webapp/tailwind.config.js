@@ -12,6 +12,7 @@ module.exports = {
         'lighterGray': '#eeeeee',
         'mainBack': '#f8f8f8',
         'aboutPanel': '#f9f9f9',
+        'acute': '#675F92',
       },
       textColor: {
         'primary': "#835238",
@@ -44,12 +45,16 @@ module.exports = {
         'logo': 80,
         'hero': 835,
         'decorationmobile':181,
+        '90': 90,
+        '150': 150
       },
       height: {
         'logomobile': 50,
         'logosmd': 84,
         'logo': 45,
-        'hero': 910
+        'hero': 910,
+        '90': 90,
+        '150': 150
       },
       padding: {
         '18p': "18%",
@@ -57,16 +62,14 @@ module.exports = {
         '5p': "5%",
         '70': "70px"
       },
+      margin: {
+        '5p': "5%"
+      },
       listStyleType: {
         square: "square",
       },
       fontFamily: {
-        'con-regular': ['CondensedRegular'],
-        'con-bold': ['CondensedBold'],
-        'slab-regular': ['SlabRegular'],
-        'slab-bold': ['SlabBold'],
-        'menlo-regular': ['MenloRegular'],
-        'menlo-bold': ['MenloBold']
+        'poppins': ['Poppins'],
       },
       screens: {
         smd: "890px"
