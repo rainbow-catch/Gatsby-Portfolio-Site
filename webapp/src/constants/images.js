@@ -7,14 +7,14 @@ const images = {
     IMAGE_CONTACT: require("../images/contact.svg"),
     IMAGE_RESUME: require("../images/resume.svg"),
 
-    IMAGE_ACUTE: require("../images/project/acute.svg"),
-    IMAGE_ACUTE1: require("../images/project/acute/acute1.svg"),
-    IMAGE_ACUTE2: require("../images/project/acute/acute2.svg"),
+    IMAGE_ACUTE: require("../images/project/acute.png"),
+    IMAGE_ACUTE1: require("../images/project/acute/acute1.png"),
+    IMAGE_ACUTE2: require("../images/project/acute/acute2.png"),
     IMAGE_ACUTE3: require("../images/project/acute/acute3.svg"),
     IMAGE_ACUTE4: require("../images/project/acute/acute4.svg"),
     IMAGE_ACUTE5: require("../images/project/acute/acute5.svg"),
 
-    IMAGE_MOBILE: require("../images/project/mobile.svg"),
+    IMAGE_MOBILE: require("../images/project/mobile.png"),
     IMAGE_MOBILE2: require("../images/project/mobile/mobile2.svg"),
     IMAGE_MOBILE_SOLUTION1: require("../images/project/mobile/1.png"),
     IMAGE_MOBILE_SOLUTION2: require("../images/project/mobile/2.png"),

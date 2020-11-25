@@ -130,7 +130,6 @@ const Yutar = () => {
                     </div>
                 ))}
             </div>
-            <img className="w-full" src={images.IMAGE_ACUTE5}></img>
         </div>
     );
 }
