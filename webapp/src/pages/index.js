@@ -11,7 +11,7 @@ function IndexPage() {
   return (
     <Layout>
       <BrowserView>
-        <div className="pl-10 lg:pl-20 flex justify-between min-h-screen" style={{ paddingTop: "89px" }}>
+        <div className="mx-auto pl-10 lg:pl-20 flex justify-between min-h-screen" style={{ paddingTop: "89px", maxWidth:"1440px" }}>
           <div className="flex justify-between flex-col">
             <div className="">
             </div>

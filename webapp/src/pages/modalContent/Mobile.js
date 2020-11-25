@@ -5,7 +5,7 @@ import ColorPanel from "../../components/colorPanel";
 
 const Mobile = () => {
     return (
-        <div className="bg-white m-12 smd:m-16 flex flex-col text-base text-white">
+        <div className="bg-white m-12 mx-15p flex flex-col text-base text-white">
             <div className="bg-mobile flex">
                 <div className="w-6/12 p-10  break-normal">
                     <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">

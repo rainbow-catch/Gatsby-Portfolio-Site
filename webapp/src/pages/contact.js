@@ -12,7 +12,7 @@ function ContactPage() {
   return (
     <Layout>
       <BrowserView>
-        <div className="mx-10 lg:mx-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh" }}>
+        <div className="mx-auto px-10 lg:px-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh", maxWidth:"1440px" }}>
           <div className="relative">
             <div className="hidden smd:block smd:absolute pointer-events-none smd:mt-10 w-7/12 smd:w-8/12">
               <div className="bg-lightGray flex p-6 pl-0">

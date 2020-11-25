@@ -5,12 +5,12 @@ import ColorPanel from "../../components/colorPanel";
 
 const Acute = () => {
     return (
-        <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
+        <div className="bg-white m-12 smd:m-16 flex flex-col text-base text-white">
             <div className="bg-acute flex">
                 <div className="w-6/12 p-10  break-normal">
                     <p className="text-25p mt-32">Acute Invoice Mobile Application Design</p>
                     <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
-                    <p className="text-25p mt-6">Problem Statement</p>
+                    <p className="text-xl mt-6">Problem Statement</p>
                     <p className="mt-8">AcuteInvoice as a business account and invoice software wants to make it painless for targetted business audience on the go to be able to manage their invoicing and accounting software while on the go.</p>
                     <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
                 </div>

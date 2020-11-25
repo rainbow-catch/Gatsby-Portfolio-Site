@@ -118,10 +118,9 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <BrowserView>
-        <div className="relative px-10 lg:px-20 min-h-screen" style={{ maxWidth: "1440px" }}>
+        <div className="relative px-10 lg:px-20 min-h-screen mx-auto" style={{ maxWidth: "1440px" }}>
           <img className="absolute" style={{ top: "150px", right: "5%" }} src={images.IMAGE_DECORATION}></img>
           <div className="flex justify-between min-h-screen flex-col" style={{ paddingTop: "89px" }}>
-            <div>
               <Heading className="pt-10 pb-5 text-lightBlack">What I have DONE.</Heading>
               <div className="flex">
                 <button className="tabButtonActive mr-3">UI/UX</button>
@@ -150,8 +149,9 @@ const IndexPage = (props) => {
                     ) : '')}
                 </div>
               </div>
-            </div>
-            <div className="bg-blacker text-white flex flex-col items-center pt-10">
+          </div>
+        </div>
+        <div className="bg-blacker text-white flex flex-col items-center pt-10">
               <p className="text-50 mt-8">Have a project Idea?</p>
               <p className="text-50">Talk to me about it.</p>
               <Link to="/contact" className="my-5">
@@ -165,10 +165,8 @@ const IndexPage = (props) => {
               </Link>
               <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
                 © 2020 Bkay, All rights reserved.
+              </div>
             </div>
-            </div>
-          </div>
-        </div>
       </BrowserView>
       <MobileView>
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
