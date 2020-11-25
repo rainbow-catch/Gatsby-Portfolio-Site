@@ -14,7 +14,7 @@ function Layout({ children }) {
         <Header />
       </div>
 
-      <main className="flex-1 w-full text-color min-h-screen mx-auto z-10"  style={{maxWidth:"1440px"}}>
+      <main className="flex-1 w-full text-color min-h-screen mx-auto z-10">
         {children}
       </main>
     </div>
