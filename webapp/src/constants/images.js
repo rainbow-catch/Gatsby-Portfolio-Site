@@ -15,6 +15,7 @@ const images = {
     IMAGE_ACUTE5: require("../images/project/acute/acute5.svg"),
 
     IMAGE_MOBILE: require("../images/project/mobile.png"),
+    IMAGE_MOBILE1: require("../images/project/mobile/mobile1.png"),
     IMAGE_MOBILE2: require("../images/project/mobile/mobile2.svg"),
     IMAGE_MOBILE_SOLUTION1: require("../images/project/mobile/1.png"),
     IMAGE_MOBILE_SOLUTION2: require("../images/project/mobile/2.png"),

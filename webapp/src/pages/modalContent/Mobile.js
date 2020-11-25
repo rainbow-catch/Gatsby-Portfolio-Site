@@ -5,7 +5,7 @@ import ColorPanel from "../../components/colorPanel";
 
 const Mobile = () => {
     return (
-        <div className="bg-white m-12 mx-15p flex flex-col text-base text-white">
+        <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
             <div className="bg-mobile flex">
                 <div className="w-6/12 p-10  break-normal">
                     <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +21,7 @@ const Mobile = () => {
                     <p className="mt-4 mb-32">This application is still a work in progress, much of the research and details can not be put on public, until project is finish and shipped.</p>
                 </div>
                 <div className="w-6/12 relative">
-                    <img className="absolute right-0 top-0" src={images.IMAGE_ACUTE1}></img>
+                    <img className="absolute right-0 top-0" src={images.IMAGE_MOBILE1} style={{ top:"10%", right:"10%"}}></img>
                 </div>
             </div>
             <div className="p-10 pt-6 flex flex-col text-black">

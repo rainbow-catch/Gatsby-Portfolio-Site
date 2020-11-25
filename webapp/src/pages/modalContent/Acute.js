@@ -15,7 +15,7 @@ const Acute = () => {
                     <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
                 </div>
                 <div className="w-6/12 relative">
-                    <img className="absolute right-0 top-0" src={images.IMAGE_ACUTE1}></img>
+                    <img className="absolute" src={images.IMAGE_ACUTE1} style={{ top:"10%", right:"10%"}}></img>
                 </div>
             </div>
             <div className="p-10 pt-6 flex flex-col text-black">
