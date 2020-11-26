@@ -84,6 +84,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins'],
+        'proxima': ['Proxima Nova']
       },
       screens: {
         smd: "890px"

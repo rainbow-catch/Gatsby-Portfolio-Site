@@ -14,6 +14,7 @@ import Mobile from "./modalContent/Mobile";
 import Yutar from "./modalContent/Yutar";
 import Xputer from "./modalContent/Xputer";
 import Financial from "./modalContent/Financial";
+import Estate from "./modalContent/Estate";
 
 // import AcuteModal from "./modal/acute";
 
@@ -92,7 +93,7 @@ const IndexPage = (props) => {
     (<Financial />),
     (<Xputer />),
     (<Yutar />),
-    "Estate",
+    (<Estate />),
   ];
   const PanelOverlay = ({ children, index }) => {
     return (
