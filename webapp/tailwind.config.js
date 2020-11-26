@@ -16,6 +16,8 @@ module.exports = {
         'mobile': '#222F49',
         'yutar': '#F3F6FA',
         'financial': '#8931E1',
+        'xputer': '#D0F4FF',
+        'estate': '#001536',
       },
       textColor: {
         'primary': "#835238",
@@ -23,6 +25,7 @@ module.exports = {
         'lightBlack': '#363636',
         'customGray': '#989898',
         'mobile': '#222F49',
+        '616161': '#616161'
       },
       borderColor: {
         'primary': "#835238",

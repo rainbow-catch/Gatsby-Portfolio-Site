@@ -58,26 +58,26 @@ const Mobile = () => {
                 <p className="text-mobile text-3xl mt-5">Design Solution</p>
                 <p className="text-base text-gray-700 mt-5">High Fidelity Screen Design</p>
             </div>
-            <div className="flex flex-wrap">
+            <div className="px-10 mb-20 flex flex-wrap">
                 <div className="w-3/12">
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION1}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION5}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE1}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE5}></img>
                 </div>
                 <div className="mt-160 w-3/12">
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION2}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION6}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION9}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE2}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE6}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE9}></img>
                 </div>
                 <div className="mt-320 w-3/12">
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION3}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION7}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION10}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION12}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE3}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE7}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE10}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE12}></img>
                 </div>
                 <div className="mt-160 w-3/12">
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION4}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION8}></img>
-                    <img className="w-full p-4" src={images.IMAGE_MOBILE_SOLUTION11}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE4}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE8}></img>
+                    <img className="w-full p-4" src={images.IMAGE_MOBILE_PAGE11}></img>
                 </div>
             </div>
         </div>

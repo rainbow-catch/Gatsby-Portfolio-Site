@@ -5,7 +5,7 @@ import ColorPanel from "../../components/colorPanel";
 
 const Financial = () => {
     return (
-        <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
+        <div className="bg-white m-12 mx-10p flex flex-col text-base text-black">
             <div className="bg-financial flex z-10">
                 <div className="p-10 text-white w-6/12 break-normal">
                     <p className="text-25p mt-10p">Aides FInancial Advisor Web Application Design</p>
@@ -33,7 +33,7 @@ const Financial = () => {
                     <p className="text-3xl">Work process</p>
                     <p className="text-gray-600 text-base mt-3 w-8/12">The work process include collection of data from the survay conducted, problem identification, UI wireframe, Visual Design and userbility testing.</p>
                 </div>
-                <img src={ images.IMAGE_FINANCIAL_PALETTE}></img>
+                <img src={images.IMAGE_FINANCIAL_PALETTE}></img>
             </div>
             <div className="px-15p flex flex-col text-black">
                 <p className="text-gray-600 text-sm">Style Guide</p>
@@ -50,7 +50,7 @@ const Financial = () => {
                             <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl " color="#7B7B7B" />
                         </div>
                     </div>
-                    <div className="flex flex-col pl-20 smd:w-6/12 text-base text-gray-700">
+                    <div className="flex flex-col pl-20 smd:w-6/12 text-base text-616161">
                         <p className="text-6xl font-poppins">Heading 1</p>
                         <p className="mt-1">Poppins - Medium 60px | Line Height: 130%</p>
                         <p className="text-3xl mt-3 font-poppins">Heading 2</p>
@@ -63,19 +63,21 @@ const Financial = () => {
                     <p className="text-3xl">Design Solution</p>
                     <p className="text-xl text-lightBlack">High Fidelity Screen Design</p>
                 </div>
-                <img className="w-full boxshadow my-10" src={ images.IMAGE_FINANCIAL_SOLUTION1}></img>
+            </div>
+            <div className="m-20">
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE1}></img>
                 <p className="text-3xl mb-6">Login Page</p>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION2}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE2}></img>
                 <p className="text-3xl mb-6">Sign up</p>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION3}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE3}></img>
                 <p className="text-3xl mb-6 flex justify-center">Dashboard</p>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION4}></img>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION5}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE4}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE5}></img>
                 <p className="text-3xl mb-6 flex justify-center">User Profile</p>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION6}></img>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION7}></img>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION8}></img>
-                <img className="w-full boxshadow mb-10" src={ images.IMAGE_FINANCIAL_SOLUTION9}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE6}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE7}></img>
+                <img className="w-full boxshadow mb-10" src={images.IMAGE_FINANCIAL_PAGE8}></img>
+                <img className="w-full boxshadow mb-32" src={images.IMAGE_FINANCIAL_PAGE9}></img>
             </div>
         </div>
     );

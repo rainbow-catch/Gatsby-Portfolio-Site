@@ -61,6 +61,7 @@ const Acute = () => {
                     <p className="text-3xl">Design Solution</p>
                     <p className="text-xl text-lightBlack">High Fidelity Screen Design</p>
                 </div>
+                <div className="h-20"></div>
                 {[
                     {
                         pageName: "Onboarding",
@@ -75,9 +76,9 @@ const Acute = () => {
                         src: images.IMAGE_ACUTE4
                     },
                 ].map((page) => (
-                    <div className="flex flex-col items-center mt-10">
-                        <p className="text-3xl">{page.pageName}</p>
-                        <img src={page.src}></img>
+                    <div className="flex flex-col items-center">
+                        <p className="text-3xl mb-5">{page.pageName}</p>
+                        <img className="pl-32" src={page.src}></img>
                     </div>
                 ))}
             </div>

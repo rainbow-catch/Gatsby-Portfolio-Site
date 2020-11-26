@@ -34,7 +34,7 @@ const Yutar = () => {
                     <ColorPanel className="boxshadow mr-8 mb-8 w-150 h-150 rounded-2xl text-sm text-white" color="#000000" />
                 </div>
                 <p className="text-3xl mt-8">Typography</p>
-                <div className="flex mt-8 text-gray-700 flex-wrap justify-around text-base">
+                <div className="flex mt-8 text-616161 flex-wrap justify-around text-base">
                     <div className="flex flex-col px-10">
                         <p className="text-4xl">Heading 1</p>
                         <p className="mt-4">Inter - Bold 36px | Line Height 44px</p>
@@ -105,22 +105,22 @@ const Yutar = () => {
                 {[
                     {
                         pageName: "Login",
-                        src: images.IMAGE_YUTAR_SOLUTION1,
+                        src: images.IMAGE_YUTAR_PAGE1,
                         class: ""
                     },
                     {
                         pageName: "Sign Up",
-                        src: images.IMAGE_YUTAR_SOLUTION2,
+                        src: images.IMAGE_YUTAR_PAGE2,
                         class: "flex-row-reverse"
                     },
                     {
                         pageName: "Dashboard",
-                        src: images.IMAGE_YUTAR_SOLUTION3,
+                        src: images.IMAGE_YUTAR_PAGE3,
                         class: "flex-col"
                     },
                     {
                         pageName: "Yutars Landing Page",
-                        src: images.IMAGE_YUTAR_SOLUTION4,
+                        src: images.IMAGE_YUTAR_PAGE4,
                         class: "flex-col"
                     },
                 ].map((page) => (
@@ -129,6 +129,7 @@ const Yutar = () => {
                         <img className="boxshadow" src={page.src}></img>
                     </div>
                 ))}
+                <div className="h-32"></div>
             </div>
         </div>
     );
