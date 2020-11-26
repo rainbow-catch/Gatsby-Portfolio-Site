@@ -12,6 +12,8 @@ import 'react-pure-modal/dist/react-pure-modal.min.css';
 import Acute from "./modalContent/Acute";
 import Mobile from "./modalContent/Mobile";
 import Yutar from "./modalContent/Yutar";
+import Xputer from "./modalContent/Xputer";
+import Financial from "./modalContent/Financial";
 
 // import AcuteModal from "./modal/acute";
 
@@ -87,8 +89,8 @@ const IndexPage = (props) => {
   const ModalContents = [
     (<Acute />),
     (<Mobile />),
-    "Financial",
-    "Xputer",
+    (<Financial />),
+    (<Xputer />),
     (<Yutar />),
     "Estate",
   ];

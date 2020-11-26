@@ -38,6 +38,19 @@ const images = {
     IMAGE_YUTAR_SOLUTION4: require("../images/project/yutar/4.png"),
 
     IMAGE_FINANCIAL: require("../images/project/financial.svg"),
+    IMAGE_FINANCIAL1: require("../images/project/financial/landing1.png"),
+    IMAGE_FINANCIAL_PALETTE: require("../images/project/financial/palette.png"),
+    IMAGE_FINANCIAL_SOLUTION1: require("../images/project/financial/1.png"),
+    IMAGE_FINANCIAL_SOLUTION2: require("../images/project/financial/2.png"),
+    IMAGE_FINANCIAL_SOLUTION3: require("../images/project/financial/3.png"),
+    IMAGE_FINANCIAL_SOLUTION4: require("../images/project/financial/4.png"),
+    IMAGE_FINANCIAL_SOLUTION5: require("../images/project/financial/5.png"),
+    IMAGE_FINANCIAL_SOLUTION6: require("../images/project/financial/6.png"),
+    IMAGE_FINANCIAL_SOLUTION7: require("../images/project/financial/7.png"),
+    IMAGE_FINANCIAL_SOLUTION8: require("../images/project/financial/8.png"),
+    IMAGE_FINANCIAL_SOLUTION9: require("../images/project/financial/9.png"),
+
+
     IMAGE_XPUTER: require("../images/project/xputer.svg"),
     IMAGE_ESTATE: require("../images/project/estate.svg"),
 

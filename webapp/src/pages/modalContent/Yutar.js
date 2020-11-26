@@ -40,7 +40,7 @@ const Yutar = () => {
                         <p className="mt-4">Inter - Bold 36px | Line Height 44px</p>
                         <p className="text-3xl mt-8">Heading 2</p>
                         <p className="mt-4">Inter - Semi-Bold 30px | Line Height 36px</p>
-                        <p className="text-2xl mt-8">Heading 2</p>
+                        <p className="text-2xl mt-8">Heading 3</p>
                         <p className="mt-4">Inter - Semi-Bold 24px | Line Height 32px</p>
                     </div>
                     <div className="border-r"></div>

@@ -15,6 +15,7 @@ module.exports = {
         'acute': '#675F92',
         'mobile': '#222F49',
         'yutar': '#F3F6FA',
+        'financial': '#8931E1',
       },
       textColor: {
         'primary': "#835238",
@@ -63,6 +64,7 @@ module.exports = {
       },
       padding: {
         '18p': "18%",
+        '15p': "15%",
         '10p': "10%",
         '5p': "5%",
         '70': "70px"

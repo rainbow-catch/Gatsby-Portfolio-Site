@@ -3,7 +3,7 @@ import images from '../../constants/images'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import ColorPanel from "../../components/colorPanel";
 
-const Acute = () => {
+const Xputer = () => {
     return (
         <div className="bg-white m-12 smd:m-16 flex flex-col text-base text-white">
             <div className="bg-acute flex">
@@ -79,4 +79,4 @@ const Acute = () => {
     );
 }
 
-export default Acute;
+export default Xputer;
