@@ -5,10 +5,10 @@ import ColorPanel from "../../components/colorPanel";
 
 const Yutar = () => {
     return (
-        <div className="bg-white m-12 smd:m-16 flex flex-col text-base text-white">
+        <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
             <div className="bg-yutar relative">
                 <div className="p-10 text-gray-900 w-6/12 break-normal z-50">
-                    <p className="text-25p mt-32">Yutars for Lenders Web Application Design</p>
+                    <p className="text-25p mt-10p">Yutars for Lenders Web Application Design</p>
                     <p className="mt-8">A platform used by lenders to check if a borrower is already overleveraged (and whose account is already negative) and recent inquiries by other lenders.</p>
                     <p className="text-xl mt-6">Problem Statement</p>
                     <p className="mt-8">Over 3,000 federal public sector borrowers are indebted to at least five different lenders simultaneously, thereby becoming difficult for borrowers to pay back debts because of insufficient income, leaving lenders to cope with huge losses.</p>
