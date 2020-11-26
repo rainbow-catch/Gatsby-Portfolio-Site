@@ -132,7 +132,7 @@ const IndexPage = (props) => {
                   {allProject.map((project, index) =>
                     index % 2 === 0 ? (
                       <div className="relative mb-10" key={project.title}>
-                        <img className="w-full" src={project.image}></img>
+                        <img className="w-full boxshadow" src={project.image}></img>
                         <PanelOverlay index={index}>{project.title}</PanelOverlay>
                       </div>
                     ) : '')}
@@ -143,7 +143,7 @@ const IndexPage = (props) => {
                   {allProject.map((project, index) =>
                     index % 2 === 1 ? (
                       <div className="relative mt-20" key={project.title}>
-                        <img className="w-full" src={project.image}></img>
+                        <img className="w-full boxshadow" src={project.image}></img>
                         <PanelOverlay index={index}>{project.title}</PanelOverlay>
                       </div>
                     ) : '')}
@@ -184,7 +184,7 @@ const IndexPage = (props) => {
               <div className="flex flex-col justify-between">
                 {allProject.map((project, index) => (
                   <div className="relative mt-5" key={project.title}>
-                    <img className="w-full" src={project.image}></img>
+                    <img className="w-full boxshadow" src={project.image}></img>
                     <PanelOverlay index={index}>{project.title}</PanelOverlay>
                   </div>
                 ))}

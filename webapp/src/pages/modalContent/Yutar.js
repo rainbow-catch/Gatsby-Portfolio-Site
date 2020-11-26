@@ -126,7 +126,7 @@ const Yutar = () => {
                 ].map((page) => (
                     <div className={"flex items-center justify-center mt-10 " + page.class }>
                         <p className="text-3xl px-20 py-10">{page.pageName}</p>
-                        <img src={page.src}></img>
+                        <img className="boxshadow" src={page.src}></img>
                     </div>
                 ))}
             </div>
