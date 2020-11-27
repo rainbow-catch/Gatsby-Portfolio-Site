@@ -100,7 +100,7 @@ const Estate = () => {
                         <div className="my-10 p-2 bg-pink-200 rounded-lg">Successful Payment Confirmation</div>
                         <img className="boxshadow w-full" src={images.IMAGE_ESTATE_PAGE6}></img>
                     </div>
-                    <div className="flex flex-col items-center w-1/2 mt-32">
+                    <div className="flex flex-col w-1/2 mt-32">
                         <div className="flex flex-col mt-10 p-10 bg-gray-200" style={{ maxWidth: "400px" }}>
                             <p className="text-2xl">Visitors Gate Pass</p>
                             <p>Access to generate visitors gate pass before visit and keeping track of visitation</p>

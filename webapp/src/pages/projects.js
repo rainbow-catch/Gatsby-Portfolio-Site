@@ -21,8 +21,8 @@ import Estate from "./modalContent/Estate";
 const IndexPage = (props) => {
 
   const [modal, setModal] = useState(-1);
-
-  const allProject = [
+  const [tab, setTab] = useState("uis");
+  const uis = [
     {
       image: images.IMAGE_ACUTE,
       title: "Acute Invoice Design"
@@ -48,6 +48,28 @@ const IndexPage = (props) => {
       title: "Estate Manager"
     },
   ];
+  const graphics = [
+    { image: images.IMAGE_GRAPHICS1 },
+    { image: images.IMAGE_GRAPHICS2 },
+    { image: images.IMAGE_GRAPHICS3 },
+    { image: images.IMAGE_GRAPHICS4 },
+    { image: images.IMAGE_GRAPHICS5 },
+    { image: images.IMAGE_GRAPHICS6 },
+  ];
+  const pencils = [
+    { image: images.IMAGE_PENCILS1 },
+    { image: images.IMAGE_PENCILS2 },
+    { image: images.IMAGE_PENCILS3 },
+    { image: images.IMAGE_PENCILS4 },
+    { image: images.IMAGE_PENCILS5 },
+    { image: images.IMAGE_PENCILS6 },
+  ];
+
+  const allProject = {
+    uis: uis,
+    graphics: graphics,
+    pencils: pencils
+  };
 
   const ModalTemplate = ({ children }) => {
     return (
@@ -124,52 +146,56 @@ const IndexPage = (props) => {
         <div className="relative px-10 lg:px-20 min-h-screen mx-auto" style={{ maxWidth: "1440px" }}>
           <img className="absolute" style={{ top: "150px", right: "5%" }} src={images.IMAGE_DECORATION}></img>
           <div className="flex justify-between min-h-screen flex-col" style={{ paddingTop: "89px" }}>
-              <Heading className="pt-10 pb-5 text-lightBlack">What I have DONE.</Heading>
-              <div className="flex">
-                <button className="tabButtonActive mr-3">UI/UX</button>
-                <button className="tabButtonNormal mr-3">Graphics Design</button>
-                <button className="tabButtonNormal mr-3">Pencil Art</button>
-              </div>
-              <div className="flex justify-between my-10">
-                <div className="flex flex-col justify-between w-6/12 pr-5">
-                  {allProject.map((project, index) =>
-                    index % 2 === 0 ? (
-                      <div className="relative mb-10" key={project.title}>
-                        <img className="w-full boxshadow" src={project.image}></img>
+            <Heading className="pt-10 pb-5 text-lightBlack">What I have DONE.</Heading>
+            <div className="flex">
+              <button className={ tab == "uis"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
+              <button className={ tab == "graphics"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
+              <button className={ tab == "pencils"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
+            </div>
+            <div className="flex justify-between my-10">
+              <div className="flex flex-col justify-between w-6/12 pr-5">
+                {allProject[tab].map((project, index) =>
+                  index % 2 === 0 ? (
+                    <div className="relative mb-10" key={project.title}>
+                      <img className="w-full boxshadow" src={project.image}></img>
+                      {tab == "uis" &&
                         <PanelOverlay index={index}>{project.title}</PanelOverlay>
-                      </div>
-                    ) : '')}
-                  <div className="h-10"></div>
-                </div>
-                <div className="flex flex-col justify-between w-6/12 pl-5">
-                  <div className="h-10"></div>
-                  {allProject.map((project, index) =>
-                    index % 2 === 1 ? (
-                      <div className="relative mt-20" key={project.title}>
-                        <img className="w-full boxshadow" src={project.image}></img>
-                        <PanelOverlay index={index}>{project.title}</PanelOverlay>
-                      </div>
-                    ) : '')}
-                </div>
+                      }
+                    </div>
+                  ) : '')}
+                <div className="h-10"></div>
               </div>
+              <div className="flex flex-col justify-between w-6/12 pl-5">
+                <div className="h-10"></div>
+                {allProject[tab].map((project, index) =>
+                  index % 2 === 1 ? (
+                    <div className="relative mt-20" key={project.title}>
+                      <img className="w-full boxshadow" src={project.image}></img>
+                      {tab == "uis" &&
+                        <PanelOverlay index={index}>{project.title}</PanelOverlay>
+                      }
+                    </div>
+                  ) : '')}
+              </div>
+            </div>
           </div>
         </div>
         <div className="bg-blacker text-white flex flex-col items-center pt-10">
-              <p className="text-50 mt-8">Have a project Idea?</p>
-              <p className="text-50">Talk to me about it.</p>
-              <Link to="/contact" className="my-5">
-                <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
-                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.5 11.5C21.5034 12.8199 21.1951 14.1219 20.6 15.3C19.8944 16.7118 18.8098 17.8992 17.4674 18.7293C16.1251 19.5594 14.5782 19.9994 13 20C11.6801 20.0035 10.3781 19.6951 9.2 19.1L3.5 21L5.4 15.3C4.80493 14.1219 4.49656 12.8199 4.5 11.5C4.50061 9.92179 4.94061 8.37488 5.77072 7.03258C6.60083 5.69028 7.78825 4.6056 9.2 3.90003C10.3781 3.30496 11.6801 2.99659 13 3.00003H13.5C15.5843 3.11502 17.553 3.99479 19.0291 5.47089C20.5052 6.94699 21.385 8.91568 21.5 11V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+          <p className="text-50 mt-8">Have a project Idea?</p>
+          <p className="text-50">Talk to me about it.</p>
+          <Link to="/contact" className="my-5">
+            <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5 11.5C21.5034 12.8199 21.1951 14.1219 20.6 15.3C19.8944 16.7118 18.8098 17.8992 17.4674 18.7293C16.1251 19.5594 14.5782 19.9994 13 20C11.6801 20.0035 10.3781 19.6951 9.2 19.1L3.5 21L5.4 15.3C4.80493 14.1219 4.49656 12.8199 4.5 11.5C4.50061 9.92179 4.94061 8.37488 5.77072 7.03258C6.60083 5.69028 7.78825 4.6056 9.2 3.90003C10.3781 3.30496 11.6801 2.99659 13 3.00003H13.5C15.5843 3.11502 17.553 3.99479 19.0291 5.47089C20.5052 6.94699 21.385 8.91568 21.5 11V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
                 &nbsp;
                 Let's Talk
               </button>
-              </Link>
-              <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
-                © 2020 Bkay, All rights reserved.
+          </Link>
+          <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
+            © 2020 Bkay, All rights reserved.
               </div>
-            </div>
+        </div>
       </BrowserView>
       <MobileView>
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
@@ -185,10 +211,12 @@ const IndexPage = (props) => {
                 <button className="tabButtonMobileNormal mr-3">Pencil Art</button>
               </div>
               <div className="flex flex-col justify-between">
-                {allProject.map((project, index) => (
+                {allProject[tab].map((project, index) => (
                   <div className="relative mt-5" key={project.title}>
                     <img className="w-full boxshadow" src={project.image}></img>
-                    <PanelOverlay index={index}>{project.title}</PanelOverlay>
+                    {tab == "uis" &&
+                      <PanelOverlay index={index}>{project.title}</PanelOverlay>
+                    }
                   </div>
                 ))}
               </div>

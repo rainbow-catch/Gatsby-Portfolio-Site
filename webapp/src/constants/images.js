@@ -72,7 +72,21 @@ const images = {
     IMAGE_ESTATE_PAGE10: require("../images/project/estate/10.png"),
     IMAGE_ESTATE_PAGE11: require("../images/project/estate/11.png"),
     IMAGE_ESTATE_PAGE12: require("../images/project/estate/12.png"),
-    IMAGE_ESTATE_PAGE13: require("../images/project/estate/13.png"),
+
+    IMAGE_GRAPHICS1: require("../images/graphics/1.png"),
+    IMAGE_GRAPHICS2: require("../images/graphics/2.png"),
+    IMAGE_GRAPHICS3: require("../images/graphics/3.png"),
+    IMAGE_GRAPHICS4: require("../images/graphics/4.png"),
+    IMAGE_GRAPHICS5: require("../images/graphics/5.png"),
+    IMAGE_GRAPHICS6: require("../images/graphics/6.png"),
+
+    IMAGE_PENCILS1: require("../images/pencils/1.png"),
+    IMAGE_PENCILS2: require("../images/pencils/2.png"),
+    IMAGE_PENCILS3: require("../images/pencils/3.png"),
+    IMAGE_PENCILS4: require("../images/pencils/4.png"),
+    IMAGE_PENCILS5: require("../images/pencils/5.png"),
+    IMAGE_PENCILS6: require("../images/pencils/6.png"),
+
 };
 
 export default images;
