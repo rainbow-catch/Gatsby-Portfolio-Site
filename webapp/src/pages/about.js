@@ -5,7 +5,7 @@ import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
 import FollowMe from "../components/followMe"
-import Heading from "../components/heading"
+import Heading from "../components/Heading"
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 function AboutPage() {

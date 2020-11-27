@@ -5,7 +5,7 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
-import Heading from "../components/heading"
+import Heading from "../components/Heading"
 import FollowMe from "../components/followMe";
 import PureModal from "react-pure-modal";
 import 'react-pure-modal/dist/react-pure-modal.min.css';
