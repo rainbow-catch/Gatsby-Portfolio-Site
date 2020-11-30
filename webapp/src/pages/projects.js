@@ -128,7 +128,7 @@ const IndexPage = (props) => {
       >
         <div className="flex flex-col min-h-screen justify-between" style={{ margin: '-15px' }}>
           {ModalContents[modal]}
-          <div className="bg-blacker text-white flex flex-col items-center">
+          <div className="bg-blacker text-white flex flex-col items-center text-center">
             <BrowserView>
               <p className="text-50 mt-8">Have a project Idea?</p>
               <p className="text-50">Talk to me about it.</p>

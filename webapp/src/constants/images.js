@@ -32,6 +32,7 @@ const images = {
 
     IMAGE_YUTAR: require("../images/project/yutar.svg"),
     IMAGE_YUTAR1: require("../images/project/yutar/yutar1.svg"),
+    IMAGE_YUTAR2: require("../images/project/yutar/yutar2.png"),
     IMAGE_YUTAR_PAGE1: require("../images/project/yutar/1.png"),
     IMAGE_YUTAR_PAGE2: require("../images/project/yutar/2.png"),
     IMAGE_YUTAR_PAGE3: require("../images/project/yutar/3.png"),
@@ -53,6 +54,7 @@ const images = {
 
     IMAGE_XPUTER: require("../images/project/xputer.svg"),
     IMAGE_XPUTER1: require("../images/project/xputer/landing.png"),
+    IMAGE_XPUTER2: require("../images/project/xputer/landing-mobile.png"),
     IMAGE_XPUTER_PAGE1: require("../images/project/xputer/1.png"),
     IMAGE_XPUTER_PAGE2: require("../images/project/xputer/2.png"),
 
