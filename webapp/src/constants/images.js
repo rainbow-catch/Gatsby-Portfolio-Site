@@ -4,15 +4,15 @@ const images = {
     IMAGE_HOME_HERO: require("../images/tempImg.svg"),
     IMAGE_HOME_INDEX_MOBILE: require("../images/index-mobile.svg"),
     IMAGE_ABOUT: require("../images/about.png"),
-    IMAGE_CONTACT: require("../images/contact.svg"),
-    IMAGE_RESUME: require("../images/resume.svg"),
+    IMAGE_CONTACT: require("../images/contact.png"),
+    IMAGE_RESUME: require("../images/resume.png"),
 
     IMAGE_ACUTE: require("../images/project/acute.png"),
     IMAGE_ACUTE1: require("../images/project/acute/acute1.png"),
     IMAGE_ACUTE2: require("../images/project/acute/acute2.png"),
     IMAGE_ACUTE3: require("../images/project/acute/acute3.png"),
     IMAGE_ACUTE4: require("../images/project/acute/acute4.png"),
-    IMAGE_ACUTE5: require("../images/project/acute/acute5.svg"),
+    IMAGE_ACUTE5: require("../images/project/acute/acute5.png"),
 
     IMAGE_MOBILE: require("../images/project/mobile.png"),
     IMAGE_MOBILE1: require("../images/project/mobile/mobile1.png"),
@@ -30,7 +30,7 @@ const images = {
     IMAGE_MOBILE_PAGE11: require("../images/project/mobile/11.png"),
     IMAGE_MOBILE_PAGE12: require("../images/project/mobile/12.png"),
 
-    IMAGE_YUTAR: require("../images/project/yutar.svg"),
+    IMAGE_YUTAR: require("../images/project/yutar.png"),
     IMAGE_YUTAR1: require("../images/project/yutar/yutar1.svg"),
     IMAGE_YUTAR2: require("../images/project/yutar/yutar2.png"),
     IMAGE_YUTAR_PAGE1: require("../images/project/yutar/1.png"),
@@ -38,7 +38,7 @@ const images = {
     IMAGE_YUTAR_PAGE3: require("../images/project/yutar/3.png"),
     IMAGE_YUTAR_PAGE4: require("../images/project/yutar/4.png"),
 
-    IMAGE_FINANCIAL: require("../images/project/financial.svg"),
+    IMAGE_FINANCIAL: require("../images/project/financial.png"),
     IMAGE_FINANCIAL1: require("../images/project/financial/landing1.png"),
     IMAGE_FINANCIAL_PALETTE: require("../images/project/financial/palette.png"),
     IMAGE_FINANCIAL_PAGE1: require("../images/project/financial/1.png"),
@@ -52,14 +52,14 @@ const images = {
     IMAGE_FINANCIAL_PAGE9: require("../images/project/financial/9.png"),
 
 
-    IMAGE_XPUTER: require("../images/project/xputer.svg"),
+    IMAGE_XPUTER: require("../images/project/xputer.png"),
     IMAGE_XPUTER1: require("../images/project/xputer/landing.png"),
     IMAGE_XPUTER2: require("../images/project/xputer/landing-mobile.png"),
     IMAGE_XPUTER_PAGE1: require("../images/project/xputer/1.png"),
     IMAGE_XPUTER_PAGE2: require("../images/project/xputer/2.png"),
 
 
-    IMAGE_ESTATE: require("../images/project/estate.svg"),
+    IMAGE_ESTATE: require("../images/project/estate.png"),
     IMAGE_ESTATE1: require("../images/project/estate/landing.png"),
     IMAGE_ESTATE_PALETTE: require("../images/project/estate/palette.png"),
     IMAGE_ESTATE_PAGE1: require("../images/project/estate/1.png"),
