@@ -66,8 +66,8 @@ function Header() {
                   route: `/contact`,
                   title: `Let's talk`,
                 }
-              ].map((link) => (
-                <div className="relative">
+              ].map((link, index) => (
+                <div className="relative" key={ index }>
                   <Link
                     className={"block text-center text-xl smd:inline-block smd:mx-6 mb-2 smd:mb-0 no-underline  hover:bg-gray-300 smd:hover:bg-white"
                       + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}

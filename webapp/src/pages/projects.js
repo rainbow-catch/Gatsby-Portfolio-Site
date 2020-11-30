@@ -49,20 +49,56 @@ const IndexPage = (props) => {
     },
   ];
   const graphics = [
-    { image: images.IMAGE_GRAPHICS1 },
-    { image: images.IMAGE_GRAPHICS2 },
-    { image: images.IMAGE_GRAPHICS3 },
-    { image: images.IMAGE_GRAPHICS4 },
-    { image: images.IMAGE_GRAPHICS5 },
-    { image: images.IMAGE_GRAPHICS6 },
+    { 
+      image: images.IMAGE_GRAPHICS1,
+      title: "Game Over Graphics Design"
+    },
+    { 
+      image: images.IMAGE_GRAPHICS2,
+      title: "Beauty and the Beast Graphics Design"
+    },
+    { 
+      image: images.IMAGE_GRAPHICS3,
+      title: "Thorin Graphics Design"
+    },
+    { 
+      image: images.IMAGE_GRAPHICS4,
+      title: "Take my Heart Graphics Design"
+    },
+    { 
+      image: images.IMAGE_GRAPHICS5,
+      title: "Slay Queen Graphics Design"
+    },
+    { 
+      image: images.IMAGE_GRAPHICS6,
+      title: "Social Butterfly Graphics Design"
+    },
   ];
   const pencils = [
-    { image: images.IMAGE_PENCILS1 },
-    { image: images.IMAGE_PENCILS2 },
-    { image: images.IMAGE_PENCILS3 },
-    { image: images.IMAGE_PENCILS4 },
-    { image: images.IMAGE_PENCILS5 },
-    { image: images.IMAGE_PENCILS6 },
+    { 
+      image: images.IMAGE_PENCILS1,
+      title: "Graphite Pencil Art - Beauty in the eyes" 
+    },
+    { 
+      image: images.IMAGE_PENCILS2,
+      title: "Graphite on Paper - Our Daily Bread" 
+    },
+    { 
+      image: images.IMAGE_PENCILS3,
+      title: "Graphite on Paper - Happiness is Free" 
+    },
+    { 
+      image: images.IMAGE_PENCILS4,
+      title: "Graphite on Paper" 
+    },
+    { 
+      image: images.IMAGE_PENCILS5,
+      title: "Graphite Pencil Drawing" 
+    },
+    { 
+      image: images.IMAGE_PENCILS6,
+      title: "Graphite Pencil Drawing" 
+    },
   ];
 
   const allProject = {
@@ -128,9 +164,9 @@ const IndexPage = (props) => {
         </BrowserView>
         <MobileView>
           <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
-            <div className="rounded-t-3xl w-full py-5 bg-white opacity-0.8 text-lg flex justify-center text-black"
-              onClick={() => setModal(index)}>
-              <p className="">
+            <div className="rounded-t-xl w-full py-3 bg-white opacity-0.8 text-lg flex justify-center text-black"
+              onClick={() => { if(tab === "uis") setModal(index)}}>
+              <p className="text-sm">
                 {children}
               </p>
             </div>
@@ -156,7 +192,7 @@ const IndexPage = (props) => {
               <div className="flex flex-col justify-between w-6/12 pr-5">
                 {allProject[tab].map((project, index) =>
                   index % 2 === 0 ? (
-                    <div className="relative mb-10" key={project.title}>
+                    <div className="relative mb-10" key={index}>
                       <img className="w-full boxshadow" src={project.image}></img>
                       {tab == "uis" &&
                         <PanelOverlay index={index}>{project.title}</PanelOverlay>
@@ -206,17 +242,15 @@ const IndexPage = (props) => {
             <div className="bg-aboutPanel pt-16 text-lightBlack text-base w-full smd:pb-20">
               <Heading className="mb-4">I’ve got good experience</Heading>
               <div className="flex">
-                <button className="tabButtonMobileActive mr-3">UI/UX</button>
-                <button className="tabButtonMobileNormal mr-3">Graphics Design</button>
-                <button className="tabButtonMobileNormal mr-3">Pencil Art</button>
+                <button className={ tab == "uis"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
+                <button className={ tab == "graphics"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
+                <button className={ tab == "pencils"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
               </div>
               <div className="flex flex-col justify-between">
                 {allProject[tab].map((project, index) => (
-                  <div className="relative mt-5" key={project.title}>
+                  <div className="relative mt-5" key={index}>
                     <img className="w-full boxshadow" src={project.image}></img>
-                    {tab == "uis" &&
-                      <PanelOverlay index={index}>{project.title}</PanelOverlay>
-                    }
+                    <PanelOverlay index={index}>{project.title}</PanelOverlay>
                   </div>
                 ))}
               </div>
