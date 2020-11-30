@@ -122,8 +122,8 @@ function Header() {
                     route: `/contact`,
                     title: `Let's talk`,
                   }
-                ].map((link) => (
-                  <div className="relative items-center">
+                ].map((link, index) => (
+                  <div className="relative items-center" key={index}>
                     <Link
                       className={"block text-center text-xl mb-2 no-underline"
                         + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}

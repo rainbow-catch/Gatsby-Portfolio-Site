@@ -48,9 +48,7 @@ function ContactPage() {
                   <textarea placeholder="Enter your message" name="fullname" className="bkayInput mb-4 w-full"></textarea>
                   <button className="primary float-right">
                     Send Message &nbsp;
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M21 1L14 21L10 12L1 8L21 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+                    <img src={images.IC_MESSAGE}></img>
                   </button>
                 </div>
               </div>
@@ -82,9 +80,7 @@ function ContactPage() {
                 <textarea placeholder="Enter your message" name="fullname" className="bkayInput mb-4 w-full"></textarea>
                 <button className="primary w-full mb-10">
                   Send Message &nbsp;
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 1L14 21L10 12L1 8L21 1Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
+                  <img src={images.IC_MESSAGE}></img>
                 </button>
             </div>
             </div>

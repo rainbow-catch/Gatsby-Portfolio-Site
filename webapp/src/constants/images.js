@@ -89,6 +89,17 @@ const images = {
     IMAGE_PENCILS5: require("../images/pencils/5.png"),
     IMAGE_PENCILS6: require("../images/pencils/6.png"),
 
+    IC_TALK: require("../images/icon/talk.svg"),
+    IC_TALK_WHITE: require("../images/icon/talk-white.svg"),
+    IC_MESSAGE: require("../images/icon/message.svg"),
+    IC_MAIL: require("../images/icon/mail.svg"),
+    IC_DOWNLOAD: require("../images/icon/download.svg"),
+    IC_ARROW: require("../images/icon/arrow.svg"),
+    IC_ARROW_WHITE: require("../images/icon/arrow-white.svg"),
+    IC_PACK1: require("../images/icon/pack1.svg"),
+    IC_PACK2: require("../images/icon/pack2.svg"),
+    IC_PACK3: require("../images/icon/pack3.svg"),
+    IC_PACK4: require("../images/icon/pack4.svg"),
 };
 
 export default images;
