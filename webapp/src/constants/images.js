@@ -3,7 +3,7 @@ const images = {
     IMAGE_DECORATION: require("../images/page-shape-elements.svg"),
     IMAGE_HOME_HERO: require("../images/tempImg.svg"),
     IMAGE_HOME_INDEX_MOBILE: require("../images/index-mobile.svg"),
-    IMAGE_ABOUT: require("../images/about.svg"),
+    IMAGE_ABOUT: require("../images/about.png"),
     IMAGE_CONTACT: require("../images/contact.svg"),
     IMAGE_RESUME: require("../images/resume.svg"),
 

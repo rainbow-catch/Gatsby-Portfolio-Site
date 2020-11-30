@@ -110,7 +110,7 @@ const IndexPage = (props) => {
   const ModalTemplate = ({ children }) => {
     return (
       <PureModal
-        className="min-w-full min-h-full bg-blacker"
+        className="min-w-full min-h-full bg-blacker z-100"
         isOpen={modal != -1}
         closeButton={
           <span style={{ position: 'absolute', top: '5px', right: '5px' }}>

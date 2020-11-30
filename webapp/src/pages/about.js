@@ -17,7 +17,7 @@ function AboutPage() {
             <div className="hidden smd:block smd:absolute smd:mt-10 smd:w-8/12">
               <img className="" src={images.IMAGE_ABOUT}></img>
               <div className="text-lightBlack text-sm my-5 ml-5 w-5/12">
-                <ul style={{ listStyleType: "circle" }}>
+                <ul>
                   <li>Illustrator, Digital Graphic Designer,</li>
                   <li>Graphite & Charcol Pencil Artist,</li>
                   <li>Interface Designer & User Experience Designer</li>
