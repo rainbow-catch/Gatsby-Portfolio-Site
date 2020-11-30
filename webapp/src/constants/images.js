@@ -9,9 +9,9 @@ const images = {
 
     IMAGE_ACUTE: require("../images/project/acute.png"),
     IMAGE_ACUTE1: require("../images/project/acute/acute1.png"),
-    IMAGE_ACUTE2: require("../images/project/acute/acute2.svg"),
-    IMAGE_ACUTE3: require("../images/project/acute/acute3.svg"),
-    IMAGE_ACUTE4: require("../images/project/acute/acute4.svg"),
+    IMAGE_ACUTE2: require("../images/project/acute/acute2.png"),
+    IMAGE_ACUTE3: require("../images/project/acute/acute3.png"),
+    IMAGE_ACUTE4: require("../images/project/acute/acute4.png"),
     IMAGE_ACUTE5: require("../images/project/acute/acute5.svg"),
 
     IMAGE_MOBILE: require("../images/project/mobile.png"),

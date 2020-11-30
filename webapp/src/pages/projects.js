@@ -49,55 +49,55 @@ const IndexPage = (props) => {
     },
   ];
   const graphics = [
-    { 
+    {
       image: images.IMAGE_GRAPHICS1,
       title: "Game Over Graphics Design"
     },
-    { 
+    {
       image: images.IMAGE_GRAPHICS2,
       title: "Beauty and the Beast Graphics Design"
     },
-    { 
+    {
       image: images.IMAGE_GRAPHICS3,
       title: "Thorin Graphics Design"
     },
-    { 
+    {
       image: images.IMAGE_GRAPHICS4,
       title: "Take my Heart Graphics Design"
     },
-    { 
+    {
       image: images.IMAGE_GRAPHICS5,
       title: "Slay Queen Graphics Design"
     },
-    { 
+    {
       image: images.IMAGE_GRAPHICS6,
       title: "Social Butterfly Graphics Design"
     },
   ];
   const pencils = [
-    { 
+    {
       image: images.IMAGE_PENCILS1,
-      title: "Graphite Pencil Art - Beauty in the eyes" 
+      title: "Graphite Pencil Art - Beauty in the eyes"
     },
-    { 
+    {
       image: images.IMAGE_PENCILS2,
-      title: "Graphite on Paper - Our Daily Bread" 
+      title: "Graphite on Paper - Our Daily Bread"
     },
-    { 
+    {
       image: images.IMAGE_PENCILS3,
-      title: "Graphite on Paper - Happiness is Free" 
+      title: "Graphite on Paper - Happiness is Free"
     },
-    { 
+    {
       image: images.IMAGE_PENCILS4,
-      title: "Graphite on Paper" 
+      title: "Graphite on Paper"
     },
-    { 
+    {
       image: images.IMAGE_PENCILS5,
-      title: "Graphite Pencil Drawing" 
+      title: "Graphite Pencil Drawing"
     },
-    { 
+    {
       image: images.IMAGE_PENCILS6,
-      title: "Graphite Pencil Drawing" 
+      title: "Graphite Pencil Drawing"
     },
   ];
 
@@ -129,17 +129,33 @@ const IndexPage = (props) => {
         <div className="flex flex-col min-h-screen justify-between" style={{ margin: '-15px' }}>
           {ModalContents[modal]}
           <div className="bg-blacker text-white flex flex-col items-center">
-            <p className="text-50 mt-8">Have a project Idea?</p>
-            <p className="text-50">Talk to me about it.</p>
-            <Link to="/contact" className="my-5 mb-24">
-              <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.5 11.5C21.5034 12.8199 21.1951 14.1219 20.6 15.3C19.8944 16.7118 18.8098 17.8992 17.4674 18.7293C16.1251 19.5594 14.5782 19.9994 13 20C11.6801 20.0035 10.3781 19.6951 9.2 19.1L3.5 21L5.4 15.3C4.80493 14.1219 4.49656 12.8199 4.5 11.5C4.50061 9.92179 4.94061 8.37488 5.77072 7.03258C6.60083 5.69028 7.78825 4.6056 9.2 3.90003C10.3781 3.30496 11.6801 2.99659 13 3.00003H13.5C15.5843 3.11502 17.553 3.99479 19.0291 5.47089C20.5052 6.94699 21.385 8.91568 21.5 11V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+            <BrowserView>
+              <p className="text-50 mt-8">Have a project Idea?</p>
+              <p className="text-50">Talk to me about it.</p>
+              <Link to="/contact" className="my-5 mb-24">
+                <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5 11.5C21.5034 12.8199 21.1951 14.1219 20.6 15.3C19.8944 16.7118 18.8098 17.8992 17.4674 18.7293C16.1251 19.5594 14.5782 19.9994 13 20C11.6801 20.0035 10.3781 19.6951 9.2 19.1L3.5 21L5.4 15.3C4.80493 14.1219 4.49656 12.8199 4.5 11.5C4.50061 9.92179 4.94061 8.37488 5.77072 7.03258C6.60083 5.69028 7.78825 4.6056 9.2 3.90003C10.3781 3.30496 11.6801 2.99659 13 3.00003H13.5C15.5843 3.11502 17.553 3.99479 19.0291 5.47089C20.5052 6.94699 21.385 8.91568 21.5 11V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 &nbsp;
                 Let's Talk
               </button>
-            </Link>
+              </Link>
+            </BrowserView>
+            <MobileView>
+              <p className="text-xl mt-4">Have a project Idea?</p>
+              <p className="text-xl">Talk to me about it.</p>
+              <Link to="/contact" className="my-5 mb-10">
+                <button className="w-full py-3 text-base text-white bg-primary rounded-lg  px-10 flex items-center justify-center">
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5 11.5C21.5034 12.8199 21.1951 14.1219 20.6 15.3C19.8944 16.7118 18.8098 17.8992 17.4674 18.7293C16.1251 19.5594 14.5782 19.9994 13 20C11.6801 20.0035 10.3781 19.6951 9.2 19.1L3.5 21L5.4 15.3C4.80493 14.1219 4.49656 12.8199 4.5 11.5C4.50061 9.92179 4.94061 8.37488 5.77072 7.03258C6.60083 5.69028 7.78825 4.6056 9.2 3.90003C10.3781 3.30496 11.6801 2.99659 13 3.00003H13.5C15.5843 3.11502 17.553 3.99479 19.0291 5.47089C20.5052 6.94699 21.385 8.91568 21.5 11V11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                &nbsp;
+                Let's Talk
+              </button>
+              </Link>
+              <FollowMe className="mb-20"/>
+            </MobileView>
           </div>
         </div>
       </PureModal>)
@@ -165,7 +181,7 @@ const IndexPage = (props) => {
         <MobileView>
           <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
             <div className="rounded-t-xl w-full py-3 bg-white opacity-0.8 text-lg flex justify-center text-black"
-              onClick={() => { if(tab === "uis") setModal(index)}}>
+              onClick={() => { if (tab === "uis") setModal(index) }}>
               <p className="text-sm">
                 {children}
               </p>
@@ -184,9 +200,9 @@ const IndexPage = (props) => {
           <div className="flex justify-between min-h-screen flex-col" style={{ paddingTop: "89px" }}>
             <Heading className="pt-10 pb-5 text-lightBlack">What I have DONE.</Heading>
             <div className="flex">
-              <button className={ tab == "uis"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
-              <button className={ tab == "graphics"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
-              <button className={ tab == "pencils"?"tabButtonActive":"tabButtonNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
+              <button className={tab == "uis" ? "tabButtonActive" : "tabButtonNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
+              <button className={tab == "graphics" ? "tabButtonActive" : "tabButtonNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
+              <button className={tab == "pencils" ? "tabButtonActive" : "tabButtonNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
             </div>
             <div className="flex justify-between my-10">
               <div className="flex flex-col justify-between w-6/12 pr-5">
@@ -242,9 +258,9 @@ const IndexPage = (props) => {
             <div className="bg-aboutPanel pt-16 text-lightBlack text-base w-full smd:pb-20">
               <Heading className="mb-4">I’ve got good experience</Heading>
               <div className="flex">
-                <button className={ tab == "uis"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
-                <button className={ tab == "graphics"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
-                <button className={ tab == "pencils"?"tabButtonMobileActive":"tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
+                <button className={tab == "uis" ? "tabButtonMobileActive" : "tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("uis")}>UI/UX</button>
+                <button className={tab == "graphics" ? "tabButtonMobileActive" : "tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("graphics")}>Graphics Design</button>
+                <button className={tab == "pencils" ? "tabButtonMobileActive" : "tabButtonMobileNormal" + " mr-3"} onClick={() => setTab("pencils")}>Pencil Art</button>
               </div>
               <div className="flex flex-col justify-between">
                 {allProject[tab].map((project, index) => (
