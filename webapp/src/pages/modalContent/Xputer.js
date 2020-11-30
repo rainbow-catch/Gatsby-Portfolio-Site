@@ -64,8 +64,8 @@ const Xputer = () => {
                                 pageName: "Contact Page",
                                 src: images.IMAGE_XPUTER_PAGE2
                             },
-                        ].map((page) => (
-                            <div className="flex flex-col mt-10">
+                        ].map((page, index) => (
+                            <div className="flex flex-col mt-10" key={index}>
                                 <p className="text-3xl mb-5">{page.pageName}</p>
                                 <img className="w-full boxshadow" src={page.src}></img>
                             </div>
@@ -123,8 +123,8 @@ const Xputer = () => {
                                 pageName: "Contact Page",
                                 src: images.IMAGE_XPUTER_PAGE2
                             },
-                        ].map((page) => (
-                            <div className="flex flex-col mt-5">
+                        ].map((page, index) => (
+                            <div className="flex flex-col mt-5" key={index}>
                                 <p className="text-xl mb-3 px-4">{page.pageName}</p>
                                 <img className="w-full boxshadow" src={page.src}></img>
                             </div>

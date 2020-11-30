@@ -77,8 +77,8 @@ const Acute = () => {
                                 pageName: "Dashboard",
                                 src: images.IMAGE_ACUTE4
                             },
-                        ].map((page) => (
-                            <div className="flex flex-col items-center">
+                        ].map((page, index) => (
+                            <div className="flex flex-col items-center" key={index}>
                                 <p className="text-3xl mb-5">{page.pageName}</p>
                                 <img className="pl-32" src={page.src}></img>
                             </div>
@@ -151,8 +151,8 @@ const Acute = () => {
                                     pageName: "Dashboard",
                                     src: images.IMAGE_ACUTE4
                                 },
-                            ].map((page) => (
-                                <div className="flex flex-col items-center">
+                            ].map((page, index) => (
+                                <div className="flex flex-col items-center" key={index}>
                                     <p className="text-xl mb-3">{page.pageName}</p>
                                     <img className="w-full" src={page.src}></img>
                                 </div>
