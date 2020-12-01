@@ -5,13 +5,17 @@ import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
 import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import SEO from "../components/seo"
 
 function IndexPage() {
   console.log("IsMobile: " + IsMobile());
   return (
     <Layout>
+      <SEO
+        title="Home"
+      />
       <BrowserView>
-        <div className="mx-auto pl-10 lg:pl-20 flex justify-between min-h-screen" style={{ paddingTop: "89px", maxWidth:"1440px" }}>
+        <div className="mx-auto pl-10 lg:pl-20 flex justify-between min-h-screen" style={{ paddingTop: "89px", maxWidth: "1440px" }}>
           <div className="flex justify-between flex-col">
             <div className="">
             </div>

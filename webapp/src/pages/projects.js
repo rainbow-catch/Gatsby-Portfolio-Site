@@ -15,6 +15,7 @@ import Yutar from "./modalContent/Yutar";
 import Xputer from "./modalContent/Xputer";
 import Financial from "./modalContent/Financial";
 import Estate from "./modalContent/Estate";
+import SEO from "../components/seo";
 
 // import AcuteModal from "./modal/acute";
 
@@ -222,6 +223,7 @@ const IndexPage = (props) => {
 
   return (
     <Layout>
+      <SEO title="Projects" />
       <BrowserView>
         <div className="relative px-10 lg:px-20 min-h-screen mx-auto" style={{ maxWidth: "1440px" }}>
           <img className="absolute" style={{ top: "150px", right: "5%" }} src={images.IMAGE_DECORATION}></img>

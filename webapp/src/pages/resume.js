@@ -7,10 +7,12 @@ import Heading from "../components/Heading"
 import FollowMe from "../components/followMe"
 import { Link } from "gatsby"
 import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import SEO from "../components/seo"
 
 function IndexPage() {
   return (
     <Layout>
+      <SEO title="Resume" />
       <BrowserView>
         <div className="relative flex flex-col mx-auto justify-between px-10 lg:px-20 min-h-screen" style={{ maxWidth: "1440px" }}>
           <img className="hidden md:block absolute" style={{ top: "150px", right: "5%" }} src={images.IMAGE_DECORATION}></img>

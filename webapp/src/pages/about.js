@@ -7,10 +7,12 @@ import images from "../constants/images"
 import FollowMe from "../components/followMe"
 import Heading from "../components/Heading"
 import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import SEO from "../components/seo"
 
 function AboutPage() {
   return (
     <Layout>
+      <SEO title="About me" />
       <BrowserView>
         <div className="mx-auto px-10 lg:px-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh", maxWidth: "1440px" }}>
           <div className="relative">
