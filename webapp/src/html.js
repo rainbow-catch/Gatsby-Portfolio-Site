@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import LoaderGIF from './images/loading.gif';
 import decocationSVG from './images/page-shape-elements.svg';
+import favicon from './images/favicon.ico';
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
@@ -12,54 +13,55 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {props.headComponents}
+        <link rel="shortcut icon" href={ favicon }/>
+          {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
-        <div
-              key={`loader`}
-              id="___loader"
-              style={{
-                alignItems: "center",
-                backgroundColor: "#F2F2F2",
-                opacity: 0.8,
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                position: "fixed",
-                left: 0,
-                top: 0,
-                right: 0,
-                bottom: 0,
-                zIndex: 100,
-              }}
-           >
-           <img 
-              src={decocationSVG} 
-              alt="loading decocation" 
-              width="150" 
+        <body {...props.bodyAttributes}>
+          {props.preBodyComponents}
+          <div
+            key={`loader`}
+            id="___loader"
+            style={{
+              alignItems: "center",
+              backgroundColor: "#F2F2F2",
+              opacity: 0.8,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              position: "fixed",
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 100,
+            }}
+          >
+            <img
+              src={decocationSVG}
+              alt="loading decocation"
+              width="150"
               height="150"
-           />
-           <img 
-              src={LoaderGIF} 
-              alt="loading spinner" 
-              width="150" 
+            />
+            <img
+              src={LoaderGIF}
+              alt="loading spinner"
+              width="150"
               height="150"
-           />
-        </div>
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
-      </body>
+            />
+          </div>
+          <div
+            key={`body`}
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: props.body }}
+          />
+          {props.postBodyComponents}
+        </body>
     </html>
   )
 }
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
+        htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
