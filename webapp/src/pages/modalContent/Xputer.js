@@ -2,6 +2,7 @@ import React from "react"
 import images from '../../constants/images'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import ColorPanel from "../../components/colorPanel";
+import { Link } from "gatsby";
 
 const Xputer = () => {
     return (
@@ -15,10 +16,12 @@ const Xputer = () => {
                             <p className="text-xl mt-6">Problem Statement</p>
                             <p className="mt-8 mb-10">Redesign the current Xputer Website to a new modern and vibrant cooperate website.</p>
                             <div className="flex">
-                                <div className="text-black border-b-2 p-2 border-black items-center flex">
-                                    Lunch Project &nbsp;
+                                <Link to="#">
+                                    <div className="text-black border-b-2 p-2 border-black items-center flex">
+                                        Launch Project &nbsp;
                                     <img src={images.IC_ARROW}></img>
-                                </div>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-6/12 relative">
@@ -83,10 +86,12 @@ const Xputer = () => {
                             <p className="text-xl mt-2">Problem Statement</p>
                             <p className="mt-3 mb-5">Redesign the current Xputer Website to a new modern and vibrant cooperate website.</p>
                             <div className="flex">
-                                <div className="text-black text-sm border-b-2 p-2 border-black items-center flex">
-                                    Lunch Project &nbsp;
+                                <Link to="#">
+                                    <div className="text-black text-sm border-b-2 p-2 border-black items-center flex">
+                                        Launch Project &nbsp;
                                     <img src={images.IC_ARROW}></img>
-                                </div>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="px-5">
@@ -103,13 +108,13 @@ const Xputer = () => {
                         <p className="text-xl mt-8">Typography</p>
                         <div className="mt-8 text-616161 text-center text-sm">
                             <p className="text-xl font-poppins">Heading 1</p>
-                            <p className="mt-2">Poppins - Semi-Bold 64px | <br/>Line Height 44px</p>
+                            <p className="mt-2">Poppins - Semi-Bold 64px | <br />Line Height 44px</p>
 
                             <p className="text-xl mt-3 font-poppins">Heading 2</p>
-                            <p className="mt-2">Poppins - Medium 30px | <br/> Line Height 44px</p>
+                            <p className="mt-2">Poppins - Medium 30px | <br /> Line Height 44px</p>
 
                             <p className="text-xl mt-3 font-poppins">Body</p>
-                            <p className="mt-2">Poppins - Regular 16px | <br/> Line Height: Auto</p>
+                            <p className="mt-2">Poppins - Regular 16px | <br /> Line Height: Auto</p>
                         </div>
 
                         <p className="text-xl mt-8">Design Solution</p>

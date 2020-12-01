@@ -2,6 +2,7 @@ import React from "react"
 import images from '../../constants/images'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import ColorPanel from "../../components/colorPanel";
+import { Link } from "gatsby";
 
 const Estate = () => {
     return (
@@ -16,10 +17,12 @@ const Estate = () => {
                             <p className="mt-8">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
                             <p className="mt-8 mb-10">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
                             <div className="flex">
-                                <div className="text-white border-b-2 p-2 border-white items-center flex">
-                                    Lunch Project &nbsp;
+                                <Link to="#">
+                                    <div className="text-white border-b-2 p-2 border-white items-center flex">
+                                        Launch Project &nbsp;
                                     <img src={images.IC_ARROW_WHITE}></img>
-                                </div>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative w-6/12">
@@ -151,10 +154,12 @@ const Estate = () => {
                             <p className="mt-3">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
                             <p className="mt-3 mb-4">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
                             <div className="flex">
-                                <div className="text-white text-sm border-b-2 p-2 border-white items-center flex">
-                                    Lunch Project &nbsp;
+                                <Link to="#">
+                                    <div className="text-white text-sm border-b-2 p-2 border-white items-center flex">
+                                        Launch Project &nbsp;
                                     <img src={images.IC_ARROW_WHITE}></img>
-                                </div>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="px-5">
