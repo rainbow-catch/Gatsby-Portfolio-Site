@@ -52,53 +52,65 @@ const IndexPage = (props) => {
   const graphics = [
     {
       image: images.IMAGE_GRAPHICS1,
-      title: "Game Over Graphics Design"
+      title: "Game Over Graphics Design",
+      url: "https://www.instagram.com/p/BVhPX20ldil"
     },
     {
       image: images.IMAGE_GRAPHICS2,
-      title: "Beauty and the Beast Graphics Design"
+      title: "Beauty and the Beast Graphics Design",
+      url: "https://www.instagram.com/p/Bt0YrCHlMIL"
     },
     {
       image: images.IMAGE_GRAPHICS3,
-      title: "Thorin Graphics Design"
+      title: "Thorin Graphics Design",
+      url: "https://www.instagram.com/p/BtfjNr1FIzq"
     },
     {
       image: images.IMAGE_GRAPHICS4,
-      title: "Take my Heart Graphics Design"
+      title: "Take my Heart Graphics Design",
+      url: "https://www.instagram.com/p/BtSsqJUl9rK"
     },
     {
       image: images.IMAGE_GRAPHICS5,
-      title: "Slay Queen Graphics Design"
+      title: "Slay Queen Graphics Design",
+      url: "https://www.instagram.com/p/BtVeAEDFpS"
     },
     {
       image: images.IMAGE_GRAPHICS6,
-      title: "Social Butterfly Graphics Design"
+      title: "Social Butterfly Graphics Design",
+      url: "https://www.instagram.com/p/BtQ15_HF6qB"
     },
   ];
   const pencils = [
     {
       image: images.IMAGE_PENCILS1,
-      title: "Graphite Pencil Art - Beauty in the eyes"
+      title: "Graphite Pencil Art - Beauty in the eyes",
+      url: "https://www.instagram.com/p/BheeBGvnqfF"
     },
     {
       image: images.IMAGE_PENCILS2,
-      title: "Graphite on Paper - Our Daily Bread"
+      title: "Graphite on Paper - Our Daily Bread",
+      url: "https://www.instagram.com/p/BlkdcK_Ht0D"
     },
     {
       image: images.IMAGE_PENCILS3,
-      title: "Graphite on Paper - Happiness is Free"
+      title: "Graphite on Paper - Happiness is Free",
+      url: "https://www.instagram.com/p/BkPbAfPnsmN"
     },
     {
       image: images.IMAGE_PENCILS4,
-      title: "Graphite on Paper"
+      title: "Graphite on Paper",
+      url: "https://www.instagram.com/p/BfbRJQaFDNM"
     },
     {
       image: images.IMAGE_PENCILS5,
-      title: "Graphite Pencil Drawing"
+      title: "Graphite Pencil Drawing",
+      url: "https://www.instagram.com/p/BjUFn2KH_DH"
     },
     {
       image: images.IMAGE_PENCILS6,
-      title: "Graphite Pencil Drawing"
+      title: "Graphite Pencil Drawing",
+      url: "https://www.instagram.com/p/Bfv1m5sl6DQ"
     },
   ];
 
@@ -166,23 +178,42 @@ const IndexPage = (props) => {
     (<Yutar />),
     (<Estate />),
   ];
-  const PanelOverlay = ({ children, index }) => {
+  const PanelOverlay = ({ children, index, url }) => {
     return (
       <div>
         <BrowserView>
           <div className="absolute opacity-0 hover:opacity-100 top-0 min-h-full min-w-full bg-semiTransparentBlack flex flex-col justify-center items-center">
-            <p className="text-white font-bold text-4xl mb-10">{children}</p>
-            <button className="seconderyFontWhite font-thin" onClick={() => setModal(index)}>View Case</button>
+            <p className="text-white font-bold text-4xl mb-5 text-center p-10">{children}</p>
+            {tab === "uis" && (
+              <button className="seconderyFontWhite font-thin" onClick={() => setModal(index)}>View Case</button>
+            )}
+            {tab !== "uis" && (
+              <Link to={url}>
+                <button className="seconderyFontWhite font-thin">View Case</button>
+              </Link>
+            )}
           </div>
         </BrowserView>
         <MobileView>
           <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
-            <div className="rounded-t-xl w-full py-3 bg-white opacity-0.8 text-lg flex justify-center text-black"
-              onClick={() => { if (tab === "uis") setModal(index) }}>
-              <p className="text-sm">
-                {children}
-              </p>
-            </div>
+            {tab === "uis" && (
+              <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black"
+                onClick={() => { setModal(index) }}>
+                <p className="text-sm">
+                  {children}
+                </p>
+              </div>
+            )}
+
+            {tab !== "uis" && (
+              <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black">
+                <Link to={url}>
+                  <p className="text-sm">
+                    {children}
+                  </p>
+                </Link>
+              </div>
+            )}
           </div>
         </MobileView>
       </div>
@@ -207,9 +238,7 @@ const IndexPage = (props) => {
                   index % 2 === 0 ? (
                     <div className="relative mb-10" key={index}>
                       <img className="w-full boxshadow" src={project.image}></img>
-                      {tab == "uis" &&
-                        <PanelOverlay index={index}>{project.title}</PanelOverlay>
-                      }
+                      <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
                     </div>
                   ) : '')}
                 <div className="h-10"></div>
@@ -220,9 +249,7 @@ const IndexPage = (props) => {
                   index % 2 === 1 ? (
                     <div className="relative mt-20" key={project.title}>
                       <img className="w-full boxshadow" src={project.image}></img>
-                      {tab == "uis" &&
-                        <PanelOverlay index={index}>{project.title}</PanelOverlay>
-                      }
+                      <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
                     </div>
                   ) : '')}
               </div>
@@ -261,7 +288,7 @@ const IndexPage = (props) => {
                 {allProject[tab].map((project, index) => (
                   <div className="relative mt-5" key={index}>
                     <img className="w-full boxshadow" src={project.image}></img>
-                    <PanelOverlay index={index}>{project.title}</PanelOverlay>
+                    <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
                   </div>
                 ))}
               </div>

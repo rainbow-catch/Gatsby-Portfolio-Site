@@ -90,7 +90,7 @@ module.exports = {
         smd: "890px"
       },
       opacity: {
-        "0.8": 0.8
+        "0.9": 0.9
       },
       zIndex: {
         "100": "100"

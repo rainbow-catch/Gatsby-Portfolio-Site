@@ -14,12 +14,9 @@ h2 {
 }
 
 a {
-  @apply text-teal-600 inline-block;
+  @apply inline-block;
 }
 
-a:hover {
-  @apply text-teal-700;
-}
 * {
   font-family: "Inter"
 }
