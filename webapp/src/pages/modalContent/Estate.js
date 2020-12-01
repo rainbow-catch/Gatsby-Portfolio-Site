@@ -10,7 +10,7 @@ const Estate = () => {
             <BrowserView>
                 <div className="bg-white m-12 mx-10p flex flex-col text-base text-black">
                     <div className="bg-estate flex z-10">
-                        <div className="p-10 text-white w-6/12 break-normal">
+                        <div className="p-10 text-white smd:w-6/12 break-normal">
                             <p className="text-25p mt-10p">Smart Manager Estate Management Portal Design</p>
                             <p className="mt-8">Smart manager is an estate management web portal for managing Estate Properties, Raising Maintenance Requests, Making Payments of Property Dues, Maintaining Accounts History to Managing Tenants' Data, and Home Owner Apartment Management.</p>
                             <p className="text-xl mt-6">Problem Statement</p>
@@ -25,7 +25,7 @@ const Estate = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="relative w-6/12">
+                        <div className="hidden smd:block relative w-6/12">
                             <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_ESTATE1}></img>
                         </div>
                     </div>
@@ -41,8 +41,8 @@ const Estate = () => {
                         <p className="text-gray-600 text-sm">Style Guide</p>
                         <p className="text-3xl">Colors & Typography</p>
                         <p className="text-gray-600 text-base mt-3 w-8/12">Brand color is simply Yellow and Mid-deep Gray, introducing secondary color Deep Blue to compliment the application to pop.</p>
-                        <div className="flex mt-10">
-                            <div className="flex smd:w-6/12">
+                        <div className="flex flex-wrap justify-between mt-10">
+                            <div className="flex">
                                 <div className="flex flex-col">
                                     <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl text-white" color="#EFA243" />
                                     <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl text-white" color="#173768" />
@@ -51,7 +51,7 @@ const Estate = () => {
                                     <ColorPanel className="boxshadow mr-6 mb-6 mt-8 w-150 h-150 rounded-2xl text-xl " color="#A0A1A5" />
                                 </div>
                             </div>
-                            <div className="flex flex-col pl-20 smd:w-6/12 text-base text-616161 font-proxima">
+                            <div className="flex flex-col text-base text-616161 font-proxima">
                                 <p className="text-4xl">Aa</p>
                                 <p className="text-3xl mt-3">Proxima Nova</p>
                                 <p className="mt-1">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>

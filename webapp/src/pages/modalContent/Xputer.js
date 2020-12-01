@@ -10,7 +10,7 @@ const Xputer = () => {
             <BrowserView>
                 <div className="bg-white m-12 mx-10p flex flex-col text-base ">
                     <div className="bg-xputer flex text-black">
-                        <div className="w-6/12 p-10  break-normal">
+                        <div className="smd:w-6/12 p-10  break-normal">
                             <p className="text-25p mt-32">Xputer Web Page Redesign</p>
                             <p className="mt-8">Xputer is a software solution cooperate company with Innovation. Excellence. Impact. Empowering businesses and organizations with cutting-edge, world-class solutions.</p>
                             <p className="text-xl mt-6">Problem Statement</p>
@@ -24,7 +24,7 @@ const Xputer = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="w-6/12 relative">
+                        <div className="hidden smd:block w-6/12 relative">
                             <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_XPUTER1}></img>
                         </div>
                     </div>
@@ -38,16 +38,16 @@ const Xputer = () => {
                                     <ColorPanel className="mr-6 w-150 h-150 rounded-2xl boxshadow text-xl text-white" color="#3E4097" />
                                 </div>
                             </div>
-                            <div className="flex flex-col">
+                            <div className="flex flex-col min-w-full">
                                 <p className="text-3xl mt-8">Typography</p>
-                                <div className="flex mt-8 text-616161">
-                                    <div className="flex flex-col">
-                                        <p className="text-6xl font-poppins">Heading 1</p>
-                                        <p className="mt-2">Poppins - Semi-Bold 64px | Line Height 44px</p>
+                                <p className="text-6xl font-poppins mt-8 text-616161">Heading 1</p>
+                                <p className="mt-2">Poppins - Semi-Bold 64px | Line Height 44px</p>
+                                <div className="flex flex-wrap justify-between min-w-full text-616161">
+                                    <div className="flex flex-col justify-end pr-5">
                                         <p className="text-3xl mt-5 font-poppins">Heading 2</p>
                                         <p className="mt-3">Poppins - Medium 30px | Line Height 44px</p>
                                     </div>
-                                    <div className="flex flex-col justify-end min-h-full">
+                                    <div className="flex flex-col justify-end pr-5">
                                         <p className="text-base mt-3 font-poppins">Body</p>
                                         <p className="mt-1">Poppins - Regular 16px | Line Height: Auto</p>
                                     </div>

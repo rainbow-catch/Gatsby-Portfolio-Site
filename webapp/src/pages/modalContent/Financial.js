@@ -10,7 +10,7 @@ const Financial = () => {
             <BrowserView>
                 <div className="bg-white m-12 mx-10p flex flex-col text-base text-black">
                     <div className="bg-financial flex z-10">
-                        <div className="p-10 text-white w-6/12 break-normal">
+                        <div className="p-10 text-white smd:w-6/12 break-normal">
                             <p className="text-25p mt-10p">Aides FInancial Advisor Web Application Design</p>
                             <p className="mt-8">Aides is a fintech web application that helps users to plan and manage their financies, daily income, daily spending and create budget for their daily financial transactions.</p>
                             <p className="text-xl mt-6">Problem Statement</p>
@@ -26,7 +26,7 @@ const Financial = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="relative w-6/12">
+                        <div className="hidden smd:block relative w-6/12">
                             <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_FINANCIAL1}></img>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ const Financial = () => {
                         <p className="text-gray-600 text-sm">Style Guide</p>
                         <p className="text-3xl">Colors & Typography</p>
                         <p className="text-gray-600 text-base mt-3 w-8/12">Using Purple as the primary color from the brand with medium gray and white to keep the application simple and clean, this gives the applicatioin sooting looks and feel. </p>
-                        <div className="flex mt-10">
-                            <div className="flex smd:w-6/12">
+                        <div className="flex flex-wrap justify-between mt-10">
+                            <div className="flex">
                                 <div className="flex flex-col">
                                     <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl text-white" color="#8A55C5" />
                                     <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl " color="#FFFFFF" />
@@ -53,7 +53,7 @@ const Financial = () => {
                                     <ColorPanel className="boxshadow mr-6 mb-6 w-150 h-150 rounded-2xl text-xl " color="#7B7B7B" />
                                 </div>
                             </div>
-                            <div className="flex flex-col pl-20 smd:w-6/12 text-base text-616161">
+                            <div className="flex flex-col text-base text-616161">
                                 <p className="text-6xl font-poppins">Heading 1</p>
                                 <p className="mt-1">Poppins - Medium 60px | Line Height: 130%</p>
                                 <p className="text-3xl mt-3 font-poppins">Heading 2</p>

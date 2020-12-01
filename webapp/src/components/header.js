@@ -85,7 +85,7 @@ function Header() {
               ))}
             </nav>
             <PureModal
-              className="w-8/12 min-h-full bg-white"
+              className="w-8/12 min-h-full min-w-full bg-white"
               isOpen={modal}
               closeButton={
                 <span style={{position: 'absolute', top:'5px', right:'5px'}}>

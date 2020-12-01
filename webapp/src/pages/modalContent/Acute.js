@@ -9,14 +9,14 @@ const Acute = () => {
             <BrowserView>
                 <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
                     <div className="bg-acute flex">
-                        <div className="p-10 text-white w-6/12 break-normal">
+                        <div className="p-10 text-white w-full smd:w-6/12 break-normal">
                             <p className="text-25p mt-32">Acute Invoice Mobile Application Design</p>
                             <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
                             <p className="text-25p mt-6">Problem Statement</p>
                             <p className="mt-8">AcuteInvoice as a business account and invoice software wants to make it painless for targetted business audience on the go to be able to manage their invoicing and accounting software while on the go.</p>
                             <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
                         </div>
-                        <div className="w-6/12 relative">
+                        <div className="hidden smd:block w-6/12 relative">
                             <img className="absolute" src={images.IMAGE_ACUTE1} style={{ top: "10%", right: "10%" }}></img>
                         </div>
                     </div>
@@ -34,15 +34,15 @@ const Acute = () => {
                             <div className="flex flex-col">
                                 <p className="text-3xl mt-8">Typography</p>
                                 <p className="text-2xl text-lightBlack mt-8">Acute invoice use Poppins Google Font</p>
-                                <div className="flex mt-8">
+                                <div className="flex flex-wrap mt-8">
                                     <div className="flex flex-col mr-10">
                                         <div className="flex items-baseline">
                                             <p className="text-4xl">Aa</p> &nbsp;
-                            <p className="text-2xl text-lightBlack">Poppins - Medium</p>
+                                            <p className="text-2xl text-lightBlack">Poppins - Medium</p>
                                         </div>
                                         <div className="flex items-baseline">
                                             <p className="font-poppins text-2xl text-lightBlack">18.00px/Heading</p> &nbsp;
-                            <p className="font-poppins text-3xl">A Visual Type Scale</p>
+                                            <p className="font-poppins text-3xl">A Visual Type Scale</p>
                                         </div>
                                     </div>
                                     <div className="flex flex-col">
