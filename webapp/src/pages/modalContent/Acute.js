@@ -80,7 +80,7 @@ const Acute = () => {
                         ].map((page, index) => (
                             <div className="flex flex-col items-center" key={index}>
                                 <p className="text-3xl mb-5">{page.pageName}</p>
-                                <img className="pl-32" src={page.src}></img>
+                                <img className="" src={page.src}></img>
                             </div>
                         ))}
                     </div>

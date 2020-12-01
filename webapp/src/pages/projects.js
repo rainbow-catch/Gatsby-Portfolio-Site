@@ -22,6 +22,7 @@ const IndexPage = (props) => {
 
   const [modal, setModal] = useState(-1);
   const [tab, setTab] = useState("uis");
+
   const uis = [
     {
       image: images.IMAGE_ACUTE,
@@ -171,7 +172,7 @@ const IndexPage = (props) => {
         <BrowserView>
           <div className="absolute opacity-0 hover:opacity-100 top-0 min-h-full min-w-full bg-semiTransparentBlack flex flex-col justify-center items-center">
             <p className="text-white font-bold text-4xl mb-10">{children}</p>
-            <button className="seconderyFontWhite" onClick={() => setModal(index)}>View Case</button>
+            <button className="seconderyFontWhite font-thin" onClick={() => setModal(index)}>View Case</button>
           </div>
         </BrowserView>
         <MobileView>
