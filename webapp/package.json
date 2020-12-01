@@ -1,9 +1,13 @@
 {
   "private": true,
-  "name": "demo",
-  "version": "1.1.0",
+  "name": "User Interface Designer | User Experience Design | Graphics Designer",
+  "description": "Portfolio site for gentleibkay",
+  "version": "1.0.0",
+  "author": "cristian p.",
   "main": "index.js",
   "license": "MIT",
+  "keywords": ["Graphic Designer", "Pencil Art", "Pencil Artist", "Design", "Designer", "User Interface Designer", "User Interface Design", "User Experience Designer", "User Experience Design", "UI", "UX", "UIUX", "UI/UX", "Logo Designer", "T-shirt Designer", "Tshirt Design", "Portrait Art", "Graphics Design", "Poster Design", "Flyer Design", "web design services", "website redesign services", "logo design services", "banner design services", "landing page design services", "responsive web designer", "professional web designer", "freelance web designer", "web design for small businesses and individuals", "web design solutions", "Graphic design", "logo design", "ARV", "Transport" ],
+
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
