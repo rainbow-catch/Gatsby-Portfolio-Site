@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
 
 import "../utils/globals.css"
 import Layout from "../components/layout"

@@ -2,13 +2,14 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 import images from '../constants/images'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 function Header() {
   var [modal, setModal] = useState(false);
   const [isExpanded, toggleExpansion] = useState(false);
+  const isMobile = IsMobile();
   return (
     <header>
       <Location>

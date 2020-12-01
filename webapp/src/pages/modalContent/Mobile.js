@@ -1,6 +1,6 @@
 import React from "react"
 import images from '../../constants/images'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
 
 const Mobile = () => {

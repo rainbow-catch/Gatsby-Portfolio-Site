@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import images from "../constants/images"
 import FollowMe from "../components/followMe"
 import Heading from "../components/Heading"
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
 
 function ContactPage() {
   return (

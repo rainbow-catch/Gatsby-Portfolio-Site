@@ -6,7 +6,7 @@ import images from "../constants/images"
 import Heading from "../components/Heading"
 import FollowMe from "../components/followMe"
 import { Link } from "gatsby"
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
 
 function IndexPage() {
   return (

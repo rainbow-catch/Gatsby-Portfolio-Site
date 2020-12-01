@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 import "../utils/globals.css"
 import Layout from "../components/layout"
 import images from "../constants/images"
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
 
 function IndexPage() {
-  console.log("isMobile: " + isMobile);
+  console.log("IsMobile: " + IsMobile());
   return (
     <Layout>
       <BrowserView>
