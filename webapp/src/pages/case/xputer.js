@@ -53,7 +53,7 @@ const Xputer = () => {
                     </div>
                     <div className="py-20 px-5p pt-6 flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
-                        <div className="flex flex-wrap justify-between">
+                        <div className="flex flex-wrap justify-around">
                             <div className="flex flex-col pr-10">
                                 <p className="text-3xl mt-8">Colors</p>
                                 <div className="mt-10 flex">
@@ -61,7 +61,7 @@ const Xputer = () => {
                                     <ColorPanel className="mr-6 w-150 h-150 rounded-2xl boxshadow text-xl text-white" color="#3E4097" />
                                 </div>
                             </div>
-                            <div className="flex flex-col min-w-full">
+                            <div className="flex flex-col">
                                 <p className="text-3xl mt-8">Typography</p>
                                 <p className="text-6xl font-poppins mt-8 text-616161">Heading 1</p>
                                 <p className="mt-2">Poppins - Semi-Bold 64px | Line Height 44px</p>
