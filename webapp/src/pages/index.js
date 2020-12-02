@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import "../utils/globals.css"
@@ -9,6 +9,10 @@ import SEO from "../components/seo"
 
 function IndexPage() {
   console.log("IsMobile: " + IsMobile());
+  const [loading, setLoading] = useState(false);
+  useEffect( () => {
+    setLoading(true);
+  });
   return (
     <Layout>
       <SEO
@@ -35,6 +39,7 @@ function IndexPage() {
           <img className="float-right object-right object-contain p-5" src={images.IMAGE_HOME_HERO}></img>
         </div>
       </BrowserView>
+      
       <MobileView>
         <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
           <div className="pl-6 flex justify-between flex-col">
@@ -53,6 +58,7 @@ function IndexPage() {
           <img className="float-right w-full object-fill" src={images.IMAGE_HOME_INDEX_MOBILE}></img>
         </div>
       </MobileView>
+      
     </Layout >
   )
 }
