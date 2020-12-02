@@ -10,7 +10,7 @@ if (typeof window !== `undefined`) {
 function Layout({ children }) {
   return (
     <div className="w-full mx-auto bg-mainBack flex-col font-lora-regular text-primary">
-      <div className="fixed w-full z-50">
+      <div className="fixed w-full z-40">
         <Header />
       </div>
 

@@ -3,13 +3,15 @@ import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 import images from '../constants/images'
 import { IsMobile } from './deviceDetect';
-import PureModal from 'react-pure-modal';
+import Modal from 'react-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 function Header() {
   var [modal, setModal] = useState(false);
+  const toggleModal = () => setModal(!modal);
   const [isExpanded, toggleExpansion] = useState(false);
   const isMobile = IsMobile();
+  Modal.setAppElement("body");
   return (
     <header>
       <Location>
@@ -20,7 +22,7 @@ function Header() {
           const pathName = location.pathname.substr(0, lastPos == 0 ? len : lastPos);
 
           return (
-            <div className={"flex flex-wrap items-center justify-between bg-white z-50 " + (isMobile ? "px-3" : "px-10 lg:px-20")}>
+            <div className={"flex flex-wrap items-center justify-between bg-white z-40 " + (isMobile ? "px-3" : "px-10 lg:px-20")}>
               <div className="my-auto">
                 <Link to="/" className="">
                   <img
@@ -32,7 +34,7 @@ function Header() {
               </div>
               <button
                 className="flex my-auto float-right items-center  text-lightBlack rounded smd:hidden"
-                onClick={() => (isMobile ? setModal(true) : toggleExpansion(!isExpanded))}
+                onClick={() => (isMobile ? toggleModal() : toggleExpansion(!isExpanded))}
               >
                 <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="37.4428" height="32.9906" transform="translate(0.228882 0.181305)" fill="white" />
@@ -84,22 +86,36 @@ function Header() {
                 </div>
               ))}
             </nav>
-            <PureModal
-              className="w-8/12 min-h-full min-w-full bg-white"
-              isOpen={modal}
-              closeButton={
-                <span style={{position: 'absolute', top:'5px', right:'5px'}}>
-                  <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="30" height="30.0931" rx="4" fill="#83523B" />
-                    <path d="M16.1707 15.0275L21.7815 9.38041C21.9253 9.22511 22.0036 9.01971 21.9999 8.80748C21.9962 8.59525 21.9107 8.39276 21.7616 8.24267C21.6125 8.09258 21.4113 8.0066 21.2004 8.00286C20.9895 7.99911 20.7855 8.07789 20.6312 8.2226L15.0203 13.8696L9.40945 8.21987C9.25515 8.07516 9.05107 7.99638 8.8402 8.00013C8.62933 8.00387 8.42814 8.08985 8.27901 8.23994C8.12988 8.39003 8.04445 8.59252 8.04073 8.80475C8.03701 9.01698 8.11529 9.22238 8.25906 9.37767L13.8699 15.0275L8.25906 20.6745C8.17909 20.7495 8.11495 20.8399 8.07046 20.9404C8.02598 21.0409 8.00205 21.1494 8.00013 21.2594C7.9982 21.3694 8.0183 21.4787 8.05924 21.5807C8.10018 21.6827 8.16111 21.7753 8.2384 21.8531C8.31569 21.9309 8.40776 21.9922 8.50911 22.0334C8.61046 22.0746 8.71902 22.0949 8.82831 22.0929C8.9376 22.091 9.04538 22.0669 9.14523 22.0221C9.24507 21.9774 9.33493 21.9128 9.40945 21.8323L15.0203 16.1853L20.6312 21.8323C20.7855 21.977 20.9895 22.0558 21.2004 22.0521C21.4113 22.0483 21.6125 21.9623 21.7616 21.8122C21.9107 21.6622 21.9962 21.4597 21.9999 21.2474C22.0036 21.0352 21.9253 20.8298 21.7815 20.6745L16.1707 15.0275Z" fill="#D0D0D0" />
-                  </svg>
-                </span>
-              }
-              closeButtonPosition='header'
-              onClose={() => {
-                setModal(false)
-                return true;
-              }}
+            <Modal
+               style={{
+                overlay: {
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                },
+                content: {
+                    position: 'fixed',
+                    top: '0',
+                    left: isMobile ? '0' : '',
+                    right: '0',
+                    bottom: '0',
+                    width: isMobile ? '100%' : '400px',
+                    border: '1px solid #ccc',
+                    background: '#fff',
+                    overflow: 'auto',
+                    WebkitOverflowScrolling: 'touch',
+                    borderRadius: '4px',
+                    outline: 'none',
+                    padding: '0',
+                    zIndex: 50
+                }
+            }}
+            isOpen={modal}
+            onRequestClose={toggleModal}
+            contentLabel="My dialog"
             >
               <div className="flex flex-col min-h-screen items-center justify-center" style={{ margin: '-15px' }}>
                 {[
@@ -139,7 +155,7 @@ function Header() {
                   </div>
                 ))}
               </div>
-            </PureModal>
+            </Modal>
             </div>
           );
         }}
