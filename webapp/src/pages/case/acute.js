@@ -1,26 +1,41 @@
 import React from "react"
 import images from '../../constants/images'
+import "../../utils/globals.css"
+
+import Layout from "../../components/layout"
 import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
+import SEO from "../../components/seo";
+import FollowMe from "../../components/followMe";
+import { Link } from "gatsby";
 
 const Acute = () => {
+    console.log("test");
     return (
-        <div>
+        <Layout>
+            <SEO title="Case-Acute" />
             <BrowserView>
-                <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
-                    <div className="bg-acute flex">
-                        <div className="p-10 text-white w-full smd:w-6/12 break-normal">
-                            <p className="text-25p mt-32">Acute Invoice Mobile Application Design</p>
-                            <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
-                            <p className="text-25p mt-6">Problem Statement</p>
-                            <p className="mt-8">AcuteInvoice as a business account and invoice software wants to make it painless for targetted business audience on the go to be able to manage their invoicing and accounting software while on the go.</p>
-                            <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
-                        </div>
-                        <div className="hidden smd:block w-6/12 relative">
-                            <img className="absolute" src={images.IMAGE_ACUTE1} style={{ top: "10%", right: "10%" }}></img>
+                <div className="bg-white flex flex-col text-base text-white">
+                    <div className="bg-acute flex flex-col items-start">
+                        <Link to="/projects" className="mt-32 ml-5p">
+                            <button className="customButton text-white bg-acuteDark border-acuteLight text-base">
+                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                            </button>
+                        </Link>
+                        <div className="px-8p flex">
+                            <div className="py-10  text-white w-full smd:w-6/12 break-normal">
+                                <p className="text-25p mt-10">Acute Invoice Mobile Application Design</p>
+                                <p className="mt-8">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
+                                <p className="text-25p mt-6">Problem Statement</p>
+                                <p className="mt-8">AcuteInvoice as a business account and invoice software wants to make it painless for targetted business audience on the go to be able to manage their invoicing and accounting software while on the go.</p>
+                                <p className="mt-8 mb-10">These prompt for the need to have a mobile application to manage and create invoice on the go for business owners.</p>
+                            </div>
+                            <div className="hidden smd:block w-6/12 relative">
+                                <img className="absolute top-0 right-0" src={images.IMAGE_ACUTE1}></img>
+                            </div>
                         </div>
                     </div>
-                    <div className="p-10 pt-6 flex flex-col text-black">
+                    <div className="py-10 px-8p  pt-6 flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
                         <div className="flex flex-wrap">
                             <div className="flex flex-col pr-10">
@@ -86,11 +101,30 @@ const Acute = () => {
                     </div>
                     <img className="w-full" src={images.IMAGE_ACUTE5}></img>
                 </div>
+                <div className="bg-blacker text-white flex flex-col items-center pt-10">
+                    <p className="text-50 mt-8">Have a project Idea?</p>
+                    <p className="text-50">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5">
+                        <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                            &nbsp;
+                            Let's Talk
+                        </button>
+                    </Link>
+                    <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
+                        © 2020 Bkay, All rights reserved.
+                    </div>
+                </div>
             </BrowserView>
             <MobileView>
                 <div className="bg-white flex flex-col text-xs text-white">
-                    <div className="bg-acute flex flex-col items-center">
-                        <div className="p-3 mt-20">
+                    <div className="bg-acute flex flex-col items-start">
+                        <Link to="/projects" className="mt-24 ml-5p">
+                            <button className="customButton text-white bg-acuteDark border-acuteLight text-sm">
+                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                            </button>
+                        </Link>
+                        <div className="p-3 mt-10">
                             <p className="text-sm">Acute Invoice Mobile Application Design</p>
                             <p className="mt-3">AcuteInvoice is an invoice web application that lets you stay organized, keep track of your payment, record your expenses and monitor the performance of your business anytime, anywhere .</p>
                             <p className="text-sm mt-2">Problem Statement</p>
@@ -161,8 +195,20 @@ const Acute = () => {
                         <img className="w-full" src={images.IMAGE_ACUTE5}></img>
                     </div>
                 </div>
+                <div className="bg-blacker text-white flex flex-col items-center">
+                    <p className="text-25p mt-8">Have a project Idea?</p>
+                    <p className="text-25p">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5 w-9/12">
+                        <button className="w-full py-5 text-base text-white bg-primary rounded-lg  px-4 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                                &nbsp;
+                                Let's Talk
+                            </button>
+                    </Link>
+                    <FollowMe className="text-base mb-24 mt-8" />
+                </div>
             </MobileView>
-        </div>
+        </Layout>
     );
 }
 

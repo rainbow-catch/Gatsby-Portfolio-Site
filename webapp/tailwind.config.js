@@ -13,6 +13,7 @@ module.exports = {
         'mainBack': '#f8f8f8',
         'aboutPanel': '#f9f9f9',
         'acute': '#675F92',
+        'acuteDark': '#5D5586',
         'mobile': '#222F49',
         'yutar': '#F3F6FA',
         'financial': '#8931E1',
@@ -31,6 +32,7 @@ module.exports = {
         'primary': "#835238",
         'lightBrown': "#b57f66",
         'lighterBrown': "#F3A18355",
+        'acuteLight': '#8F88B5',
       },
       borderWidth: {
         'lg': '25px'
@@ -69,6 +71,7 @@ module.exports = {
         '18p': "18%",
         '15p': "15%",
         '10p': "10%",
+        '8p': "8%",
         '5p': "5%",
         '70': "70px"
       },

@@ -1,13 +1,16 @@
 import React from "react"
-import images from '../../constants/images'
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
-import ColorPanel from "../../components/colorPanel";
+import images from '../constants/images'
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import ColorPanel from "../components/colorPanel";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Mobile = () => {
     return (
-        <div>
+        <Layout>
+            <SEO title="Case-Mobile"></SEO>
             <BrowserView>
-                <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
+                <div className="bg-white flex flex-col text-base text-white">
                     <div className="bg-mobile flex">
                         <div className="smd:w-6/12 p-10 break-normal">
                             <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +161,7 @@ Allowing it’s users to make deposit into bank account at the comfort of their 
                     </div>
                 </div>
             </MobileView>
-        </div>
+        </Layout>
     );
 }
 

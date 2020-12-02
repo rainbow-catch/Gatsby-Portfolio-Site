@@ -1,14 +1,19 @@
 import React from "react"
-import images from '../../constants/images'
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
-import ColorPanel from "../../components/colorPanel";
+import images from '../constants/images'
+import "../utils/globals.css"
+
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import ColorPanel from "../components/colorPanel";
 import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Estate = () => {
     return (
-        <div>
+        <Layout>
+            <SEO title="Case-Estate"></SEO>
             <BrowserView>
-                <div className="bg-white m-12 mx-10p flex flex-col text-base text-black">
+                <div className="bg-white flex flex-col text-base text-black">
                     <div className="bg-estate flex z-10">
                         <div className="p-10 text-white smd:w-6/12 break-normal">
                             <p className="text-25p mt-10p">Smart Manager Estate Management Portal Design</p>
@@ -252,7 +257,7 @@ const Estate = () => {
                     </div>
                 </div>
             </MobileView>
-        </div >
+        </Layout >
     );
 }
 

@@ -20,6 +20,11 @@ a {
 * {
   font-family: "Inter"
 }
+
+button.customButton {
+  @apply rounded-lg px-8 py-3 flex justify-center items-center;
+}
+
 button.primary {
   @apply text-lg text-white rounded-lg bg-primary px-8 py-3 flex justify-center items-center;
 }

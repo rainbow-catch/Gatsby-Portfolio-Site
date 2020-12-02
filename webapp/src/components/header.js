@@ -7,10 +7,12 @@ import Modal from 'react-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 function Header() {
-  var [modal, setModal] = useState(false);
-  const toggleModal = () => setModal(!modal);
+  const [modal, setModal] = useState(false);
   const [isExpanded, toggleExpansion] = useState(false);
+  
+  const toggleModal = () => setModal(!modal);
   const isMobile = IsMobile();
+
   Modal.setAppElement("body");
   return (
     <header>
@@ -20,6 +22,11 @@ function Header() {
           const lastPos = location.pathname.lastIndexOf('/');
           const len = location.pathname.length;
           const pathName = location.pathname.substr(0, lastPos == 0 ? len : lastPos);
+
+          const checkUrl = (url) => {
+            if(location.pathname.includes('case') && url=='/projects') return true; 
+            return url == pathName;
+          };
 
           return (
             <div className={"flex flex-wrap items-center justify-between bg-white z-40 " + (isMobile ? "px-3" : "px-10 lg:px-20")}>
@@ -73,14 +80,14 @@ function Header() {
                 <div className="relative" key={ index }>
                   <Link
                     className={"block text-center text-xl smd:inline-block smd:mx-6 mb-2 smd:mb-0 no-underline  hover:bg-gray-300 smd:hover:bg-white"
-                      + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}
+                      + (checkUrl(link.route) ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}
 
                     key={link.title}
                     to={link.route}
                   >
                     {link.title}
                   </Link>
-                  {link.route == pathName &&
+                  {checkUrl(link.route) &&
                     <div className="bg-primary absolute hidden smd:block w-full h-1 rounded-t-xl object-fill" style={{ bottom: "-30px" }}></div>
                   }
                 </div>
@@ -143,7 +150,7 @@ function Header() {
                   <div className="relative items-center" key={index}>
                     <Link
                       className={"block text-center text-xl mb-2 no-underline"
-                        + (link.route == pathName ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}
+                        + (checkUrl(link.route) ? " text-primary font-bold hover:text-primary " : " text-lightBlack hover:text-gray-900")}
 
                       key={link.title}
                       to={link.route}

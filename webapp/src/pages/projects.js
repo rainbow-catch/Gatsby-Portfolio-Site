@@ -12,13 +12,6 @@ import images from "../constants/images"
 import Heading from "../components/Heading"
 import FollowMe from "../components/followMe";
 
-import Acute from "./modalContent/Acute";
-import Mobile from "./modalContent/Mobile";
-import Yutar from "./modalContent/Yutar";
-import Xputer from "./modalContent/Xputer";
-import Financial from "./modalContent/Financial";
-import Estate from "./modalContent/Estate";
-
 // import AcuteModal from "./modal/acute";
 
 const IndexPage = (props) => {
@@ -27,41 +20,47 @@ const IndexPage = (props) => {
   const [tab, setTab] = useState("uis");
   const [scale, setScale] = useState(1);
   const [loaded, setLoaded] = useState(false);
-  useEffect( ()=>{
+  useEffect(() => {
     setLoaded(true);
   });
-  const BrowserView = ({children}) => {
+  const BrowserView = ({ children }) => {
     return !IsMobile() && loaded && children;
   };
 
-  const MobileView = ({children}) => {
+  const MobileView = ({ children }) => {
     return IsMobile() && loaded && children;
   };
 
   const uis = [
     {
       image: images.IMAGE_ACUTE,
-      title: "Acute Invoice Design"
+      title: "Acute Invoice Design",
+      url: "/case/acute"
     },
     {
       image: images.IMAGE_MOBILE,
-      title: "Mobile Deposit"
+      title: "Mobile Deposit",
+      url: "/case/mobile"
     },
     {
       image: images.IMAGE_FINANCIAL,
-      title: "Financial Advisor"
+      title: "Financial Advisor",
+      url: "/case/financial"
     },
     {
       image: images.IMAGE_XPUTER,
-      title: "Xputer Redesign"
+      title: "Xputer Redesign",
+      url: "/case/xputer"
     },
     {
       image: images.IMAGE_YUTAR,
-      title: "Yutar Web Design"
+      title: "Yutar Web Design",
+      url: "/case/yutar"
     },
     {
       image: images.IMAGE_ESTATE,
-      title: "Estate Manager"
+      title: "Estate Manager",
+      url: "/case/estate"
     },
   ];
   const graphics = [
@@ -135,100 +134,26 @@ const IndexPage = (props) => {
     pencils: pencils
   };
 
-  const ModalTemplate = ({ children }) => {
-    return (
-      <PureModal
-        className="min-w-full min-h-full bg-blacker z-100"
-        isOpen={modal != -1}
-        closeButton={
-          <span style={{ position: 'absolute', top: '5px', right: '5px' }}>
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="28" height="28" rx="5.6" fill="#F8F8F8" />
-              <path d="M9.20599 10.394C8.87795 10.0659 8.87795 9.53406 9.20599 9.20602C9.53404 8.87798 10.0659 8.87798 10.3939 9.20602L14 12.8121L17.606 9.20602C17.934 8.87798 18.4659 8.87798 18.794 9.20602C19.122 9.53406 19.122 10.0659 18.794 10.394L15.1879 14L18.794 17.606C19.122 17.934 19.122 18.4659 18.794 18.794C18.4659 19.122 17.934 19.122 17.606 18.794L14 15.1879L10.3939 18.794C10.0659 19.122 9.53404 19.122 9.20599 18.794C8.87795 18.4659 8.87795 17.934 9.20599 17.606L12.812 14L9.20599 10.394Z" fill="black" />
-            </svg>
-          </span>
-        }
-        closeButtonPosition='header'
-        onClose={() => {
-          setModal(-1)
-          return true;
-        }}
-      >
-        <div className="flex flex-col min-h-screen justify-between" style={{ margin: '-15px' }}>
-          {ModalContents[modal]}
-          <div className="bg-blacker text-white flex flex-col items-center text-center">
-            <BrowserView>
-              <p className="text-50 mt-8">Have a project Idea?</p>
-              <p className="text-50">Talk to me about it.</p>
-              <Link to="/contact" className="my-5 mb-24">
-                <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
-                  <img src={images.IC_TALK_WHITE}></img>
-                &nbsp;
-                Let's Talk
-              </button>
-              </Link>
-            </BrowserView>
-            <MobileView>
-              <p className="text-xl mt-4">Have a project Idea?</p>
-              <p className="text-xl">Talk to me about it.</p>
-              <Link to="/contact" className="my-5 mb-10">
-                <button className="w-full py-3 text-base text-white bg-primary rounded-lg  px-10 flex items-center justify-center">
-                  <img src={images.IC_TALK_WHITE}></img>
-                &nbsp;
-                Let's Talk
-              </button>
-              </Link>
-              <FollowMe className="mb-20" />
-            </MobileView>
-          </div>
-        </div>
-      </PureModal>)
-  }
-
-  const ModalContents = [
-    (<Acute />),
-    (<Mobile />),
-    (<Financial />),
-    (<Xputer />),
-    (<Yutar />),
-    (<Estate />),
-  ];
   const PanelOverlay = ({ children, index, url }) => {
     return (
       <div>
         <BrowserView>
           <div className="absolute opacity-0 hover:opacity-100 top-0 min-h-full min-w-full bg-semiTransparentBlack flex flex-col justify-center items-center">
             <p className="text-white font-bold text-4xl mb-5 text-center p-10">{children}</p>
-            {tab === "uis" && (
-              <button className="seconderyFontWhite font-thin" onClick={() => setModal(index)}>View Case</button>
-            )}
-            {tab !== "uis" && (
-              <Link target="_blank" to={url}>
-                <button className="seconderyFontWhite font-thin">View Case</button>
-              </Link>
-            )}
+            <Link target="_blank" to={url}>
+              <button className="seconderyFontWhite font-thin">View Case</button>
+            </Link>
           </div>
         </BrowserView>
         <MobileView>
           <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
-            {tab === "uis" && (
-              <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black"
-                onClick={() => { setModal(index) }}>
+            <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black">
+              <Link target="_blank" to={url}>
                 <p className="text-sm">
                   {children}
                 </p>
-              </div>
-            )}
-
-            {tab !== "uis" && (
-              <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black">
-                <Link target="_blank" to={url}>
-                  <p className="text-sm">
-                    {children}
-                  </p>
-                </Link>
-              </div>
-            )}
+              </Link>
+            </div>
           </div>
         </MobileView>
       </div>
@@ -252,7 +177,7 @@ const IndexPage = (props) => {
               <div className="flex flex-col justify-between w-6/12 pr-5">
                 {allProject[tab].map((project, index) =>
                   index % 2 === 0 ? (
-                    <div className="relative mb-10" style={{ scale:scale,transition:"scale .5s ease-in"}} key={index}>
+                    <div className="relative mb-10" style={{ scale: scale, transition: "scale .5s ease-in" }} key={index}>
                       <img className="w-full boxshadow" src={project.image}></img>
                       <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
                     </div>
@@ -324,8 +249,6 @@ const IndexPage = (props) => {
           </div>
         </div>
       </MobileView>
-      <ModalTemplate />
-
     </Layout >
   )
 }

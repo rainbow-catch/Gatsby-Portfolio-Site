@@ -96,6 +96,8 @@ const images = {
     IC_DOWNLOAD: require("../images/icon/download.svg"),
     IC_ARROW: require("../images/icon/arrow.svg"),
     IC_ARROW_WHITE: require("../images/icon/arrow-white.svg"),
+    IC_ARROW_LEFT: require("../images/icon/arrow-left.svg"),
+    IC_ARROW_LEFT_WHITE: require("../images/icon/arrow-left-white.svg"),
     IC_PACK1: require("../images/icon/pack1.svg"),
     IC_PACK2: require("../images/icon/pack2.svg"),
     IC_PACK3: require("../images/icon/pack3.svg"),

@@ -3,12 +3,15 @@ import images from '../../constants/images'
 import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
 import { Link } from "gatsby";
+import Layout from "../../components/layout";
+import SEO from "../../components/seo";
 
 const Yutar = () => {
     return (
-        <div>
+        <Layout>
+            <SEO title="Case-Yutar"></SEO>
             <BrowserView>
-                <div className="bg-white m-12 mx-10p flex flex-col text-base text-white">
+                <div className="bg-white l text-base text-white">
                     <div className="bg-yutar relative">
                         <div className="p-10 text-gray-900 w-6/12 break-normal z-50">
                             <p className="text-25p mt-10p">Yutars for Lenders Web Application Design</p>
@@ -192,7 +195,7 @@ const Yutar = () => {
                     </div>
                 </div>
             </MobileView>
-        </div>
+        </Layout>
     );
 }
 

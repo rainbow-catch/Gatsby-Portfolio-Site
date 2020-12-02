@@ -1,14 +1,17 @@
 import React from "react"
-import images from '../../constants/images'
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
-import ColorPanel from "../../components/colorPanel";
+import images from '../constants/images'
+import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import ColorPanel from "../components/colorPanel";
 import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const Xputer = () => {
     return (
-        <div>
+        <Layout>
+            <SEO title="Case-Xputer"></SEO>
             <BrowserView>
-                <div className="bg-white m-12 mx-10p flex flex-col text-base ">
+                <div className="bg-white flex flex-col text-base ">
                     <div className="bg-xputer flex text-black">
                         <div className="smd:w-6/12 p-10  break-normal">
                             <p className="text-25p mt-32">Xputer Web Page Redesign</p>
@@ -139,7 +142,7 @@ const Xputer = () => {
                 </div >
 
             </MobileView >
-        </div >
+        </Layout >
     );
 }
 
