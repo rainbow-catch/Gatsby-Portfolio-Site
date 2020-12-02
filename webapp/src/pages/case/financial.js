@@ -1,8 +1,8 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import images from '../../constants/images'
 import "../../utils/globals.css"
 
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
+import { IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
 import { Link } from "gatsby";
 import Layout from "../../components/layout";
@@ -10,6 +10,18 @@ import SEO from "../../components/seo";
 import FollowMe from "../../components/followMe";
 
 const Financial = () => {
+    const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+      setLoaded(true);
+    });
+    const BrowserView = ({ children }) => {
+      return !IsMobile() && loaded && children;
+    };
+  
+    const MobileView = ({ children }) => {
+      return IsMobile() && loaded && children;
+    };
+    
     return (
         <Layout>
             <SEO title="Case-Financial"></SEO>

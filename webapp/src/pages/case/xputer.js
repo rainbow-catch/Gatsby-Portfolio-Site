@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import images from '../../constants/images'
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
+import { IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
 import { Link } from "gatsby";
 import Layout from "../../components/layout";
@@ -8,6 +8,18 @@ import SEO from "../../components/seo";
 import FollowMe from "../../components/followMe";
 
 const Xputer = () => {
+    const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+      setLoaded(true);
+    });
+    const BrowserView = ({ children }) => {
+      return !IsMobile() && loaded && children;
+    };
+  
+    const MobileView = ({ children }) => {
+      return IsMobile() && loaded && children;
+    };
+    
     return (
         <Layout>
             <SEO title="Case-Xputer"></SEO>
@@ -20,7 +32,7 @@ const Xputer = () => {
                             </button>
                         </Link>
                         <div className="pl-8p flex">
-                            <div className="smd:w-6/12 p-10  break-normal">
+                            <div className="smd:w-6/12 py-10  break-normal">
                                 <p className="text-25p mt-20">Xputer Web Page Redesign</p>
                                 <p className="mt-8">Xputer is a software solution cooperate company with Innovation. Excellence. Impact. Empowering businesses and organizations with cutting-edge, world-class solutions.</p>
                                 <p className="text-xl mt-6">Problem Statement</p>

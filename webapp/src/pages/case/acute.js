@@ -1,15 +1,27 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import images from '../../constants/images'
 import "../../utils/globals.css"
 
 import Layout from "../../components/layout"
-import { BrowserView, MobileView, IsMobile } from '../../components/deviceDetect';
+import { IsMobile } from '../../components/deviceDetect';
 import ColorPanel from "../../components/colorPanel";
 import SEO from "../../components/seo";
 import FollowMe from "../../components/followMe";
 import { Link } from "gatsby";
 
 const Acute = () => {
+    const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+      setLoaded(true);
+    });
+    const BrowserView = ({ children }) => {
+      return !IsMobile() && loaded && children;
+    };
+  
+    const MobileView = ({ children }) => {
+      return IsMobile() && loaded && children;
+    };
+    
     console.log("test");
     return (
         <Layout>
