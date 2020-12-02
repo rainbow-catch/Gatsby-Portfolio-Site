@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import { IsMobile } from '../components/deviceDetect';
 import PureModal from "react-pure-modal";
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
@@ -34,6 +34,14 @@ const IndexPage = (props) => {
   //     setScale(1);
   //   }, 1000);
   // }, [tab]);
+  const BrowserView = ({children}) => {
+    return !IsMobile() && children;
+  };
+
+  const MobileView = ({children}) => {
+    return IsMobile() && children;
+  };
+
   const uis = [
     {
       image: images.IMAGE_ACUTE,
