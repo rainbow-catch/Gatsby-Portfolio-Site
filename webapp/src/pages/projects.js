@@ -26,20 +26,16 @@ const IndexPage = (props) => {
   const [modal, setModal] = useState(-1);
   const [tab, setTab] = useState("uis");
   const [scale, setScale] = useState(1);
-
-  // useEffect( async () => {
-  //   await setScale(0);
-  //   console.log("scale", scale);
-  //   setTimeout(function() {
-  //     setScale(1);
-  //   }, 1000);
-  // }, [tab]);
+  const [loaded, setLoaded] = useState(false);
+  useEffect( ()=>{
+    setLoaded(true);
+  });
   const BrowserView = ({children}) => {
-    return !IsMobile() && children;
+    return !IsMobile() && loaded && children;
   };
 
   const MobileView = ({children}) => {
-    return IsMobile() && children;
+    return IsMobile() && loaded && children;
   };
 
   const uis = [
