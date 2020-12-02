@@ -1,21 +1,23 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import PureModal from "react-pure-modal";
+import 'react-pure-modal/dist/react-pure-modal.min.css';
 
 import "../utils/globals.css"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo";
 import images from "../constants/images"
 import Heading from "../components/Heading"
 import FollowMe from "../components/followMe";
-import PureModal from "react-pure-modal";
-import 'react-pure-modal/dist/react-pure-modal.min.css';
+
 import Acute from "./modalContent/Acute";
 import Mobile from "./modalContent/Mobile";
 import Yutar from "./modalContent/Yutar";
 import Xputer from "./modalContent/Xputer";
 import Financial from "./modalContent/Financial";
 import Estate from "./modalContent/Estate";
-import SEO from "../components/seo";
 
 // import AcuteModal from "./modal/acute";
 
@@ -23,7 +25,15 @@ const IndexPage = (props) => {
 
   const [modal, setModal] = useState(-1);
   const [tab, setTab] = useState("uis");
+  const [scale, setScale] = useState(1);
 
+  // useEffect( async () => {
+  //   await setScale(0);
+  //   console.log("scale", scale);
+  //   setTimeout(function() {
+  //     setScale(1);
+  //   }, 1000);
+  // }, [tab]);
   const uis = [
     {
       image: images.IMAGE_ACUTE,
@@ -238,7 +248,7 @@ const IndexPage = (props) => {
               <div className="flex flex-col justify-between w-6/12 pr-5">
                 {allProject[tab].map((project, index) =>
                   index % 2 === 0 ? (
-                    <div className="relative mb-10" key={index}>
+                    <div className="relative mb-10" style={{ scale:scale,transition:"scale .5s ease-in"}} key={index}>
                       <img className="w-full boxshadow" src={project.image}></img>
                       <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
                     </div>

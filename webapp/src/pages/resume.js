@@ -62,11 +62,11 @@ function IndexPage() {
                 <p className="text-black text-25p leading-none">Adam</p>
                 <p className="text-black text-50 font-bold leading-none">Mayowa</p>
                 <p className="text-lightBlack text-xs mt-10 mb-5">User Interface / User Experience & Graphic Designer</p>
-                <p className="text-lightBlack text-base items-center mb-10 flex">
+                <Link className="text-lightBlack text-base items-center mb-10 flex" to="https://mailto:gentleibkay@gmail.com">
                   <img src={images.IC_MAIL}></img>
                    &nbsp;
                   gentleibkay@gmail.com
-                </p>
+                </Link>
                 <div>
                   <Link to="https://drive.google.com/file/d/1n4d3I9HezrgyzW0AAHC-GLIaq0Bqw15k/view">
                     <button className="primary">
