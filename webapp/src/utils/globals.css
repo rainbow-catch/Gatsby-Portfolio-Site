@@ -22,7 +22,7 @@ a {
 }
 
 button.customButton {
-  @apply rounded-lg px-8 py-3 flex justify-center items-center;
+  @apply rounded-lg px-8 py-3 border-2 flex justify-center items-center;
 }
 
 button.primary {

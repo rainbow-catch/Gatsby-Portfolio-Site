@@ -7,34 +7,42 @@ import ColorPanel from "../../components/colorPanel";
 import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+import FollowMe from "../../components/followMe";
 
 const Estate = () => {
     return (
         <Layout>
             <SEO title="Case-Estate"></SEO>
             <BrowserView>
-                <div className="bg-white l text-base text-black">
-                    <div className="bg-estate flex z-10">
-                        <div className="p-10 text-white smd:w-6/12 break-normal">
-                            <p className="text-25p mt-10p">Smart Manager Estate Management Portal Design</p>
-                            <p className="mt-8">Smart manager is an estate management web portal for managing Estate Properties, Raising Maintenance Requests, Making Payments of Property Dues, Maintaining Accounts History to Managing Tenants' Data, and Home Owner Apartment Management.</p>
-                            <p className="text-xl mt-6">Problem Statement</p>
-                            <p className="mt-8">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
-                            <p className="mt-8 mb-10">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
-                            <div className="flex">
-                                <Link to="#" target="_blank">
-                                    <div className="text-white border-b-2 p-2 border-white items-center flex">
-                                        Launch Project &nbsp;
+                <div className="bg-white text-base text-black">
+                    <div className="bg-estate flex flex-col z-10">
+                        <Link to="/projects" className="mt-32 ml-5p">
+                            <button className="customButton text-white bg-estateDark border-estateLight text-base">
+                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                            </button>
+                        </Link>
+                        <div className="px-8p flex">
+                            <div className="text-white smd:w-6/12 break-normal">
+                                <p className="text-25p mt-10p">Smart Manager Estate Management Portal Design</p>
+                                <p className="mt-8">Smart manager is an estate management web portal for managing Estate Properties, Raising Maintenance Requests, Making Payments of Property Dues, Maintaining Accounts History to Managing Tenants' Data, and Home Owner Apartment Management.</p>
+                                <p className="text-xl mt-6">Problem Statement</p>
+                                <p className="mt-8">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
+                                <p className="mt-8 mb-10">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
+                                <div className="flex mb-20">
+                                    <Link to="#" target="_blank">
+                                        <div className="text-white border-b-2 p-2 border-white items-center flex">
+                                            Launch Project &nbsp;
                                     <img src={images.IC_ARROW_WHITE}></img>
-                                    </div>
-                                </Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="hidden smd:block relative w-6/12">
+                                <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_ESTATE1}></img>
                             </div>
                         </div>
-                        <div className="hidden smd:block relative w-6/12">
-                            <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_ESTATE1}></img>
-                        </div>
                     </div>
-                    <div className="p-10 flex justify-between items-center text-black">
+                    <div className="px-8p flex justify-between items-center text-black">
                         <div className="flex flex-col justify-center">
                             <p className="text-gray-600 text-sm">Process</p>
                             <p className="text-3xl">Work process</p>
@@ -69,7 +77,7 @@ const Estate = () => {
                             <p className="text-xl text-lightBlack">High Fidelity Screen Design</p>
                         </div>
                     </div>
-                    <div className="m-10 text-sm">
+                    <div className="px-8p my-10 text-sm">
                         <div className="flex">
                             <div className="flex flex-col mt-10 px-5" style={{ maxWidth: "400px" }}>
                                 <p className="text-2xl">Dashboard</p>
@@ -148,11 +156,30 @@ const Estate = () => {
 
                     </div>
                 </div>
+                <div className="bg-blacker text-white flex flex-col items-center pt-10">
+                    <p className="text-50 mt-8">Have a project Idea?</p>
+                    <p className="text-50">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5">
+                        <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                            &nbsp;
+                            Let's Talk
+                        </button>
+                    </Link>
+                    <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
+                        © 2020 Bkay, All rights reserved.
+                    </div>
+                </div>
             </BrowserView>
             <MobileView>
                 <div className="bg-white flex flex-col text-sm text-black">
                     <div className="bg-estate flex flex-col">
-                        <div className="p-3 text-white text-xs break-normal mt-20">
+                        <Link to="/projects" className="mt-24 ml-5p">
+                            <button className="customButton text-white bg-estateDark border-estateLight text-sm">
+                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                            </button>
+                        </Link>
+                        <div className="p-3 text-white text-xs break-normal mt-10">
                             <p className="text-sm">Smart Manager Estate Management Portal Design</p>
                             <p className="mt-3">Smart manager is an estate management web portal for managing Estate Properties, Raising Maintenance Requests, Making Payments of Property Dues, Maintaining Accounts History to Managing Tenants' Data, and Home Owner Apartment Management.</p>
                             <p className="text-sm mt-2">Problem Statement</p>
@@ -171,7 +198,7 @@ const Estate = () => {
                             <img className="object-scale-down" src={images.IMAGE_ESTATE_PAGE11}></img>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-between items-center text-black text-center">
+                    <div className="flex flex-col justify-between items-center text-black text-center px-5p">
                         <p className="text-gray-600 text-xs">Process</p>
                         <p className="text-xl">Work process</p>
                         <p className="text-gray-600 text-sm mt-3">The work process include understanding clients requirments, UI wireframe, Visual Design and testing.</p>
@@ -255,6 +282,18 @@ const Estate = () => {
                         </div>
                         <img className="w-full" src={images.IMAGE_ESTATE_PAGE12}></img>
                     </div>
+                </div>
+                <div className="bg-blacker text-white flex flex-col items-center">
+                    <p className="text-25p mt-8">Have a project Idea?</p>
+                    <p className="text-25p">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5 w-9/12">
+                        <button className="w-full py-5 text-base text-white bg-primary rounded-lg  px-4 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                                &nbsp;
+                                Let's Talk
+                            </button>
+                    </Link>
+                    <FollowMe className="text-base mb-24 mt-8" />
                 </div>
             </MobileView>
         </Layout >

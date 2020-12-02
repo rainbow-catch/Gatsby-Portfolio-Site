@@ -16,9 +16,12 @@ module.exports = {
         'acuteDark': '#5D5586',
         'mobile': '#222F49',
         'yutar': '#F3F6FA',
+        'yutarDark': '#E9EDF2',
         'financial': '#8931E1',
         'xputer': '#D0F4FF',
+        'xputerLight': '#BDE7F3',
         'estate': '#001536',
+        'estateDark': '#001941',
       },
       textColor: {
         'primary': "#835238",
@@ -33,6 +36,11 @@ module.exports = {
         'lightBrown': "#b57f66",
         'lighterBrown': "#F3A18355",
         'acuteLight': '#8F88B5',
+        'estateLight': '#0F52BF',
+        'financialDark': "#6018A8",
+        'mobileDark': "#4A566F",
+        'xputerDark': "#04AADC",
+        'yutarDardker': "#AFB4BA",
       },
       borderWidth: {
         'lg': '25px'

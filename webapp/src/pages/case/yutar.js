@@ -5,32 +5,40 @@ import ColorPanel from "../../components/colorPanel";
 import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
+import FollowMe from "../../components/followMe";
 
 const Yutar = () => {
     return (
         <Layout>
             <SEO title="Case-Yutar"></SEO>
             <BrowserView>
-                <div className="bg-white l text-base text-white">
-                    <div className="bg-yutar relative">
-                        <div className="p-10 text-gray-900 w-6/12 break-normal z-50">
-                            <p className="text-25p mt-10p">Yutars for Lenders Web Application Design</p>
-                            <p className="mt-8">A platform used by lenders to check if a borrower is already overleveraged (and whose account is already negative) and recent inquiries by other lenders.</p>
-                            <p className="text-xl mt-6">Problem Statement</p>
-                            <p className="mt-8">Over 3,000 federal public sector borrowers are indebted to at least five different lenders simultaneously, thereby becoming difficult for borrowers to pay back debts because of insufficient income, leaving lenders to cope with huge losses.</p>
-                            <p className="mt-8 mb-10">These prompted the need to have a data collection web application that helps lenders to have access to borrowers infomations to checkmate overleverage borrowers.</p>
-                            <div className="flex">
-                                <Link to="#" target="_blank">
-                                    <div className="text-black border-b-2 p-2 border-black items-center flex">
-                                        Launch Project &nbsp;
+                <div className="bg-white flex flex-col text-base text-white">
+                    <div className="bg-yutar flex flex-col relative">
+                        <Link to="/projects" className="mt-32 ml-5p">
+                            <button className="customButton text-black bg-yutarDark border-yutarDardker text-base">
+                                <img src={images.IC_ARROW_LEFT}></img> View All
+                            </button>
+                        </Link>
+                        <div className="pl-8p flex">
+                            <div className="p-10 text-gray-900 w-6/12 break-normal z-50">
+                                <p className="text-25p mt-10p">Yutars for Lenders Web Application Design</p>
+                                <p className="mt-8">A platform used by lenders to check if a borrower is already overleveraged (and whose account is already negative) and recent inquiries by other lenders.</p>
+                                <p className="text-xl mt-6">Problem Statement</p>
+                                <p className="mt-8">Over 3,000 federal public sector borrowers are indebted to at least five different lenders simultaneously, thereby becoming difficult for borrowers to pay back debts because of insufficient income, leaving lenders to cope with huge losses.</p>
+                                <p className="mt-8 mb-10">These prompted the need to have a data collection web application that helps lenders to have access to borrowers infomations to checkmate overleverage borrowers.</p>
+                                <div className="flex">
+                                    <Link to="#" target="_blank">
+                                        <div className="text-black border-b-2 p-2 border-black items-center flex">
+                                            Launch Project &nbsp;
                                         <img src={images.IC_ARROW}></img>
-                                    </div>
-                                </Link>
+                                        </div>
+                                    </Link>
+                                </div>
                             </div>
+                            <img className="absolute right-0 bottom-0 h-full" style={{ maxWidth: "50%" }} src={images.IMAGE_YUTAR1}></img>
                         </div>
-                        <img className="absolute right-0 bottom-0 h-full" style={{ maxWidth: "50%" }} src={images.IMAGE_YUTAR1}></img>
                     </div>
-                    <div className="p-10 pt-6 flex flex-col text-black">
+                    <div className="py-10 px-5p pt-6 flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
                         <p className="text-3xl mt-8">Colors & Typography</p>
                         <div className="mt-6 flex">
@@ -107,11 +115,30 @@ const Yutar = () => {
                         <div className="h-32"></div>
                     </div>
                 </div>
+                <div className="bg-blacker text-white flex flex-col items-center pt-10">
+                    <p className="text-50 mt-8">Have a project Idea?</p>
+                    <p className="text-50">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5">
+                        <button className="w-full py-5 text-xl text-white bg-primary rounded-lg  px-20 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                            &nbsp;
+                            Let's Talk
+                        </button>
+                    </Link>
+                    <div className="mt-20 mb-10 text-gray-500 lg:px-12 py-5">
+                        © 2020 Bkay, All rights reserved.
+                    </div>
+                </div>
             </BrowserView>
             <MobileView>
                 <div className="bg-white flex flex-col text-sm text-white">
                     <div className="bg-yutar flex flex-col">
-                        <div className="p-3 mt-20 text-gray-900 break-normal">
+                        <Link to="/projects" className="mt-24 ml-5p">
+                            <button className="customButton text-black bg-yutarDark border-yutarDardker text-sm">
+                                <img src={images.IC_ARROW_LEFT}></img> View All
+                            </button>
+                        </Link>
+                        <div className="p-3 mt-10 text-gray-900 break-normal">
                             <p className="text-sm">Yutars for Lenders Web Application Design</p>
                             <p className="mt-2">A platform used by lenders to check if a borrower is already overleveraged (and whose account is already negative) and recent inquiries by other lenders.</p>
                             <p className="text-sm mt-3">Problem Statement</p>
@@ -128,7 +155,7 @@ const Yutar = () => {
                         </div>
                         <img className="px-5" src={images.IMAGE_YUTAR2}></img>
                     </div>
-                    <div className="flex flex-col items-center text-center text-black mt-8">
+                    <div className="flex flex-col px-5p items-center text-center text-black mt-8">
                         <p className="text-gray-600 text-xs">Style Guide</p>
                         <p className="text-xl mt-3">Colors</p>
                         <div className="mt-6 flex justify-center flex-wrap">
@@ -193,6 +220,18 @@ const Yutar = () => {
                         ))}
                         <div className="h-10"></div>
                     </div>
+                </div>
+                <div className="bg-blacker text-white flex flex-col items-center px-5p">
+                    <p className="text-25p mt-8">Have a project Idea?</p>
+                    <p className="text-25p">Talk to me about it.</p>
+                    <Link to="/contact" className="my-5 w-9/12">
+                        <button className="w-full py-5 text-base text-white bg-primary rounded-lg  px-4 flex items-center justify-center">
+                            <img src={images.IC_TALK_WHITE}></img>
+                                &nbsp;
+                                Let's Talk
+                            </button>
+                    </Link>
+                    <FollowMe className="text-base mb-24 mt-8" />
                 </div>
             </MobileView>
         </Layout>

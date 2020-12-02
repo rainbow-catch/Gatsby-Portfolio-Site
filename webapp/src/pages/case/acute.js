@@ -195,7 +195,7 @@ const Acute = () => {
                         <img className="w-full" src={images.IMAGE_ACUTE5}></img>
                     </div>
                 </div>
-                <div className="bg-blacker text-white flex flex-col items-center">
+                <div className="bg-blacker text-white flex flex-col items-center px-5p">
                     <p className="text-25p mt-8">Have a project Idea?</p>
                     <p className="text-25p">Talk to me about it.</p>
                     <Link to="/contact" className="my-5 w-9/12">
