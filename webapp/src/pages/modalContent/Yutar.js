@@ -17,7 +17,7 @@ const Yutar = () => {
                             <p className="mt-8">Over 3,000 federal public sector borrowers are indebted to at least five different lenders simultaneously, thereby becoming difficult for borrowers to pay back debts because of insufficient income, leaving lenders to cope with huge losses.</p>
                             <p className="mt-8 mb-10">These prompted the need to have a data collection web application that helps lenders to have access to borrowers infomations to checkmate overleverage borrowers.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black border-b-2 p-2 border-black items-center flex">
                                         Launch Project &nbsp;
                                         <img src={images.IC_ARROW}></img>
@@ -115,7 +115,7 @@ const Yutar = () => {
                             <p className="mt-2">Over 3,000 federal public sector borrowers are indebted to at least five different lenders simultaneously, thereby becoming difficult for borrowers to pay back debts because of insufficient income, leaving lenders to cope with huge losses.</p>
                             <p className="mt-2 mb-5">These prompted the need to have a data collection web application that helps lenders to have access to borrowers infomations to checkmate overleverage borrowers.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black border-b-2 p-2 border-black items-center text-sm flex">
                                         Launch Project &nbsp;
                                         <img src={images.IC_ARROW}></img>

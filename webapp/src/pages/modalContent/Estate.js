@@ -17,7 +17,7 @@ const Estate = () => {
                             <p className="mt-8">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
                             <p className="mt-8 mb-10">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-white border-b-2 p-2 border-white items-center flex">
                                         Launch Project &nbsp;
                                     <img src={images.IC_ARROW_WHITE}></img>
@@ -154,7 +154,7 @@ const Estate = () => {
                             <p className="mt-3">Managing estate properties maintain all Property and Tenancy related Documents, Apartment maintenance request and track of record for all dues by tenants can be a task for Home Owners.</p>
                             <p className="mt-3 mb-4">These prompted for the need to design a Smart Estate manager that incoporate payment gate, manage multi Home Owner properties and Tenant related documents and maintenance request raised. Which has User Module and Admin Module.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link target="_blank" to="/about" >
                                     <div className="text-white text-sm border-b-2 p-2 border-white items-center flex">
                                         Launch Project &nbsp;
                                     <img src={images.IC_ARROW_WHITE}></img>

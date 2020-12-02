@@ -199,7 +199,7 @@ const IndexPage = (props) => {
               <button className="seconderyFontWhite font-thin" onClick={() => setModal(index)}>View Case</button>
             )}
             {tab !== "uis" && (
-              <Link to={url}>
+              <Link target="_blank" to={url}>
                 <button className="seconderyFontWhite font-thin">View Case</button>
               </Link>
             )}
@@ -218,7 +218,7 @@ const IndexPage = (props) => {
 
             {tab !== "uis" && (
               <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black">
-                <Link to={url}>
+                <Link target="_blank" to={url}>
                   <p className="text-sm">
                     {children}
                   </p>

@@ -26,12 +26,12 @@ function IndexPage() {
               <p className="text-black text-50 leading-none">Adam</p>
               <p className="text-black text-100 font-bold leading-none">Mayowa</p>
               <p className="text-lightBlack text-lg mt-10 mb-5">User Interface / User Experience & Graphic Designer</p>
-              <Link className="text-lightBlack text-lg items-center mb-10 flex" to="https://mailto:gentleibkay@gmail.com">
+              <Link target="_blank" className="text-lightBlack text-lg items-center mb-10 flex" to="https://mailto:gentleibkay@gmail.com">
                 <img src={images.IC_MAIL}></img> &nbsp;
                 gentleibkay@gmail.com
             </Link>
               <div>
-                <Link to="https://drive.google.com/file/d/1n4d3I9HezrgyzW0AAHC-GLIaq0Bqw15k/view">
+                <Link target="_blank" to="https://drive.google.com/file/d/1n4d3I9HezrgyzW0AAHC-GLIaq0Bqw15k/view">
                   <button className="primary">
                     <img src={images.IC_DOWNLOAD}></img> &nbsp;
                 View Resume
@@ -62,13 +62,13 @@ function IndexPage() {
                 <p className="text-black text-25p leading-none">Adam</p>
                 <p className="text-black text-50 font-bold leading-none">Mayowa</p>
                 <p className="text-lightBlack text-xs mt-10 mb-5">User Interface / User Experience & Graphic Designer</p>
-                <Link className="text-lightBlack text-base items-center mb-10 flex" to="https://mailto:gentleibkay@gmail.com">
+                <Link target="_blank" className="text-lightBlack text-base items-center mb-10 flex" to="https://mailto:gentleibkay@gmail.com">
                   <img src={images.IC_MAIL}></img>
                    &nbsp;
                   gentleibkay@gmail.com
                 </Link>
                 <div>
-                  <Link to="https://drive.google.com/file/d/1n4d3I9HezrgyzW0AAHC-GLIaq0Bqw15k/view">
+                  <Link target="_blank" to="https://drive.google.com/file/d/1n4d3I9HezrgyzW0AAHC-GLIaq0Bqw15k/view">
                     <button className="primary">
                       <img src={images.IC_DOWNLOAD}></img> &nbsp;
                       View Resume

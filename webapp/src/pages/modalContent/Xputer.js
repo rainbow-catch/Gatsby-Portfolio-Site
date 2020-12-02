@@ -16,7 +16,7 @@ const Xputer = () => {
                             <p className="text-xl mt-6">Problem Statement</p>
                             <p className="mt-8 mb-10">Redesign the current Xputer Website to a new modern and vibrant cooperate website.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black border-b-2 p-2 border-black items-center flex">
                                         Launch Project &nbsp;
                                     <img src={images.IC_ARROW}></img>
@@ -86,7 +86,7 @@ const Xputer = () => {
                             <p className="text-xl mt-2">Problem Statement</p>
                             <p className="mt-3 mb-5">Redesign the current Xputer Website to a new modern and vibrant cooperate website.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black text-sm border-b-2 p-2 border-black items-center flex">
                                         Launch Project &nbsp;
                                     <img src={images.IC_ARROW}></img>

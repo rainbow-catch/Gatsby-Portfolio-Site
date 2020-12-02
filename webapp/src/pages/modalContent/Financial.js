@@ -18,7 +18,7 @@ const Financial = () => {
                     </p>
                             <p className="mt-8 mb-10">These prompted for the need to create a web application so user can Plan and manage their finances in a very intuitive and simple way.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black border-b-2 p-2 border-black items-center flex">
                                         Launch Project &nbsp;
                                         <img src={images.IC_ARROW}></img>
@@ -94,7 +94,7 @@ const Financial = () => {
                             <p className="mt-3 text-xs">By statistical data from survey shows that about 6 of 10 people don’t create budgets to track their spending transactions. 58% of those who create budgets do so manually using pen and paper, Others who create budgets do so with spreadsheet packages and budgeting apps. Using these current means to track expenses have proven to be quite stressful and difficult to manage.</p>
                             <p className="mt-3 mb-3 text-xs">These prompted for the need to create a web application so user can Plan and manage their finances in a very intuitive and simple way.</p>
                             <div className="flex">
-                                <Link to="#">
+                                <Link to="#" target="_blank">
                                     <div className="text-black border-b-2 p-2 border-black items-center text-sm flex">
                                         Launch Project &nbsp;
                                         <img src={images.IC_ARROW}></img>

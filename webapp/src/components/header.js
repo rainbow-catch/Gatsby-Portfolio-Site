@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import { Location } from '@reach/router'
 import images from '../constants/images'
-import { BrowserView, MobileView, IsMobile } from '../components/deviceDetect';
+import { IsMobile } from './deviceDetect';
 import PureModal from 'react-pure-modal';
 import 'react-pure-modal/dist/react-pure-modal.min.css';
 
@@ -32,7 +32,7 @@ function Header() {
               </div>
               <button
                 className="flex my-auto float-right items-center  text-lightBlack rounded smd:hidden"
-                onClick={() => isMobile ? setModal(true) : toggleExpansion(!isExpanded)}
+                onClick={() => (isMobile ? setModal(true) : toggleExpansion(!isExpanded))}
               >
                 <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="37.4428" height="32.9906" transform="translate(0.228882 0.181305)" fill="white" />

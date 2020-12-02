@@ -80,7 +80,7 @@ function AboutPage() {
               <p>
                 Talk to me if you have a project, or idea you’d like us to create amazing future big things.
                 </p>
-              <img className="my-5" src={images.IMAGE_ABOUT}></img>
+              <img className="my-5 w-full" src={images.IMAGE_ABOUT}></img>
               <p className="text-customGray">Illustrator, Digital Graphic Designer, Graphite & Charcol Pencil Artist,  Interface Designer &
 User Experience Designer</p>
               <Link to="/contact" className="my-5 w-full">
