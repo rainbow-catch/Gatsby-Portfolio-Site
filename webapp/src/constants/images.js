@@ -1,7 +1,7 @@
 const images = {
     IMAGE_LOGO: require("../images/logo.svg"),
     IMAGE_DECORATION: require("../images/page-shape-elements.svg"),
-    IMAGE_HOME_HERO: require("../images/tempImg.png"),
+    IMAGE_HOME_HERO: require("../images/tempImg.svg"),
     IMAGE_HOME_INDEX_MOBILE: require("../images/index-mobile.svg"),
     IMAGE_ABOUT: require("../images/about.png"),
     IMAGE_CONTACT: require("../images/contact.png"),
