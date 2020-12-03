@@ -33,8 +33,8 @@ const Financial = () => {
                                 <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
                             </button>
                         </Link>
-                        <div className="px-8p flex">
-                            <div className="flex flex-col text-white smd:w-6/12 break-normal">
+                        <div className="pl-8p flex justify-between">
+                            <div className="flex flex-col text-white smd:w-5/12 break-normal">
                                 <p className="text-25p mt-10p">Aides FInancial Advisor Web Application Design</p>
                                 <p className="mt-8">Aides is a fintech web application that helps users to plan and manage their financies, daily income, daily spending and create budget for their daily financial transactions.</p>
                                 <p className="text-xl mt-6">Problem Statement</p>
@@ -49,8 +49,8 @@ const Financial = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="hidden smd:block relative w-6/12">
-                                <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_FINANCIAL1}></img>
+                            <div className="hidden smd:flex w-7/12 flex-col justify-center pb-10 pl-5">
+                            <img className="object-right-bottom object-scale-down" src={images.IMAGE_FINANCIAL_PAGE1}></img>
                             </div>
                         </div>
                     </div>

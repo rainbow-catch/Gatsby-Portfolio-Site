@@ -37,7 +37,7 @@ function IndexPage() {
                 © 2020 Bkay, All rights reserved.
           </div>
             </div>
-            <img className="float-right object-right object-contain p-5" src={images.IMAGE_HOME_HERO}></img>
+            <img className="float-right object-right object-contain p-15" src={images.IMAGE_HOME_HERO}></img>
           </div>
         </BrowserView>
       }

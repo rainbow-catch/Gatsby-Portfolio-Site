@@ -1,7 +1,7 @@
 const images = {
     IMAGE_LOGO: require("../images/logo.svg"),
     IMAGE_DECORATION: require("../images/page-shape-elements.svg"),
-    IMAGE_HOME_HERO: require("../images/tempImg.svg"),
+    IMAGE_HOME_HERO: require("../images/tempImg.png"),
     IMAGE_HOME_INDEX_MOBILE: require("../images/index-mobile.svg"),
     IMAGE_ABOUT: require("../images/about.png"),
     IMAGE_CONTACT: require("../images/contact.png"),
@@ -53,7 +53,7 @@ const images = {
 
 
     IMAGE_XPUTER: require("../images/project/xputer.png"),
-    IMAGE_XPUTER1: require("../images/project/xputer/landing.png"),
+    IMAGE_XPUTER1: require("../images/project/xputer/landing-mobile.png"),
     IMAGE_XPUTER2: require("../images/project/xputer/landing-mobile.png"),
     IMAGE_XPUTER_PAGE1: require("../images/project/xputer/1.png"),
     IMAGE_XPUTER_PAGE2: require("../images/project/xputer/2.png"),

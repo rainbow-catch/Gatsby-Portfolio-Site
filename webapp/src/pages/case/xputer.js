@@ -31,8 +31,8 @@ const Xputer = () => {
                                 <img src={images.IC_ARROW_LEFT}></img> View All
                             </button>
                         </Link>
-                        <div className="pl-8p flex">
-                            <div className="smd:w-6/12 py-10  break-normal">
+                        <div className="pl-8p flex justify-between">
+                            <div className="smd:w-5/12 py-10  break-normal">
                                 <p className="text-25p mt-20">Xputer Web Page Redesign</p>
                                 <p className="mt-8">Xputer is a software solution cooperate company with Innovation. Excellence. Impact. Empowering businesses and organizations with cutting-edge, world-class solutions.</p>
                                 <p className="text-xl mt-6">Problem Statement</p>
@@ -46,14 +46,14 @@ const Xputer = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="hidden smd:block w-6/12 relative">
-                                <img className="absolute right-0 bottom-0 h-full object-right-bottom object-scale-down" src={images.IMAGE_XPUTER1}></img>
+                            <div className="hidden smd:flex w-7/12 flex-col justify-end pb-10 pl-10">
+                                <img className="object-right-bottom object-scale-down" src={images.IMAGE_XPUTER1}></img>
                             </div>
                         </div>
                     </div>
                     <div className="py-20 px-5p pt-6 flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
-                        <div className="flex flex-wrap justify-around">
+                        <div className="flex flex-wrap justify-start">
                             <div className="flex flex-col pr-10">
                                 <p className="text-3xl mt-8">Colors</p>
                                 <div className="mt-10 flex">
@@ -77,9 +77,9 @@ const Xputer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-center mt-20">
+                        <div className="flex flex-col items-start mt-20">
                             <p className="text-3xl">Design Solution</p>
-                            <p className="text-xl text-lightBlack">High Fidelity Screen Design</p>
+                            <p className="text-xl text-lightBlack mt-5">High Fidelity Screen Design</p>
                         </div>
                         {[
                             {
