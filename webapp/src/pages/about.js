@@ -69,17 +69,17 @@ function AboutPage() {
             <div className="bg-aboutPanel pt-16 text-lightBlack text-base w-full smd:pb-20">
               <Heading className="mb-4">About Me</Heading>
               <p>
-                My name is Adam Mayowa. I’m a designer, an art enthusiast I focus on mobile and web interface designing, my passion towards arts & interface design made me root myself into the digital design world.
-                </p><br />
-              <p>
-                My objectives are to make a commendable contribution to the field of Computing which is vast in different sections, working together with other professionals in the design sections using my skills to enhance several projects to work in various facets of mobile application interface design, responsive web design, and development, increasing my skills base in preparation for my longer-term goal.
-                </p><br />
-              <p>
+                Hi there, I’m Adam Mayowa a.ka Bkay, a designer, an art enthusiast I focus on mobile, web interface design and graphic design, my passion towards arts & interface design made me root myself into the digital design world.
+              </p><br />
+                <p>
+                My objectives are to make a commendable contribution to the field of Computing which is vast in different sections, working together with other professionals in the design sections using my skills to enhance several projects to work in various facets of mobile application interface design, responsive web design, and development, increasing my skills base in preparation for my longer-term goal. 
+              </p><br />
+                <p>
                 I’m very proficient in the use of Adobe applications for interface design and development of a clean and straightforward layout. My design skill can’t comprehend; I love to use design as a form of solution to a client case study. I believe simple is beautiful.
-                </p><br />
-              <p>
-                Talk to me if you have a project, or idea you’d like us to create amazing future big things.
-                </p>
+              </p><br />
+                <p>
+                Let’s talk if you have a project, or idea you’d like us to create amazing future big things.
+            </p>
               <img className="my-5 w-full" src={images.IMAGE_ABOUT}></img>
               <p className="text-customGray">Illustrator, Digital Graphic Designer, Graphite & Charcol Pencil Artist,  Interface Designer &
 User Experience Designer</p>
