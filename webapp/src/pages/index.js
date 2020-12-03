@@ -50,7 +50,7 @@ function IndexPage() {
               </div>
               <p className="text-25p text-lightBlack">Everything is</p>
               <p className="text-70p font-bold text-lightBrown uppercase">design</p>
-              <p className="text-20p text-lightBlack">...Simple I belive is beautiful</p>
+              <p className="text-20p text-lightBlack">...Simple I believe is beautiful</p>
               <div>
                 <Link to="/projects" className="mt-5">
                   <button className="primarymobile">View Projects</button>
