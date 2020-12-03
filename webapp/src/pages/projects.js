@@ -11,18 +11,34 @@ import SEO from "../components/seo";
 import images from "../constants/images"
 import Heading from "../components/Heading"
 import FollowMe from "../components/followMe";
+import { console } from "window-or-global";
 
 // import AcuteModal from "./modal/acute";
 
 const IndexPage = (props) => {
 
   const [modal, setModal] = useState(-1);
-  const [tab, setTab] = useState("uis");
+  const [tab, setTab] = useState("none");
   const [scale, setScale] = useState(1);
   const [loaded, setLoaded] = useState(false);
+
+  useEffect( () => {
+    setTab("uis");
+  }, []);
+
   useEffect(() => {
     setLoaded(true);
+    console.log('loaded');
   });
+
+  useEffect(() => {
+    console.log('loaded');
+    document.getElementById('___loader').style.display = "flex";
+    setTimeout(function () {
+      document.getElementById("___loader").style.display = "none"
+    }, 500)
+  }, tab);
+
   const BrowserView = ({ children }) => {
     return !IsMobile() && loaded && children;
   };
@@ -129,6 +145,7 @@ const IndexPage = (props) => {
   ];
 
   const allProject = {
+    none: [],
     uis: uis,
     graphics: graphics,
     pencils: pencils
