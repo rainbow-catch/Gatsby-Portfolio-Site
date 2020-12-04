@@ -49,7 +49,7 @@ function IndexPage() {
                 <img className="float-right w-decorationmobile h-decorationmobile pr-5p pt-3 pb-10" src={images.IMAGE_DECORATION}></img>
               </div>
               <p className="text-25p text-lightBlack">Everything is</p>
-              <p className="text-70p font-black text-lightBrown uppercase">design</p>
+              <p className="text-80p font-black text-lightBrown uppercase">design</p>
               <p className="text-20p text-lightBlack">...Simple I believe is beautiful</p>
               <div>
                 <Link to="/projects" className="mt-5">

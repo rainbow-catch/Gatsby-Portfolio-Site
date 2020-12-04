@@ -53,6 +53,7 @@ module.exports = {
         '25p': "25px",
         '20p': "20px",
         '70p': "70px",
+        '80p': "80px",
         'smdHuge': "80px",
         'decorationmobile':"88px",
       },
