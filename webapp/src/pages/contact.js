@@ -17,8 +17,8 @@ function ContactPage() {
         <div className="mx-auto px-10 lg:px-20 flex flex-col justify-between" style={{ paddingTop: "89px", minHeight: "100vh", maxWidth:"1440px" }}>
           <div className="relative">
             <div className="hidden smd:block smd:absolute pointer-events-none smd:mt-10 w-7/12 smd:w-8/12">
-              <div className="bg-lightGray flex p-6 pl-0">
-                <img className="object-cover w-full" style={{ borderTopLeftRadius: "20%" }} src={images.IMAGE_CONTACT}></img>
+              <div className="bg-lightBrown flex py-6 pl-8">
+                <img className="object-cover w-full" src={images.IMAGE_CONTACT}></img>
               </div>
               {/* <div className="text-lightBlack text-lg my-5 w-7/12">
               <FollowMe/>
@@ -33,7 +33,7 @@ function ContactPage() {
             <div className="relative smd:w-7/12 float-right flex flex-col">
               <div className="h-logo smd:h-logosmd"></div>
               <img className="absolute" style={{ top: "50px", right: "25px" }} src={images.IMAGE_DECORATION}></img>
-              <div className="bg-white border-t-lg border-l-lg border-lightBrown p-5 text-lightBlack text-lg w-full pb-20">
+              <div className="bg-white border-t-lg border-r-lg border-lightBrown p-5 pl-10 text-lightBlack text-lg w-full pb-20 mt-20">
                 <Heading className="my-10">Talk to Me.</Heading>
                 <p>
                   Have a cool Idea for new project? Need a reliable partner to improve your product. Guess What!. I’m here to listen and present solution to all case study.
