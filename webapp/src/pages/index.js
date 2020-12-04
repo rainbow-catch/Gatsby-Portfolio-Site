@@ -44,12 +44,12 @@ function IndexPage() {
       {loading &&
         <MobileView>
           <div className="flex flex-col justify-between min-h-screen" style={{ paddingTop: "60px" }}>
-            <div className="pl-6 flex justify-between flex-col">
+            <div className="pl-6 flex justify-between flex-col items-center text-center font-medium">
               <div>
                 <img className="float-right w-decorationmobile h-decorationmobile pr-5p pt-3 pb-10" src={images.IMAGE_DECORATION}></img>
               </div>
               <p className="text-25p text-lightBlack">Everything is</p>
-              <p className="text-70p font-bold text-lightBrown uppercase">design</p>
+              <p className="text-70p font-black text-lightBrown uppercase">design</p>
               <p className="text-20p text-lightBlack">...Simple I belive is beautiful</p>
               <div>
                 <Link to="/projects" className="mt-5">

@@ -51,7 +51,7 @@ const Xputer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="py-20 px-5p pt-6 flex flex-col text-black">
+                    <div className="py-20 px-8p pt-6 flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
                         <div className="flex flex-wrap justify-start">
                             <div className="flex flex-col pr-10">
@@ -92,8 +92,8 @@ const Xputer = () => {
                             },
                         ].map((page, index) => (
                             <div className="flex flex-col mt-10" key={index}>
-                                <p className="text-3xl mb-5">{page.pageName}</p>
-                                <img className="w-full boxshadow" src={page.src}></img>
+                                <p className="text-3xl mb-8">{page.pageName}</p>
+                                <img className="boxshadow mx-5p" src={page.src}></img>
                             </div>
                         ))}
                         <div className="h-32"></div>

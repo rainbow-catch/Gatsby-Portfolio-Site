@@ -22,7 +22,7 @@ const IndexPage = (props) => {
   const [scale, setScale] = useState(1);
   const [loaded, setLoaded] = useState(false);
 
-  useEffect( () => {
+  useEffect(() => {
     setTab("uis");
   }, []);
 
@@ -165,11 +165,9 @@ const IndexPage = (props) => {
         <MobileView>
           <div className="absolute top-0 min-h-full min-w-full flex flex-col justify-end items-center">
             <div className="rounded-t-xl w-full py-3 bg-white opacity-0.9 text-lg flex justify-center text-black">
-              <Link target="_blank" to={url}>
-                <p className="text-sm">
-                  {children}
-                </p>
-              </Link>
+              <p className="text-sm">
+                {children}
+              </p>
             </div>
           </div>
         </MobileView>
@@ -246,7 +244,9 @@ const IndexPage = (props) => {
                 {allProject[tab].map((project, index) => (
                   <div className="relative mt-5" key={index}>
                     <img className="w-full boxshadow" src={project.image}></img>
-                    <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
+                    <Link target="_blank" to={project.url}>
+                      <PanelOverlay index={index} url={project.url}>{project.title}</PanelOverlay>
+                    </Link>
                   </div>
                 ))}
               </div>
