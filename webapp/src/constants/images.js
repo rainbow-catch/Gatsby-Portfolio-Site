@@ -102,6 +102,8 @@ const images = {
     IC_PACK2: require("../images/icon/pack2.svg"),
     IC_PACK3: require("../images/icon/pack3.svg"),
     IC_PACK4: require("../images/icon/pack4.svg"),
+    IC_VIEW_ALL: require("../images/icon/view-all.svg"),
+    IC_VIEW_ALL_WHITE: require("../images/icon/view-all-white.svg"),
 };
 
 export default images;

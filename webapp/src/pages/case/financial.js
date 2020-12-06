@@ -30,7 +30,7 @@ const Financial = () => {
                     <div className="bg-financial flex flex-col z-10">
                         <Link to="/projects" className="mt-32 ml-5p">
                             <button className="customButton text-white bg-financial border-financialDark text-base">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="pl-8p flex justify-between">
@@ -127,7 +127,7 @@ const Financial = () => {
                     <div className="bg-financial flex flex-col">
                         <Link to="/projects" className="mt-24 ml-5p">
                             <button className="customButton text-white bg-financial border-financialDark text-sm">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="px-5p text-white break-normal mt-10">

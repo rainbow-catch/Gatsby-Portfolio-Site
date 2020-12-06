@@ -28,7 +28,7 @@ const Yutar = () => {
                     <div className="bg-yutar flex flex-col relative">
                         <Link to="/projects" className="mt-32 ml-5p">
                             <button className="customButton text-black bg-yutarDark border-yutarDardker text-base">
-                                <img src={images.IC_ARROW_LEFT}></img> View All
+                                <img src={images.IC_VIEW_ALL}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="pl-8p flex">
@@ -147,7 +147,7 @@ const Yutar = () => {
                     <div className="bg-yutar flex flex-col">
                         <Link to="/projects" className="mt-24 ml-5p">
                             <button className="customButton text-black bg-yutarDark border-yutarDardker text-sm">
-                                <img src={images.IC_ARROW_LEFT}></img> View All
+                                <img src={images.IC_VIEW_ALL}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="p-3 mt-10 text-gray-900 break-normal">

@@ -30,7 +30,7 @@ const Estate = () => {
                     <div className="bg-estate flex flex-col z-10">
                         <Link to="/projects" className="mt-32 ml-5p">
                             <button className="customButton text-white bg-estateDark border-estateLight text-base">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="px-8p flex">
@@ -188,7 +188,7 @@ const Estate = () => {
                     <div className="bg-estate flex flex-col">
                         <Link to="/projects" className="mt-24 ml-5p">
                             <button className="customButton text-white bg-estateDark border-estateLight text-sm">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="p-3 text-white text-xs break-normal mt-10">

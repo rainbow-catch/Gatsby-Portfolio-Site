@@ -28,7 +28,7 @@ const Mobile = () => {
                     <div className="bg-mobile flex flex-col">
                         <Link to="/projects" className="mt-32 ml-5p">
                             <button className="customButton text-white bg-mobile border-mobileDark text-base">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="px-8p flex justify-between">
@@ -127,7 +127,7 @@ const Mobile = () => {
                     <div className="bg-mobile flex flex-col">
                         <Link to="/projects" className="mt-24 ml-5p">
                             <button className="customButton text-white bg-mobile border-mobileDark text-sm">
-                                <img src={images.IC_ARROW_LEFT_WHITE}></img> View All
+                                <img src={images.IC_VIEW_ALL_WHITE}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="px-5p mt-5 text-xs">

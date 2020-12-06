@@ -10,16 +10,16 @@ import FollowMe from "../../components/followMe";
 const Xputer = () => {
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
-      setLoaded(true);
+        setLoaded(true);
     });
     const BrowserView = ({ children }) => {
-      return !IsMobile() && loaded && children;
+        return !IsMobile() && loaded && children;
     };
-  
+
     const MobileView = ({ children }) => {
-      return IsMobile() && loaded && children;
+        return IsMobile() && loaded && children;
     };
-    
+
     return (
         <Layout>
             <SEO title="Case-Xputer"></SEO>
@@ -28,7 +28,7 @@ const Xputer = () => {
                     <div className="bg-xputer flex flex-col text-black">
                         <Link to="/projects" className="mt-32 ml-5p">
                             <button className="customButton bg-xputerLight border-xputerDark text-base">
-                                <img src={images.IC_ARROW_LEFT}></img> View All
+                                <img src={images.IC_VIEW_ALL}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="pl-8p flex justify-between">
@@ -51,19 +51,19 @@ const Xputer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="py-20 px-8p pt-6 flex flex-col text-black">
+                    <div className="py-8 px-10p flex flex-col text-black">
                         <p className="text-gray-600 text-sm">Style Guide</p>
-                        <div className="flex flex-wrap justify-start">
-                            <div className="flex flex-col pr-10">
-                                <p className="text-3xl mt-8">Colors</p>
+                        <div className="flex flex-wrap justify-between">
+                            <div className="flex flex-col pr-10 mb-10">
+                                <p className="text-3xl mt-3">Colors</p>
                                 <div className="mt-10 flex">
                                     <ColorPanel className="mr-6 w-150 h-150 rounded-2xl boxshadow text-xl text-white" color="#04AADC" />
                                     <ColorPanel className="mr-6 w-150 h-150 rounded-2xl boxshadow text-xl text-white" color="#3E4097" />
                                 </div>
                             </div>
                             <div className="flex flex-col">
-                                <p className="text-3xl mt-8">Typography</p>
-                                <p className="text-6xl font-poppins mt-8 text-616161">Heading 1</p>
+                                <p className="text-3xl mt-3">Typography</p>
+                                <p className="text-6xl font-poppins mt-5 text-616161">Heading 1</p>
                                 <p className="mt-2">Poppins - Semi-Bold 64px | Line Height 44px</p>
                                 <div className="flex flex-wrap justify-start min-w-full text-616161">
                                     <div className="flex flex-col justify-end pr-5">
@@ -77,7 +77,9 @@ const Xputer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-start mt-20">
+                    </div>
+                    <div className="py-20 px-8p text-center pt-6 flex flex-col text-black">
+                        <div className="flex flex-col items-center mt-8">
                             <p className="text-3xl">Design Solution</p>
                             <p className="text-xl text-lightBlack mt-5">High Fidelity Screen Design</p>
                         </div>
@@ -119,7 +121,7 @@ const Xputer = () => {
                     <div className="bg-xputer flex flex-col text-black">
                         <Link to="/projects" className="mt-24 ml-5p">
                             <button className="customButton bg-xputerLight border-xputerDark text-sm">
-                                <img src={images.IC_ARROW_LEFT}></img> View All
+                                <img src={images.IC_VIEW_ALL}></img> &nbsp; View All
                             </button>
                         </Link>
                         <div className="px-5p mt-10  break-normal">
@@ -140,9 +142,9 @@ const Xputer = () => {
                             <img className="w-full object-scale-down" src={images.IMAGE_XPUTER2}></img>
                         </div>
                     </div>
-                    <div className="pt-6 px-5p flex flex-col text-black items-center">
+                    <div className="pt-6 px-5p text-center flex flex-col text-black items-center">
                         <p className="text-gray-600">Style Guide</p>
-                        <p className="text-xl mt-5">Colors</p>
+                        <p className="text-xl mt-2">Colors</p>
                         <div className="mt-5 flex justify-center">
                             <ColorPanel className="mr-6 w-90 h-90 rounded-2xl boxshadow text-xs text-white" color="#04AADC" />
                             <ColorPanel className="w-90 h-90 rounded-2xl boxshadow text-xs text-white" color="#3E4097" />
