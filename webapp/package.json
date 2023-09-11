@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "gatsby": "^2.19.17",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^1.2.0",
     "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-sharp": "^2.8.0",
